@@ -1,0 +1,299 @@
+
+@font-face {
+font-family: 'AvenirNext-Medium';
+src: url('font/AvenirNext-Medium.ttf');
+}
+@font-face {
+font-family: 'AvenirNext-Regular';
+src: url('font/AvenirNext-Regular.ttf');
+}
+@font-face {
+font-family: 'AvenirNext-DemBold';
+src: url('font/AvenirNext-DemBold.ttf');
+}
+body{
+	margin: 0px;
+    padding: 0px;
+	font-size: 16px;
+	font-family: 'Exo 2',sans-serif;
+	width: 100% auto;
+	max-width: 1400px;
+	min-width: 320px;
+	/*height: 1770px;*/
+	margin: 0 auto;
+	position: relative;
+	overflow-x: hidden;
+	background: #ffffff;
+}
+h1{
+	font-family: 'AvenirNext-Medium',sans-serif;
+	font-size: 72px;
+	font-weight: normal;
+}
+h2{
+	font-family: 'AvenirNext-Medium',sans-serif;
+	font-size: 46px;
+	font-weight: normal;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+	align-items: space-around;
+    max-width: 1400px;
+    background-color: transparent;
+}
+
+.container{
+	
+	background-image: url("img/pict.png");	
+	background-position: center center;
+	background-repeat: no-repeat;        
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-color: #ccc;
+
+	color: #ffffff;
+	height: 790px;
+    position: relative;
+
+
+}
+.select{
+	text-align: right;
+	padding: 15px 100px;
+}
+.select a{
+	font-family: 'AvenirNext-DemBold',sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-right: 20px;
+	font-size: 11px;
+}
+.logo{
+	font-family: 'AvenirNext-Medium',sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.logo p{
+	font-family: 'AvenirNext-Regular',sans-serif;
+	font-size: 14px;
+	text-transform: none;
+	font-weight: normal;
+	margin-top: -12px;
+}
+
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin:0px;
+    /* Убираю еще отступы! */
+    padding:0px;
+}
+ul:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.menu li {
+    /* Задаю выравнивание и позиционирование. */
+    float: left;
+    /* Считаем координаты относительно исходного места*/
+    position: relative;
+}
+ul.menu li a {
+    /* Делаю элементы блочными: */
+    display: block;
+    /* Задаю белый цвет. */
+    color: #fff;
+    /* Задаю отступ 10px. */
+    padding: 10px;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю цвет. */
+    background-color: transparent;
+}
+ul.menu li a:hover {
+    /* Задаю цвет при наведении. */
+    background-color: transparent;
+}
+ul.ssubmenuu {
+    position: absolute;
+    width: 130px;
+    top: 37px;
+    left:0px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    background-color: transparent;
+}
+ul.ssubmenuu li {
+    /* Блочное расположение элементов*/
+    display: block;
+}
+ul.ssubmenuu li a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+    color: #ffffff;
+    /* Цвет фона. */
+    background-color: transparent;
+}
+ul.ssubmenuu li a:hover {
+    /* Цвет фона при наведении. */
+    background-color: transparent;
+    /* Задаю подчеркивание*/
+   
+   
+}
+ul.menu li:hover ul.ssubmenuu {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+
+
+
+.menu li:after {
+ content: "";
+ width: 0;
+ height: 0;
+ position: absolute;
+ right: 1px;
+ top: 50%;
+ margin-top: -6px;
+ border-width: 6px 0 6px 6px;
+ border-style: solid;
+ border-color: transparent #fff;
+}
+
+
+
+
+
+
+
+
+
+.box{
+	border: 1px solid #ffffff;
+	border-radius: 30px;
+	padding: 10px 20px;
+}
+.btn_form{
+	font-family: 'AvenirNext-Medium',sans-serif;
+	font-size: 18px;
+	background-color: transparent;
+	color: #ffffff;
+	border: none;
+	
+
+}
+.line{
+	border-right: 1px solid #ffffff;
+	padding-right: 15px;
+}
+.block1{
+
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+	
+	align-items: center;
+	flex-direction: column;
+	padding-top: 50px;
+}
+										
+.block1 p{
+	font-family: 'AvenirNext-Regular',sans-serif;
+	font-size: 26px;
+	
+	
+}
+
+
+
+.block2{
+	font-family: 'AvenirNext-Medium',sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+    display: -webkit-flex;
+    display: flex;
+	-webkit-justify-content: space-around;
+    justify-content: space-around;
+	background: #ffffff;
+	max-width: 1400px;
+	padding-top: 60px;
+	
+}
+.block3{
+	color: #262626;
+}
+ul{
+	margin-left: 22px;
+	padding: 0;
+}
+li{
+	color: #0f4ed0;
+	padding-left: 8px;
+}
+span{
+	color: #262626;
+}
+.btn{
+	font-family: 'AvenirNext-Regular',sans-serif;
+	font-size: 20px;
+	background-color: #2856b3;
+	color: #ffffff;
+	border: 1px solid #2856b3;
+	border-radius: 30px;
+	padding: 15px 50px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.txt{
+	font-size: 14px;
+	text-transform: uppercase;
+    border: 1px dotted #d5d3d1; /* Параметры границы */
+    background: #faf8f6; /* Цвет фона */
+	color: #b3b3b3;
+    padding: 10px;
+}
+
+
+
+footer{
+	font-family: 'AvenirNext-Medium',sans-serif;
+	font-size: 14px;
+	color: #b3b3b3;
+	font-weight: normal;
+	text-align: left;
+	margin: 50px 200px;
+	
+}
+.color{
+	color: #2856b3;
+}
+footer a{
+	color: #2856b3;
+}
+
+
+
+
+
+
