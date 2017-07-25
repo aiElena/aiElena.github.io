@@ -1,0 +1,32 @@
+
+body{
+	color:#8a8a8a;
+	font-size:20.83px;
+	font-family:'Exo 2',sans-serif;
+	width:100% auto;
+	max-width:1170px auto;
+	min-width:320px;
+	position:relative;
+	overflow-x:hidden;
+}
+
+
+.hidden{
+		display:none
+}
+::-webkit-input-placeholder{
+	color:transparent;
+	opacity:1
+}
+:-moz-placeholder{
+	color:transparent;
+	opacity:1
+}
+:-ms-input-placeholder{
+	color:transparent;opacity:1
+}
+img{
+	max-width:100%;
+	height:auto!important;
+	width:auto\9
+}
