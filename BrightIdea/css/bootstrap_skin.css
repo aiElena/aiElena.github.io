@@ -1,0 +1,210 @@
+
+h1, .h1 {
+	font-family:'OpenSans-CondLight',sans-serif;
+	font-size: 60px;
+	color: #ffffff;	
+}
+h2, .h2 {
+	font-size: 36px;
+}
+h3, .h3 {
+	font-size: 28px;
+}
+h4, .h4 {
+	font-size: 18px;
+}
+h5, .h5 {
+	font-size: 16px;
+}
+h6, .h6 {
+	font-size: 12px;
+}
+.lead {
+	font-size: 33px;
+}
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {	
+	text-decoration: none; 
+}
+a:hover,
+a:focus,
+a:visited,
+a:active {	
+	text-decoration: none;
+	color: #ffeb3b;
+}
+.navbar-inverse {
+	font-family:'OpenSans-CondLight',sans-serif;
+	font-size: 36px;
+	color: #ffffff;
+	border: none;
+	display: block;
+	margin-bottom: 0;
+}
+.navbar-header {
+  padding: 11px 0 !important;
+  margin: 0 auto;
+  display: block;
+}
+.navbar-nav {
+	 margin: -1px;
+}
+
+.collapse .navbar-collapse div {
+	padding: 11px 0;
+	float: left;
+	width: 83.33333333% !important;
+}
+
+.navbar-inverse .nav  li a{
+	color: #ffffff;
+	line-height: 1.6;
+	padding: 2px 94px 0 0; 
+}
+.navbar-inverse .nav li a:hover{
+	color: #ffeb3b;
+	background-color: rgb(33,33,33) !important;
+}
+.navbar-inverse .nav li a:focus{
+	color: #ffeb3b;
+	background-color: rgb(33,33,33)!important;
+}
+.nav .open a, .nav .open a:hover, .nav .open a:focus{
+	color: #ffeb3b;
+	background-color: rgb(33,33,33)!important;
+}
+.dropdown-menu{
+	background-color: transparent !important;
+	padding: 0;
+}
+.dropdown:hover .dropdown-menu { 
+    display: block;
+	font-size: 20px;
+	margin-top: -2px;
+	background-color: rgb(33, 33, 33) !important;
+}
+.dropdown-menu  li a{
+	font-size: 20px;
+	color: #ffffff !important;
+}
+.dropdown-menu  li a:hover { 
+	background-color: rgb(33, 33, 33) !important;
+	color: #ffeb3b !important;
+	text-decoration: none;
+}
+.dropdown-menu  li a:focus { 
+  background-color: rgb(33, 33, 33) !important;
+  color: #ffeb3b !important;
+  text-decoration: none;
+}
+.navbar-inverse .dropdown-open .dropdown-menu  li{
+	font-size: 20px !important;
+	color: #ffffff !important;
+}
+.navbar-inverse .dropdown-open .dropdown-menu li a:hover{
+	background-color: rgb(33, 33, 33) !important;
+	color: #ffeb3b !important;
+	text-decoration: none;	
+}
+.dropdown-open .dropdown-menu li a:focus{
+	background-color: rgb(33, 33, 33) !important;
+	color: #ffeb3b !important;
+	text-decoration: none;	
+}
+.dropdown-open .dropdown-menu li a:active{
+	background-color: rgb(33, 33, 33) !important;
+	color: #ffeb3b !important;
+	text-decoration: none;	
+}
+
+.phone{
+	list-style: none;
+	display: block;
+	float: right;
+	margin: 0 auto;
+	padding: 11px 0;
+}
+
+
+
+.panel-title>a,
+.panel-title>small,
+.panel-title>.small,
+.panel-title>small>a,
+.panel-title>.small>a{
+	font-family:'NotoSans',sans-serif;
+	border: none !important;
+	background-color: #ffffff !important;
+	color: #212121;
+	font-size: 28px;
+}
+.panel-default>.panel-heading{
+	color: #212121;
+	background-color: #ffffff !important;
+	border: none !important;
+}
+.panel-default{
+	border: none !important;
+}
+
+.btn-success{
+	font-family:'NotoSans Bold',sans-serif;
+	outline: none;
+	background-color: #ffeb3b;
+	color: #212121;
+	font-size: 24px;
+	border: 1px solid #ffeb3b;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 5px 60px;
+}
+.btn-success:hover{
+	outline: none;
+	font-size: 24px;
+	background-color: #ffeb3b;
+	border: 1px solid #ffeb3b;
+	border-radius: 10px;
+	color: #212121;
+}
+.btn-success:focus{
+	outline: none;
+	font-size: 24px;
+	background-color: #ffeb3b !important;
+	border: 1px solid #ffeb3b !important;
+	border-radius: 10px;
+	color: #212121 !important;
+	border-radius: 10px !important;
+}
+
+
+footer .btn-success{
+	font-family:'OpenSans-CondBold',sans-serif !important;
+	outline: none;
+	background-color: #ffeb3b;
+	color: #212121;
+	font-size: 24px;
+	padding: 5px 55px;
+	border: 1px solid #ffeb3b;
+	border-radius: 10px;	
+}
+footer .btn-success:hover{
+	outline: none;
+	font-size: 24px;
+	background-color: #ffeb3b;
+	border: 1px solid #ffeb3b;
+	color: #212121;
+}
+footer .btn-success:focus{
+	outline: none;
+	font-size: 24px;
+	background-color: #ffeb3b !important;
+	border: 1px solid #ffeb3b !important;
+	color: #212121 !important;	
+}
+
+
+
+
