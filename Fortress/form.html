@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Fortress</title>
+	<meta name="description" content="">
+		
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+	<script src = "script.js"></script>
+	
+</head>
+<body>
+	<div class="header">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container">
+						<a class="navbar-brand" href="index.html"><img src="img/logo.png" /></a>
+							<div class="header_phone">38<span>(000)</span> 000-00-00</div>
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>	
+							</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="header_nav_item"><a href="#">О компании</a></li>
+								<li class="header_nav_item"><a href="form.html">Снять квартиру</a></li>
+								<li class="header_nav_item"><a href="#">Наши партнеры</a></li>
+								<li class="header_nav_item"><a href="form1.html">Сдать квартиру</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Полезное <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="index.html">Главная</a></li>
+										<li><a href="form.html">Снять квартиру</a></li>
+										<li><a href="form1.html">Сдать квартиру</a></li>
+										<li><a href="dok1.html">Договорно-нормативная база</a></li>
+										<li><a href="dok2.html">Условия предоставления услуг</a></li>
+									</ul>
+								</li>
+								<li class="header_nav_item"><a href="#">Мы в прессе</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+			</div>
+
+
+
+
+
+		
+	<div class="container container_form">
+		<div class="row">
+			<div class="grid-test col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<form class="myform" action="send.php" method="post">
+					<input type="hidden" name="what" value="отправка формы">
+						<div class="formPage">
+							<h2>1. Информация о вас</h2>				
+							<div class="col-xs-12">
+								<label for="name">Ваше имя:</label>
+								<input name="name" id="name" type="text" required class="form-control" placeholder="*Введите Ваше имя">
+							</div>
+							<div class="col-xs-12">
+								<label for="patronymic">Ваше отчество:</label>
+								<input name="patronymic" id="patronymic" type="text"  class="form-control"  placeholder="Введите Ваше отчество" >
+							</div>
+							<div class="col-xs-12">
+								<label for="lastName" class="control-label">Ваша фамилия :</label>
+								<input type="text" class="form-control" id="lastName" name="lastName" placeholder="*Введите Вашу фамилию" required>
+							</div>
+							<div class="col-xs-12">
+								<label for="phone">Ваш контактный (финансовый) телефон(будет привязан к заявке):</label>
+								<input name="phone" id="phone" type="text" required class="form-control"  placeholder="(___) ___ __ __" >
+							</div>
+							<div class="col-xs-12">
+								<label for="email" class="control-label">Ваш контактный e-mail<br> (будет привязан к заявке):</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="*Введите e-mail"  required>
+							</div>
+							<div class="col-xs-12">
+								<label for="socLink" class="control-label">Ссылка на Ваш аккаунт в соцсетях<br> для хозяев:</label>
+								<input type="text" class="form-control" id="socLink" name="socLink" placeholder="Введите Ссылку">
+							</div>
+							<div class="col-xs-12">
+								<label for="reg" class="control-label">Место вашей регистрации:</label>
+								<input type="text" class="form-control" id="reg" name="reg" placeholder="Введите место регистрации">
+							</div>
+							<div class="col-xs-12">
+								<label for="work" class="control-label">Место вашей работы:</label>
+								<input type="text" class="form-control" id="work" name="work" placeholder="Введите место работы" required>
+							</div>
+							<div class="col-xs-12">
+								<label for="status" class="control-label">Ваша должность:</label>
+								<input type="text" class="form-control" id="status"  name="status" placeholder="Введите должность" required>
+							</div>
+							<div class="col-xs-12">
+								<label for="wok" class="control-label">Адрес доставки бумажной корреспонденции от Нас:</label>
+								<input type="text" class="form-control" id="wok" name="wok" placeholder="Введите адрес" required>
+							</div>
+							<div class="col-xs-12">
+								<label for="price" class="control-label">Среднемесячный (сумарный) доход вашей семьи (грн):</label>
+								<input type="text" class="form-control"  id="price" name="price" placeholder="Введите сумму">
+							</div>
+							<div class="col-xs-12">
+								<div class="checkboxRow">
+									<p class="width100">Возможность подтверждения вашего финансового дохода:</p>
+									<label class="control-label radio-inline containerNoPadding" >
+										<div class="col-lg-6">
+											<input type="radio" name="option1" id="optionsRadios1" value="Да" checked>
+											<p>Да</p>
+										</div>
+									</label>
+									<label class="control-label radio-inline containerNoPadding">
+									<div class="col-lg-6">
+										<input type="radio" name="option1" id="optionsRadios1" value="Нет">
+										<p>Нет</p>
+									</div>
+									</label>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<label for="family" class="control-label">Состав семьи (Дети\Животные), возраст:</label>
+								<input type="text" class="form-control" id="family"  name="family" placeholder=" ">
+							</div>
+							<div class="col-xs-12">
+								<div class="checkboxRow">
+									<p class="width100">Рекомендации от предыдущих Арендодателей:</p>
+									<label class="control-label radio-inline containerNoPadding">
+										<div class="col-lg-6">
+											<input type="radio" name="option2" id="optionsRadios1" value="Да" checked>
+											<p>Да</p>
+										</div>
+									</label>
+									<label class="control-label radio-inline containerNoPadding">
+										<div class="col-lg-6">
+											<input type="radio" name="option2" id="optionsRadios2" value="Нет">
+											<p>Нет</p>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>	
+						<div class="formPage">
+							<h2>2. Информация о квартире и согласование</h2>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label for="flat" class="control-label">Какая квартира вас заинтересовала: район+цена либо ссылка</label>
+									<input type="text" class="form-control" id="flat" name="flat" placeholder=" ">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label for="district" class="pink control-label">Интересующие районы по значимости (предпочтению):</label>
+									<select id="district" name="district" class="pink form-control" required>
+										<option value="Голосеевский">Голосеевский</option>
+										<option value="Дарницкий">Дарницкий</option>
+										<option value="Деснянский">Деснянский</option>
+										<option value="Днепровский">Днепровский </option>
+										<option value="Оболонский">Оболонский</option>
+										<option value="Подольский">Подольский</option>
+										<option value="Печерский">Печерский</option>
+										<option value="Святошинский">Святошинский </option>
+										<option value="Соломенский">Соломенский</option>
+										<option value="Шевченковский">Шевченковский</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group">
+									<p>Сколько комнат Вы хотите?</p>
+									<div class="col-lg-6 containerNoPadding">
+										<label for="col_min" class="control-label"></label>
+										<select id="col_min" name="col_min" class="pink form-control" required>
+											<option disabled selected hidden>*Мин</option>
+											<option selected>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label for="firstName" class="control-label width100">Ценовой диапазон аренды(Для подбора доп. вариантов):</label>
+									<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 containerNoPadding">
+										<label for="price_min" class="control-label ">Цена от:</label>
+									</div>
+									<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 containerNoPadding" required>
+										<select id="price_min" name="price_min" class="pink form-control">
+											<option  disabled selected hidden>*Цена от:(Грн)</option>
+											<option  selected>2 500 грн</option>
+											<option>3 500 грн</option>
+											<option>4 500 грн</option>
+											<option>5 000 грн</option>
+											<option>10 000 грн</option>
+											<option>15 000 грн</option>
+											<option>20 000 грн</option>
+											<option>25 000 грн</option>
+											<option>50 000 грн</option>
+											<option>200 грн (посуточно)</option>
+											<option>300 грн (посуточно)</option>
+											<option>400 грн (посуточно)</option>
+											<option>500 грн (посуточно)</option>
+											<option>1 000 грн (посуточно)</option>
+										</select>
+									</div>
+									<div class="col-xs-12  col-sm-3 col-md-3 col-lg-3 containerNoPadding">
+										<label for="price_max" class="control-label">Цена до:</label>
+									</div>
+									<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 containerNoPadding">
+										<select id="price_max" name="price_max" class="pink form-control">
+											<option disabled hidden>*Цена до:(Грн)</option>
+											<option >2 500 грн</option>
+											<option  selected>3 500 грн</option>
+											<option>4 500 грн</option>
+											<option>5 000 грн</option>
+											<option>10 000 грн</option>
+											<option>15 000 грн</option>
+											<option>20 000 грн</option>
+											<option>25 000 грн</option>
+											<option>50 000 грн</option>
+											<option>200 грн (посуточно)</option>
+											<option>300 грн (посуточно)</option>
+											<option>400 грн (посуточно)</option>
+											<option>500 грн (посуточно)</option>
+											<option>1 000 грн (посуточно)</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group calendarPadding">
+									<label for="start_rent" class="control-label">Крайняя (критичная) дата вселения:</label>
+									<input type="text" id="datapickker2" name="start_rent" class="form-control datapickkerStyle"  placeholder="дд-мм-гггг">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label for="type" class="control-label">На какой срок вы хотите снять квартиру (мин, макс.)?</label>
+									<select id="type" name="type" class="form-control">
+										<option selected>Долгосрочная</option>
+										<option>Посуточная аренда</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="form-group">
+									<label for="time_pr" class="control-label">Удобное дата и время просмотра (Вселения)</label>
+									<select id="time_pr" name="time_pr" class="form-control">
+										<option>17:00</option>
+										<option>18:00</option>
+										<option selected>19:00</option>
+										<option>20:00</option>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+										<option>7:00</option>
+										<option>8:00</option>
+										<option>9:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+								<div class="form-group inputListPageForm">
+									<p>Удобный способ расчета с хозяином для Вас:</p>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<label class="radio-inline containerNoPadding">
+											<input type="radio" name="option3" value="Через терминал самообслуживания (грн)">
+											<p>Через терминал самообслуживания (грн)</p>
+										</label>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<label class="radio-inline containerNoPadding">
+											<input type="radio" name="option3" value="С Вашей банковской карты">
+											<p>С Вашей банковской карты</p>
+										</label>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<label class="radio-inline containerNoPadding">
+											<input type="radio" name="option3" value="С Вашей системы электронных платежей">
+											<p>С Вашей системы электронных платежей</p>
+										</label>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<label class="radio-inline containerNoPadding">
+											<input type="radio" name="option3" value="С Вашего расчетного счета в банке">
+											<p>С Вашего расчетного счета в банке</p>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+								<div class="form-group inputListPageForm">
+									<p>С кем вы хотите осуществить просмотр</p>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<label class="radio-inline containerNoPadding">
+											<input type="radio" name="option4" value="С агентом и хозяйкой">
+											<p>С агентом и хозяйкой</p>
+										</label>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<label class="radio-inline containerNoPadding">
+											<input type="radio" name="option4" value="С хозяйкой без агента">
+											<p>С хозяйкой без агента</p>
+										</label>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<label class="radio-inline containerNoPadding">
+											<input type="radio" name="option4" value="Без хозяйки и агента">
+											<p>Без хозяйки и агента ("слепое" вселение)</p>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="formPage">
+							<h4>3. Дополнительная информация</h4>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<p>Удобный способ информирования о новых поступлениях вариантов квартир:</p>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<label class="checkbox-inline containerNoPadding">
+										<input type="checkbox" name="option5" id="option5" value="SMS-информирование">
+										<p>SMS-информирование</p>
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<label class="checkbox-inline containerNoPadding">
+										<input type="checkbox" name="option5" id="option5" value="На e-mail">
+										<p>На e-mail</p>
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<label class="checkbox-inline containerNoPadding">
+										<input type="checkbox" name="option5" id="option5" value="Письмо на отделение Укрпочты">
+										<p>Письмо на отделение Укрпочты</p>
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<label class="checkbox-inline containerNoPadding">
+										<input type="checkbox" name="option5" id="option5" value="Доставка письма Курьером">
+										<p>Доставка письма Курьером</p>
+									</label>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<p>Интересует ли вас аренда с правом выкупа?</p>
+								<label class="control-label radio-inline containerNoPadding">
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+										<input type="radio" name="option6" id="optionsRadios1" value="Да">
+										<p>Да</p>
+									</div>
+								</label>
+								<label class="control-label radio-inline containerNoPadding">
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+										<input type="radio" name="option6" id="optionsRadios2" value="Нет">
+										<p>Нет</p>
+									</div>
+								</label>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<hr>	
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<label class="checkbox-inline containerNoPadding">
+										<input type="checkbox" name="option9" id="option2" value="option1" required>
+										<p>С <a href="workingconditions.html" target="_blank">Условиями Работы</a> ознакомлен(а) и согласен(на)!</p>
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<label class="checkbox-inline containerNoPadding">
+										<input type="checkbox" name="option9" value="option1" required>
+										<p>С <a href="agreement.html" target="_blank">Условиями Договора</a> ознакомлен(а) и согласен(на)!</p>
+									</label>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+									<label class="checkbox-inline containerNoPadding">
+										<input type="checkbox" name="statement" value="Прошу вас оказать помощь и содействие в поиске и предоставлении мне информации о вариантах жилых помещений" required>
+										<p>Заявление: "Прошу вас оказать помощь и содействие в поиске и предоставлении мне информации о вариантах жилых помещений
+											на рынке аренды жилья".</p>
+									</label>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<label for="coments" class="control-label">Дополнительно: пожелания, предложения, жалобы, рекомендации, благодарности, форма для commercial proposal.</label>
+								<textarea class="form-control"  name="coments" rows="3" placeholder=" . . . . . "></textarea><hr>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12  text-center">
+								<a href="#page_2"><button  type="submit" class="btn btn-success">Оставить заявку</button></a>
+							</div>
+						</div>				
+				</form>	
+			</div>
+		</div>
+	</div>
+			
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
