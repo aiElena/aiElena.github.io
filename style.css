@@ -68,7 +68,6 @@ header::after {
 header h1 {
     height: 100%;
 }
- 
 header h1::before {
     content: '';
     display: inline-block;
