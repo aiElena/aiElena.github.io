@@ -105,6 +105,7 @@ body{
 	background: url(img/image_1/image_265x290/ledcross_001.png) no-repeat 50% 50%;
 	display: block;
 	border-radius: 0;
+	border: 1px solid #b8b8b8;
 	width: 265px; 
 	height: 290px;		
 }
