@@ -101,6 +101,9 @@ body{
 	margin-left: 11px;
     color: #000;
 }
+.item{
+	border: 1px solid #ff0000;
+}
 .izo_1{
 	background: url(img/image_1/image_265x290/ledcross_001.png) no-repeat 50% 50%;
 	display: block;
