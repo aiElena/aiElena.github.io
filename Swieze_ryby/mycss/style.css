@@ -312,7 +312,7 @@ nav.mynav .navbar-brand:focus{
 }
      /*jumbotron*/
 .jumbotron{
-    background: url(../img/bg.png) no-repeat, center, top, fixed;
+    background: url(../img/bg.png) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -328,8 +328,8 @@ nav.mynav .navbar-brand:focus{
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(12, 43, 97, 0.82);
-
+  background: rgba(12, 43, 97, 0.82);
+  
 }
 .jumbotron h1{
 	font-family: Montserrat, sans-serif;
@@ -404,8 +404,8 @@ h2:after{
 	text-transform: uppercase;
 }
 
-.bg-overlay {
-    background: url(../img/sklep.png) no-repeat, center, top, fixed;
+.bg-overlay{
+    background: url("../img/sklep.png") no-repeat, center, top, fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -415,6 +415,16 @@ h2:after{
 	z-index: 100;
     height: 380px;
    
+}
+.bg-overlay:after{
+   content: '';
+    display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 43, 97, 0.82); 
 }
 .bg-overlay h4{
 	font-family: Montserrat, sans-serif;
