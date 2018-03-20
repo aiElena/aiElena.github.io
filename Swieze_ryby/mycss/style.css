@@ -328,7 +328,7 @@ nav.mynav .navbar-brand:focus{
   height: 100%;
   width: 100%;
   background: rgb(12, 43, 97, 0.82);
-  
+
 }
 .jumbotron h1{
 	font-family: Montserrat, sans-serif;
@@ -404,7 +404,7 @@ h2:after{
 }
 
 .bg-overlay {
-    background: linear-gradient(rgb(12, 43, 97, 0.82), rgb(12, 43, 97, 0.82)), url(../img/sklep.png) no-repeat center top fixed;
+    background: url(../img/sklep.png) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
