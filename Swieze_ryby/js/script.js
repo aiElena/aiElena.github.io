@@ -10,11 +10,15 @@ $(document).ready(function() {
 
 
 $(function(){
-	$('.your-class').slick({arrows:false});
+	$('.carousel-inner').slick({arrows:false});
     $('#next').click(function(){
-    	$('.your-class').slick('slickNext');
+    	$('.right carousel-control').slick('slickNext');
     });
     $('#prev').click(function(){
-    	$('.your-class').slick('slickPrev');
+    	$('.left carousel-control').slick('slickPrev');
     });
 });
+
+
+
+		
