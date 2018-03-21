@@ -750,9 +750,9 @@ footer{
 
 @font-face { 
   font-family: 'Montserrat'; 
-  src: url('font/Montserrat.woff2') format('woff2'), 
-       url('font/Montserrat.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('font/Montserrat.woff') format('woff'); 
+  src: url('../font/Montserrat.woff2') format('woff2'), 
+       url('../font/Montserrat.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../font/Montserrat.woff') format('woff'); 
   font-weight: normal; 
   font-style: normal;
 } 
