@@ -716,12 +716,13 @@ footer{
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	padding: 0;	
 }
-}
-@media screen and (max-width: 560px){
-
 .inform{
 	text-align: center;
 }
+}
+@media screen and (max-width: 560px){
+
+
 .uslugy h3:after{
 	content: "";
 	position: absolute;
