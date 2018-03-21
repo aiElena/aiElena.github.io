@@ -733,15 +733,18 @@ footer{
 }
 
 
-
-@font-face { 
-  font-family: 'Montserrat'; 
-  src: url('../font/montserrat.woff2') format('woff2'), 
-       url('../font/montserrat.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('../font/montserrat.woff') format('woff'); 
-  font-weight: normal; 
-  font-style: normal; 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../font/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/montserrat-v12-latin-regular.woff2') format('woff2'), 
+		url('../font/montserrat-v12-latin-regular.woff') format('woff'), 
+		url('../font/montserrat-v12-latin-regular.ttf') format('truetype'), 
+		url('../font/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); 
 }
+
+
 
 
 
