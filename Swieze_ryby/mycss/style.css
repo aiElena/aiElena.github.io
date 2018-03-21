@@ -257,25 +257,11 @@ nav{
 	position: relative;
 	background: transparent !important;
 	border: none !important;
-	box-shadow: none !important;
+	box-shadow: none;
 	z-index: 100000;
 }
-.navbar .navbar-default{
-	position: relative;
-	background: transparent !important;
-	z-index: 100000;
-}
-/*nav.collapse .navbar-collapse{
-	position: relative;
-	background: transparent !important;
-	z-index: 100000;
-}
-nav.navbar .navbar-default .mynav{
-	position: relative;
-	background: transparent !important;
-	z-index: 100000;
-}*/
-.navbar .navbar-default ul li a{
+
+nav .navbar-collapse ul li a{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff !important;
 	font-size: 14px;
@@ -285,7 +271,7 @@ nav.navbar .navbar-default .mynav{
 	z-index: 100000;
 }
 
-.navbar .navbar-default ul li a:hover{
+nav .navbar-collapse ul li a:hover{
 
 	background: transparent !important;
 	background: #00a1eb !important;
@@ -293,7 +279,7 @@ nav.navbar .navbar-default .mynav{
 	border-radius: 5px;
 }
 
-.navbar .navbar-default .navbar-brand{
+.navbar-default .navbar-brand{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 25px;
