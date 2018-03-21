@@ -499,57 +499,111 @@ h3:after{
 
 /* carousel */
 
-.sl{
-	position: relative;
-	z-index: 100;
+.slider-area {
+	margin: 20px auto;
+	padding: 0 2.7% 0 3.2%;
 }
 
-.media-carousel 
-{
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px;
-  margin-top: 30px;
+.single-slider {
+	width: 350px;
+	height: 270px;
+	border-top: 1px solid transparent;
+	display: table;
 }
-/* Previous button  */
-.media-carousel .carousel-control.left 
-{
-  left: -12px;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
+
+.first {
+	background: url(../img/sl1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
-/* Next button  */
-.media-carousel .carousel-control.right 
-{
-  right: -12px !important;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
+.second {
+	background: url(../img/sl2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
-/* Changes the position of the indicators */
-.media-carousel .carousel-indicators 
-{
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
+
+.third {
+	background: url(../img/sl3.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
-/* Changes the colour of the indicators */
-.media-carousel .carousel-indicators li 
-{
-  background: #c0c0c0;
+
+.fourth {
+	background: url(../img/sl4.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
-.media-carousel .carousel-indicators .active 
-{
-  background: #333333;
+
+.fifth {
+	background: url(../img/sl1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.sixth {
+	background: url(../img/sl2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.seventh {
+	background: url(../img/sl3.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.eighth {
+	background: url(../img/sl4.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.slider-title {
+	/*margin: 25% auto;*/
+	display: table-cell;
+  vertical-align: middle;
+	text-align: center;
+}
+
+.slider-title h4, 
+.slider-title p {
+	text-transform: uppercase;
+	color: #ffff;
+}
+
+.slider-title .zamow {
+	display: inline;
+	cursor: pointer;
+	margin: 0 auto;
+	background-color: #ffff;
+	border-radius: 3px;
+	color: #2185c0;
+	border:none;
+	outline: none;
+	padding: 7px;
+	font-size: 1em;
+}
+
+
+.owl-nav {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 45%;
+	z-index: 99;
+	
+}
+
+.owl-prev {
+	position: absolute;
+	left: 0;
+	top: 45%;
+}
+
+.owl-next {
+	position: absolute;
+	right: 0;
+	top: 45%;
 }
 
 /* End carousel */
