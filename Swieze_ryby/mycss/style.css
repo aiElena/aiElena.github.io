@@ -293,7 +293,7 @@ nav.navbar .navbar-default .mynav{
 	border-radius: 5px;
 }
 
-.navbar-brand{
+.navbar .navbar-default .navbar-brand{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 25px;
