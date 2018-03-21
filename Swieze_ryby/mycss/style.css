@@ -260,12 +260,12 @@ nav{
 	box-shadow: none !important;
 	z-index: 100000;
 }
-nav.container-fluid{
+nav.navbar .navbar-default{
 	position: relative;
 	background: transparent !important;
 	z-index: 100000;
 }
-nav.collapse .navbar-collapse{
+/*nav.collapse .navbar-collapse{
 	position: relative;
 	background: transparent !important;
 	z-index: 100000;
@@ -274,8 +274,8 @@ nav.navbar .navbar-default .mynav{
 	position: relative;
 	background: transparent !important;
 	z-index: 100000;
-}
-nav.mynav ul li a{
+}*/
+nav.navbar .navbar-default ul li a{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff !important;
 	font-size: 14px;
@@ -285,7 +285,7 @@ nav.mynav ul li a{
 	z-index: 100000;
 }
 
-nav.mynav ul li a:hover{
+nav.navbar .navbar-default ul li a:hover{
 
 	background: transparent !important;
 	background: #00a1eb !important;
@@ -293,7 +293,7 @@ nav.mynav ul li a:hover{
 	border-radius: 5px;
 }
 
-nav.mynav .navbar-brand{
+nav.navbar-brand{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 25px;
@@ -302,11 +302,11 @@ nav.mynav .navbar-brand{
 	z-index: 100000;
 
 }
-nav.mynav .navbar-brand:hover{
+nav.navbar-brand:hover{
 	color:  #ffffff;
 	text-decoration: underline;
 }
-nav.mynav .navbar-brand:focus{
+nav.navbar-brand:focus{
 	color:  #ffffff;
 	text-decoration: underline;
 }
