@@ -499,7 +499,7 @@ h3:after{
 .single-slider:hover .slider-title .zamow {
 
 	display: inline;
-	/*cursor: pointer;*/
+	position: relative;
 	margin: 0 auto;
 	background-color: #ffff;
 	border-radius: 3px;
@@ -508,6 +508,7 @@ h3:after{
 	outline: none;
 	padding: 7px;
 	font-size: 1em;
+	z-index: 1000;
 }
 .first {
 	background: url(../img/sl1.png);
