@@ -484,7 +484,9 @@ h3:after{
 	margin: 20px auto;
 	padding: 0 2.7% 0 3.2%;
 }
-
+.owl-item{
+	margin-right: 0;
+}
 .single-slider {
 	width: 90%;
 	height: 270px;
