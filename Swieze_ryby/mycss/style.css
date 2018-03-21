@@ -260,7 +260,7 @@ nav{
 	box-shadow: none !important;
 	z-index: 100000;
 }
-nav.navbar .navbar-default{
+.navbar .navbar-default{
 	position: relative;
 	background: transparent !important;
 	z-index: 100000;
@@ -275,7 +275,7 @@ nav.navbar .navbar-default .mynav{
 	background: transparent !important;
 	z-index: 100000;
 }*/
-nav.navbar .navbar-default ul li a{
+.navbar .navbar-default ul li a{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff !important;
 	font-size: 14px;
@@ -285,7 +285,7 @@ nav.navbar .navbar-default ul li a{
 	z-index: 100000;
 }
 
-nav.navbar .navbar-default ul li a:hover{
+.navbar .navbar-default ul li a:hover{
 
 	background: transparent !important;
 	background: #00a1eb !important;
@@ -293,7 +293,7 @@ nav.navbar .navbar-default ul li a:hover{
 	border-radius: 5px;
 }
 
-nav.navbar-brand{
+.navbar-brand{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 25px;
@@ -302,11 +302,11 @@ nav.navbar-brand{
 	z-index: 100000;
 
 }
-nav.navbar-brand:hover{
+.navbar-brand:hover{
 	color:  #ffffff;
 	text-decoration: underline;
 }
-nav.navbar-brand:focus{
+.navbar-brand:focus{
 	color:  #ffffff;
 	text-decoration: underline;
 }
@@ -509,8 +509,25 @@ h3:after{
 	height: 270px;
 	border-top: 1px solid transparent;
 	display: table;
+	cursor: pointer;
 }
+.slider-title .zamow {
+	display: none;
 
+}
+.single-slider:hover .slider-title .zamow {
+
+	display: inline;
+	/*cursor: pointer;*/
+	margin: 0 auto;
+	background-color: #ffff;
+	border-radius: 3px;
+	color: #2185c0;
+	border:none;
+	outline: none;
+	padding: 7px;
+	font-size: 1em;
+}
 .first {
 	background: url(../img/sl1.png);
 	background-repeat: no-repeat;
@@ -571,18 +588,7 @@ h3:after{
 	color: #ffff;
 }
 
-.slider-title .zamow {
-	display: inline;
-	cursor: pointer;
-	margin: 0 auto;
-	background-color: #ffff;
-	border-radius: 3px;
-	color: #2185c0;
-	border:none;
-	outline: none;
-	padding: 7px;
-	font-size: 1em;
-}
+
 
 
 .owl-nav {
