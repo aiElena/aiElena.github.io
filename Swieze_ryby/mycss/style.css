@@ -744,17 +744,15 @@ footer{
 		url('../font/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); 
 }
 
-
-
-
-
  
-@font-face { 
-  font-family: 'Hind'; 
-  src: url('font/Hind.woff2') format('woff2'), 
-       url('font/Hind.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('font/Hind.woff') format('woff'); 
-  font-weight: normal; 
+@font-face {
+  font-family: 'Hind';
   font-style: normal;
-}  
+  font-weight: 400;
+  src:  url('../font/hind-v8-latin-regular.eot?#iefix') format('embedded-opentype'), 
+        url('../font/hind-v8-latin-regular.woff2') format('woff2'),
+        url('../font/hind-v8-latin-regular.woff') format('woff'),
+        url('../font/hind-v8-latin-regular.ttf') format('truetype'),
+        url('../font/hind-v8-latin-regular.svg#Hind') format('svg');
+} 
 
