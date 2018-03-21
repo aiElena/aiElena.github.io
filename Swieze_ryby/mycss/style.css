@@ -570,8 +570,6 @@ h3:after{
 }
 
 
-
-
 .owl-nav {
 	position: absolute;
 	width: 100%;
@@ -724,7 +722,7 @@ footer{
 .uslugy h3:after{
 	content: "";
 	position: absolute;
-	top: 75%;
+	top: 65%;
 	left: 42%;
 	width: 16%;
 	height: 2px;
