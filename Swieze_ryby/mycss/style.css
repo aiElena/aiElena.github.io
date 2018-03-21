@@ -719,15 +719,6 @@ footer{
 	text-align: center;
 }
 
-.uslugy h3:after{
-	content: "";
-	position: absolute;
-	top: 65%;
-	left: 42%;
-	width: 16%;
-	height: 2px;
-	background-color: #a1a1a1;
-}
 }
 
 
