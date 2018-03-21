@@ -293,7 +293,7 @@ nav.navbar .navbar-default .mynav{
 	border-radius: 5px;
 }
 
-.navbar .navbar-default .navbar-brand{
+.navbar-default .navbar-brand{
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 25px;
@@ -302,11 +302,11 @@ nav.navbar .navbar-default .mynav{
 	z-index: 100000;
 
 }
-.navbar-brand:hover{
+.navbar-default .navbar-brand:hover{
 	color:  #ffffff;
 	text-decoration: underline;
 }
-.navbar-brand:focus{
+.navbar-default .navbar-brand:focus{
 	color:  #ffffff;
 	text-decoration: underline;
 }
