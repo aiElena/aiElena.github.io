@@ -495,7 +495,16 @@ h3:after{
 	cursor: pointer;
 }
 .slider-title .zamow {
-	display: none;
+	display: inline;
+	cursor: pointer;
+	margin: 0 auto;
+	background-color: transparent;
+	border-radius: transparent;
+	color: transparent;
+	border: none;
+	outline: none;
+	padding: 7px;
+	font-size: 1em;
 
 }
 .single-slider:hover .slider-title .zamow {
