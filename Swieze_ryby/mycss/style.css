@@ -352,7 +352,7 @@ h2:after{
 	background-color: #a1a1a1;
 }
 
-.sklep_atticle{
+.sklep-atticle{
 	font-family: Hind, sans-serif;
 	position: relative;
 	color:  #737373;
@@ -362,7 +362,7 @@ h2:after{
 	margin: 50px 0 30px;
 }
 
-.sklep__phone{
+.sklep-phone{
 	font-family: Montserrat, sans-serif;
 	color:  #00a1eb;
 	font-size: 22px;
