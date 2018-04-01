@@ -22,7 +22,7 @@ html, body {
 body, body * { box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -webkit-box-sizing:border-box; }
 h1{
 	font-family: "Montserrat", sans-serif;
-	color:  #ffff00;
+	color:  #ffffff;
 	font-size: 3.5rem;
 	font-weight: 700;
 	line-height: 80px;
