@@ -120,7 +120,6 @@ h3{
 	letter-spacing: 3px;
 }
 
-
 			/*nav*/
 
 .brand{
@@ -222,7 +221,6 @@ ul, li{
 	text-align: center;
 }
 .content1 .wrap{
-
 	background-color: rgb(242, 242, 242);
 	padding-bottom: 50px;
 
@@ -349,6 +347,7 @@ ul, li{
   margin-left: -22%;
 }
 					/*and content*/
+					
 					/*timer*/
 .timer {
 	color: #fff;
@@ -397,8 +396,7 @@ ul, li{
    color: #a7a7a8;
 }
 					/*and timer*/
-					
-					
+										
 				/*flex*/
  .wrap{
 	max-width: 1930px;
