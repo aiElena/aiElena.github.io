@@ -1,6 +1,4 @@
 html, body, div, span, form, object{
-	height: 100%;
-	width: 100%;
     margin: 0 auto;
     padding: 0;
     border: 0;
@@ -11,9 +9,16 @@ html, body, div, span, form, object{
 	font-style: inherit;
 	font-weight: inherit;    
 }
+
 a img, :link img, :visited img {
 	border: 0 none;
 }
+
+html, body { 
+    height: 100%;
+	width: 100%;
+}
+
 body, body * { box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -webkit-box-sizing:border-box; }
 h1{
 	font-family: Montserrat-Regular, sans-serif;
