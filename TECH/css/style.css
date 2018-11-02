@@ -502,9 +502,6 @@ h1{
 .sl{
 	flex-wrap: wrap;  
 }
-.flexslider{
-	flex-wrap: wrap;
-}
 .item_txt{
 	flex-basis: 100%;
 }
@@ -514,6 +511,9 @@ h1{
 }
 #item_nav-btns{
 	margin: 2px 1px 0 0; 
+}
+.wrapper-slider {
+	margin: 0 auto 20px;
 }
 }
 @media only screen and (max-width : 414px){
