@@ -87,9 +87,9 @@ html{
 }
 
 body{
-	font-family:"Lato-Black",arial,sans-serif;
-	text-align:center;
-    min-height:100%;
+	font-family: "Lato-Black",arial,sans-serif;
+	text-align: center;
+    min-height: 100%;
 }
 
 body, body * { box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -webkit-box-sizing:border-box; }
