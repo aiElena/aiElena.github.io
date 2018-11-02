@@ -9,17 +9,19 @@ html, body, div, span, form, object{
 	font-style: inherit;
 	font-weight: inherit;    
 }
-
-a img, :link img, :visited img {
+a img, :link img, :visited img{
 	border: 0 none;
 }
-
-html, body { 
+html, body{ 
     height: 100%;
 	width: 100%;
 }
-
-body, body * { box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -webkit-box-sizing:border-box; }
+body, body *{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
 h1{
 	font-family: Montserrat-Regular, sans-serif;
 	color:  #ffffff;
@@ -39,9 +41,9 @@ h2{
 	text-align: left;
 }
 img{
-	max-width:100%;
-	height:auto!important;
-	width:auto\9
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
 }
 main{
     margin: 0 auto;
