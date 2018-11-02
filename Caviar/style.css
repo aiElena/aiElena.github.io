@@ -120,7 +120,6 @@ h3{
 	letter-spacing: 3px;
 }
 
-
 			/*nav*/
 
 .brand{
@@ -148,9 +147,10 @@ nav .wrapper{
 	display: none;
 	z-index: 10000;
 	cursor: pointer;
-    width:50px;
-    height:40px;
-    background: url(img/menu.png) no-repeat;
+    width: 40px;
+    height: 30px;
+    margin: 8px 0 auto 50px;
+    background:linear-gradient(to bottom, #b4b4b4 0%, #b4b4b4 20%, transparent 20%, transparent 40%, #b4b4b4 40%, #b4b4b4 60%, transparent 60%, transparent 80%, #b4b4b4 80%, #b4b4b4 100%);
 }
 .menu li{		
 	float: left;	
@@ -221,7 +221,6 @@ ul, li{
 	text-align: center;
 }
 .content1 .wrap{
-
 	background-color: rgb(242, 242, 242);
 	padding-bottom: 50px;
 
@@ -348,6 +347,7 @@ ul, li{
   margin-left: -22%;
 }
 					/*and content*/
+					
 					/*timer*/
 .timer {
 	color: #fff;
@@ -374,7 +374,7 @@ ul, li{
 	border-radius: 8px;
 	background-color: #dcbf7b;
     background-clip: padding-box;
-    padding: 0 12px;
+    padding: 0;
     line-height: 80px;
     text-align: center;
 }
@@ -396,8 +396,7 @@ ul, li{
    color: #a7a7a8;
 }
 					/*and timer*/
-					
-					
+										
 				/*flex*/
  .wrap{
 	max-width: 1930px;
