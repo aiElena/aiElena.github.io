@@ -53,6 +53,7 @@ section {
 }
 header{	
 	max-width: 1600px;
+	margin: 0 auto;
 	height: auto;
 	background: url('../img/bg.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -260,9 +261,9 @@ p{
 /*стили слайдера*/
 
 .wrapper-slider {
-max-width: 1600px;
-margin: 0 auto;
-height: auto;
+	max-width: 1600px;
+	margin: 0 auto 100px;
+	height: auto;
 }
 
 #block-for-slider {
@@ -416,10 +417,12 @@ height: auto;
 
 /*  блок flexslider */
 
-section.flexslider{
+.flexslider{
 	display: flex;
 	position: relative;	
-	margin-top: 170px;
+	max-width: 1600px;
+	margin: 0 auto;
+	height: auto;
 }
 .item_pict{
 	max-width: 50%
