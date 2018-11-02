@@ -21,7 +21,7 @@ html, body {
 
 body, body * { box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -webkit-box-sizing:border-box; }
 h1{
-	font-family: "Montserrat", sans-serif;
+	font-family: Montserrat-Regular, sans-serif;
 	color:  #ffffff;
 	font-size: 3.5rem;
 	font-weight: 700;
@@ -31,7 +31,7 @@ h1{
 	transform: scaleX(1.0009);
 }
 h2{
-	font-family: "Montserrat", sans-serif;
+	font-family: Montserrat-Regular, sans-serif;
 	color:  #111111;
 	font-size: 2rem;
 	font-weight: 700;
@@ -118,7 +118,7 @@ p{
  }
 
 .menu__links-item {
-	font-family: "Montserrat", sans-serif;
+	font-family: Montserrat-Regular, sans-serif;
 	color:  #fff;
 	font-size: 17px;
 	font-weight: 700;
@@ -193,7 +193,7 @@ p{
 	padding: 100px 20px;
 }
 .txt_menu p{
-	font-family: Montserrat, sans-serif;
+	font-family: Montserrat-Regular, sans-serif;
 	color:  #fff;
 	font-size: 16px;
 	font-weight: 600;
@@ -236,7 +236,7 @@ p{
 	padding: 20px 0;
 }
 .text_flex_txt{
-	font-family: Montserrat sans-serif;
+	font-family: Montserrat-Regular sans-serif;
 	color:  #111;
 	font-size: 1rem;
 	font-weight: 500;
@@ -244,14 +244,14 @@ p{
 	text-align: left;
 }
 .sum{
-	font-family: Montserrat sans-serif;
+	font-family: Montserrat-Regular sans-serif;
 	color:  #111;
 	font-size: 2rem;
 	font-weight: 500;
 	line-height: 27px;
 }
 .sign{
-	font-family: Montserrat sans-serif;
+	font-family: Montserrat-Regular sans-serif;
 	color:  #2975f4;
 	font-size: 2rem;
 	font-weight: 500;
@@ -355,7 +355,7 @@ height: auto;
 }
 /* стили текстового блока */
 .text-block p{
-	font-family: Montserrat sans-serif;
+	font-family: Montserrat-Regular sans-serif;
 	color:  #111111;
 	font-size: 16px;
 	font-weight: 600;
@@ -370,7 +370,7 @@ height: auto;
 /* стили кнопок в текстовом блоке */
 
 .model{
-	font-family: Montserrat sans-serif;
+	font-family: Montserrat-Regular sans-serif;
 	color:  #fefefe;
 	font-size: 1rem;
 	font-weight: 700;
@@ -397,7 +397,7 @@ height: auto;
     opacity: 1;
 }
 .check{
-	font-family: Montserrat sans-serif;
+	font-family: Montserrat-Regular sans-serif;
 	color:  #4083f5;
 	font-size: 1rem;
 	font-weight: 600;
@@ -468,7 +468,7 @@ section.flexslider{
 	margin: 0;
 }
 .item_txt p{
-	font-family: Montserrat;
+	font-family: Montserrat-Regular;
 	color:  #111111;
 	font-size: 16px;
 	font-weight: 500;
@@ -576,8 +576,8 @@ section.flexslider{
 }
 
 @font-face {
-font-family: "Montserrat"; 
-src: url("../font/Montserrat.ttf") format("truetype"); 
+font-family: "Montserrat-Regular"; 
+src: url("../font/Montserrat-Regular.ttf") format("truetype"); 
 font-style: normal; 
 font-weight: normal; 
 } 
