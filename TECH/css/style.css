@@ -1,17 +1,17 @@
 html, body, div, span, form, object{
-    margin:0 auto;
-    padding:0;
-    border:0;
-    outline:0;
-    vertical-align:baseline;
-    background:transparent;
-    font-size:16px;
-	font-style:inherit;
-	font-weight:inherit;    
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 16px;
+	font-style: inherit;
+	font-weight: inherit;    
 }
 
 a img, :link img, :visited img {
-	border:0 none;
+	border: 0 none;
 }
 
 html, body { 
@@ -45,7 +45,7 @@ img{
 }
 main {
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1600px;
     display: block;
 }
 section {
