@@ -485,7 +485,16 @@ p{
 }
 
 
-
+/*-----------------*/
+.footer{
+	text-align: center;
+	position: relative;	
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 20px 0;
+	background: #000;
+	color: #fff;
+}
 
 
 /*--------------------------------*/
