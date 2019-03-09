@@ -1,0 +1,150 @@
+html, body, div, span, form, object{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 16px;
+	font-style: normal;
+	font-weight: normal;    
+}
+
+body{
+	color: #000;
+	font-size: 16px;
+	max-width: 1006px;
+	min-width: 320px;
+	margin: 0 auto;
+	position: relative;
+	overflow-x: hidden;
+}
+
+h2 {
+    position: relative;
+	color: #323232;
+	font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.block2{
+	align-items: stretch;
+	text-align: left;
+	margin: 30px;
+}
+
+.my-flex-block{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.item_right{
+	flex: 1;
+	padding: 20px;
+	width: 300px;	
+}
+
+.box-answ{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+	min-height: 90px;
+	min-width: 400px;
+	border: 1px solid #000;	
+}
+.box-answ p{
+	padding: 0 10px;
+}
+.item_left{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 400px;
+	flex-wrap: wrap;
+	margin-bottom: auto;
+}
+.item_left li{
+	border: 1px solid #000;
+	border-bottom: 0;
+	padding: 10px;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.item_left li:last-child {
+	border-bottom: 1px solid #000;
+}
+.item_left li:hover,
+.item_left li:focus{
+	background: #ccc;
+}
+.item_left li i.fa{
+	display: none;
+	padding: 0 0 0 20px;	
+}
+.item_left li:hover i.fa,
+.item_left li:focus i.fa{
+	display: inline-block;
+}
+
+
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/*кнопка меняет название*/
+#ggt{
+	cursor: pointer;
+}
+
+#drag1 p{
+	margin: 0;
+}
+
+
+/*перетаскивание файла*/
+#dropZone{
+	margin: 50px auto;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
