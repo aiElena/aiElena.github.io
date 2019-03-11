@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>Test-JS</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
+	<!--[if lte IE 9 ]>
+		<script type="text/javascript" src="js/PIE.js"></script>
+		<script type="text/javascript" src="js/for-ie.js"></script>
+		<script type="text/javascript" src="js/modernizr-1.7.min.js"></script>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div id="dropZone"></div>
+		<div class="block2">
+			<h2>Выбрать фамилию и получить текст</h2>		
+			<div class="my-flex-block">	
+				<div class="item_left">
+					<ul>	
+						<li onclick="openbox('box1'); return false">Иванов Иван Иванович <i class="fa fa-caret-right" aria-hidden="true"></i></li>
+						<li onclick="openbox('box2'); return false">Петров Петр Петрович <i class="fa fa-caret-right" aria-hidden="true"></i></li>
+						<li onclick="openbox('box3'); return false">Сидоров Сидор Сидорович <i class="fa fa-caret-right" aria-hidden="true"></i></li>	
+					</ul>
+
+ <input type="button" id="ggt" value="open" onclick="dawn(this)">					
+				</div>
+				<div class="item_right">
+					<div class="box-answ">
+						<div id="box1" style="display: none;">
+							<p>111-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Morbi molestie egestas massa, et sollicitudin urma mattis faucibus.
+								Praesent sagittis laoreet est, et efficitur enim lacinia id.
+							</p>
+						</div>
+						<div id="box2" style="display: none;">
+							<p>222-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Morbi molestie egestas massa, et sollicitudin urma mattis faucibus.
+								Praesent sagittis laoreet est, et efficitur enim lacinia id.
+							</p>
+						</div>
+						<div id="box3" style="display: none;">
+							<p>333-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Morbi molestie egestas massa, et sollicitudin urma mattis faucibus.
+								Praesent sagittis laoreet est, et efficitur enim lacinia id.
+							</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h2>Drag and Drop</h2>
+			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div draggable="true" ondragstart="drag(event)" id="drag1"><p>ttt</p></div>
+			</div>
+			<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		</div>
+		<hr>
+		
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	
+	<script src="js/common.js"></script>						
+</body>
+</html>
