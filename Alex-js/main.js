@@ -9,3 +9,8 @@ const myConst = 3.14;
 const myName = 'Elena';
 let myIncome;
 let 50;
+
+console.log(300);
+console.log(300);
+console.log(300);
+console.log(300);   
