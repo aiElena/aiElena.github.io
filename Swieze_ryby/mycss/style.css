@@ -242,7 +242,7 @@ body{
 	color: #8c8c8c;
 	font-family: Montserrat, sans-serif;
 	max-width: 1280px;
-	/*min-width: 320px;*/
+	min-width: 320px;
 	position: relative;
 	margin: 0 auto;
 	overflow-x: hidden;
