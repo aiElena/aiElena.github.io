@@ -325,7 +325,7 @@ nav .navbar-collapse ul li a:hover{
 .jumbotron p{
 	font-family: Hind, sans-serif;
 	position: relative;
-	color:  #ffffff;
+	color:  #ff0000;
 	font-size: 22px;
 	font-weight: 700;
 	padding-bottom: 200px;
@@ -509,7 +509,6 @@ h3:after{
 
 }
 .single-slider:hover .slider-title .zamow {
-
 	display: inline;
 	position: relative;
 	margin: 0 auto;
