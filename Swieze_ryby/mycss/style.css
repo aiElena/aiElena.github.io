@@ -658,7 +658,7 @@ h3:after{
 }
 
 .map{	
-   
+	overflow: hidden;
 	background: #ccc;
 	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
