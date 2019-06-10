@@ -245,6 +245,7 @@ body{
 	min-width: 320px;
 	position: relative;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 nav{
@@ -293,7 +294,6 @@ nav .navbar-collapse ul li a:hover{
      /*jumbotron*/
 .jumbotron{
     background: url(../img/bg.png) no-repeat center top fixed;
-	/*background: url(../img/bg.png) no-repeat center top;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
