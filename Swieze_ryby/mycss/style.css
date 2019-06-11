@@ -237,7 +237,7 @@ template {
 	display: none;
 }
 
-body{
+body {
 					
 	color: #8c8c8c;
 	font-family: Montserrat, sans-serif;
@@ -248,7 +248,7 @@ body{
 	overflow-x: hidden;
 }
 
-nav{
+nav {
 	position: relative;
 	background: transparent !important;
 	border: none !important;
@@ -256,7 +256,7 @@ nav{
 	z-index: 100000;
 }
 
-nav .navbar-collapse ul li a{
+nav .navbar-collapse ul li a {
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff !important;
 	font-size: 14px;
@@ -266,7 +266,7 @@ nav .navbar-collapse ul li a{
 	z-index: 100000;
 }
 
-nav .navbar-collapse ul li a:hover{
+nav .navbar-collapse ul li a:hover {
 
 	background: transparent !important;
 	background: #00a1eb !important;
@@ -274,25 +274,27 @@ nav .navbar-collapse ul li a:hover{
 	border-radius: 5px;
 }
 
-.navbar-default .navbar-brand{
+.navbar-default .navbar-brand {
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 25px;
 	font-weight: 700;
 	text-transform: uppercase;
 	z-index: 100000;
+}
 
-}
-.navbar-default .navbar-brand:hover{
+.navbar-default .navbar-brand:hover {
 	color:  #ffffff;
 	text-decoration: underline;
 }
-.navbar-default .navbar-brand:focus{
+
+.navbar-default .navbar-brand:focus {
 	color:  #ffffff;
 	text-decoration: underline;
 }
+
      /*jumbotron*/
-.jumbotron{
+.jumbotron {
     background: url(../img/bg.png) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -301,7 +303,8 @@ nav .navbar-collapse ul li a:hover{
 	position: relative;
 	z-index: 100;
 }
-.jumbotron.overlay:before{
+
+.jumbotron.overlay:before {
   content: '';
   display: block;
   position: absolute;
@@ -309,10 +312,10 @@ nav .navbar-collapse ul li a:hover{
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(28, 92, 142, 0.62);
-  
+  background: rgba(28, 92, 142, 0.62); 
 }
-.jumbotron h1{
+
+.jumbotron h1 {
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 5.5714rem;
@@ -322,7 +325,8 @@ nav .navbar-collapse ul li a:hover{
 	text-transform: uppercase;
 	z-index: 1000;
 }
-.jumbotron p{
+
+.jumbotron p {
 	font-family: Hind, sans-serif;
 	position: relative;
 	color:  #fff;
@@ -333,8 +337,9 @@ nav .navbar-collapse ul li a:hover{
 	z-index: 1000;
 }
 		 /* end jumbotron*/
+		 
 		 /*----sklep---*/
-h2.sklep{
+h2.sklep {
 	font-family: Montserrat, sans-serif;
 	position: relative;
 	color:  #00a1eb;
@@ -342,7 +347,8 @@ h2.sklep{
 	font-weight: 700;
 	text-transform: uppercase;	
 }
-h2:after{
+
+h2:after {
 	content: "";
 	position: absolute;
 	top: 150%;
@@ -352,7 +358,7 @@ h2:after{
 	background-color: #a1a1a1;
 }
 
-.sklep-atticle{
+.sklep-atticle {
 	font-family: Hind, sans-serif;
 	position: relative;
 	color:  #737373;
@@ -362,7 +368,7 @@ h2:after{
 	margin: 50px 0 30px;
 }
 
-.sklep-phone{
+.sklep-phone {
 	font-family: Montserrat, sans-serif;
 	color:  #00a1eb;
 	font-size: 22px;
@@ -371,7 +377,7 @@ h2:after{
 	text-transform: uppercase;
 }
 
-.btn-primary{
+.btn-primary {
 	font-family: Montserrat, sans-serif;
 	background: #00a1eb;
 	color:  #ffffff;
@@ -385,7 +391,7 @@ h2:after{
 	text-transform: uppercase;
 }
 
-.bg-overlay{
+.bg-overlay {
     background: url("../img/sklep.png") no-repeat, center, top, fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -394,10 +400,9 @@ h2:after{
 	position: relative;
     background-position: center center;
 	z-index: 100;
-    height: 380px;
-   
+    height: 380px;  
 }
-.bg-overlay:after{
+.bg-overlay:after {
    content: '';
     display: block;
 	position: absolute;
@@ -407,7 +412,8 @@ h2:after{
     height: 100%;
     background: rgba(28, 92, 142, 0.82); 
 }
-.bg-overlay h4{
+
+.bg-overlay h4 {
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 22px;
@@ -418,11 +424,11 @@ h2:after{
 	position: absolute;
 	top: 80%;
 	left: 70%;
-	z-index: 1000;
-	
+	z-index: 1000;	
 }
+
 /*-------asortyment---------*/
-h3.asortyment{
+h3.asortyment {
 	font-family: Montserrat, sans-serif;
 	position: relative;
 	color:  #00a1eb;
@@ -430,7 +436,8 @@ h3.asortyment{
 	font-weight: 700;
 	text-transform: uppercase;	
 }
-h3:after{
+
+h3:after {
 	content: "";
 	position: absolute;
 	top: 120%;
@@ -442,17 +449,17 @@ h3:after{
 /*---------------------------*/
 
 /*-------------uslugy ----------------------*/
-.services{
+.services {
 	margin: 40px auto;
 }
-.services h3{
+.services h3 {
 	font-family: Montserrat, sans-serif;
 	color:  #00a1eb;
 	font-size: 23.88px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.services h3:after{
+.services h3:after {
 	content: "";
 	position: absolute;
 	top: 65%;
@@ -461,15 +468,15 @@ h3:after{
 	height: 2px;
 	background-color: #a1a1a1;
 }
-.services img{
+.services img {
 	background: #00a1eb;
 	border: 2px solid #00a1eb;
 }
-.services img:hover{
+.services img:hover {
 	background: #fff;
 	border: 2px solid #00a1eb;
 }
-.services p{
+.services p {
 	font-family: Hind, sans-serif;
 	color:  #737373;
 	font-size: 14px;
@@ -479,14 +486,15 @@ h3:after{
 }
 
 /* carousel */
-
 .slider-area {
 	margin: 20px auto;
 	padding: 0 2.7% 0 3.2%;
 }
-.owl-carousel{
+
+.owl-carousel {
 	margin: 0 auto;
 }
+
 .single-slider {
 	width: 90%;
 	height: 270px;
@@ -495,6 +503,7 @@ h3:after{
 	margin: 0 auto;
 	cursor: pointer;
 }
+
 .slider-title .zamow {
 	display: inline;
 	cursor: pointer;
@@ -506,8 +515,8 @@ h3:after{
 	outline: none;
 	padding: 7px;
 	font-size: 1em;
-
 }
+
 .single-slider:hover .slider-title .zamow {
 	display: inline;
 	position: relative;
@@ -521,11 +530,13 @@ h3:after{
 	font-size: 1em;
 	z-index: 1000;
 }
+
 .first {
 	background: url(../img/sl1.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+
 .second {
 	background: url(../img/sl2.png);
 	background-repeat: no-repeat;
@@ -569,13 +580,13 @@ h3:after{
 }
 
 .slider-title {
-	/*margin: 25% auto;*/
 	display: table-cell;
 	position: relative;
 	vertical-align: middle;
 	text-align: center;
 }
-.slider-title:after{
+
+.slider-title:after {
    content: '';
     display: block;
 	position: absolute;
@@ -594,14 +605,12 @@ h3:after{
 	z-index: 1000;
 }
 
-
 .owl-nav {
 	position: absolute;
 	width: 100%;
 	height: 0;
 	top: 45%;
 	z-index: 1000;
-	
 }
 
 .owl-prev {
@@ -615,29 +624,29 @@ h3:after{
 	right: 0;
 	top: 45%;
 }
-
 /* End carousel */
-/*----------kontakt---------*/
 
-.wrap{
+/*----------kontakt---------*/
+.wrap {
 	background: #2ab2ed;
 	margin-top: 90px;
 	margin-bottom: 60px;
 }
-.kontakt{
+
+.kontakt {
 	padding-right: 30px;
 }	
 
-.kontakt h2{
+.kontakt h2 {
 	font-family: Montserrat, sans-serif;
 	color:  #ffffff;
 	font-size: 34px;
 	font-weight: 700;
 	padding-top: 60px;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 }
-.kontakt h2:after{
+
+.kontakt h2:after {
 	content: "";
 	position: absolute;
 	top: 40%;
@@ -646,7 +655,7 @@ h3:after{
 	height: 2px;
 	background-color: #59c3f0;
 }
-.kontakt p{
+.kontakt p {
 	font-family: Hind, sans-serif;
 	color:  #ffffff;
 	font-size: 14px;
@@ -656,7 +665,7 @@ h3:after{
 	padding-top: 40px;
 }
 
-.map{	
+.map {	
 	overflow: hidden;
 	background: #ccc;
 	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
@@ -664,41 +673,47 @@ h3:after{
 	padding: 0;
 	
 }
-.btn-default{
+
+.btn-default {
 	background: #fff;
 	font-family: Montserrat, sans-serif;
 	color:  #2eb2ef;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 15.01px;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 }
-.btn-default:hover{
+
+.btn-default:hover {
 	color:  #2eb2ef;
 }
-.btn-default:focus{
+
+.btn-default:focus {
 	color:  #2eb2ef;
 }
+
 /*---------------inform--------------*/
-.inform h3{
+.inform h3 {
 	font-family: Montserrat, sans-serif;
 	color:  #737373;
 	font-size: 21.89px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
-.inform  h3:after{
+
+.inform  h3:after {
 	content: none;
 }
-.inform p{
+
+.inform p {
 	font-family: Hind, sans-serif;
 	color:  #737373;
 	font-size: 13.98px;
 	font-weight: 400;
 	line-height: 26px;
 }
-.inform a{
+
+.inform a {
 	display: block;
 	padding-top: 10px;
 	font-family: Hind, sans-serif;
@@ -708,11 +723,12 @@ h3:after{
 	line-height: 26px;	
 }
 
-.inform a:hover{
+.inform a:hover {
 	text-decoration: none;
 	color: #2b2b2b;
 }
-footer{
+
+footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -722,10 +738,10 @@ footer{
 	padding: 50px;
 	margin-top: 67px;
 	background: #2b2b2b;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 }
-footer .top{
+
+footer .top {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -738,15 +754,15 @@ footer .top{
 	text-decoration: none;
 }
 
-
 @media screen and (max-width: 560px){
-.map{	
+.map {	
 	background: #ccc;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 	padding: 0;	
-}	
-.inform{
+}
+	
+.inform {
 	text-align: center;
 }
 
