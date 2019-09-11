@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
 			$this = $(this); //получаем кнопку
 			if(!$this.hasClass('active')){
 				$container = $this.parent();
-				//$container.find('.tab-content').removeClass('active'); //это если скрывать через добавление класса
+				$container.find('.tab-content').removeClass('active'); //это если скрывать через добавление класса
 				$container.find('.tab-content').hide().toggle(500); //то же, только так как у вас
 				$container.find($this.attr('href')).show().toggle(500);
 				$container.find('.tab-btn').removeClass('active');
