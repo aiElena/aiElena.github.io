@@ -33,7 +33,8 @@ jQuery(document).ready(function() {
         });*/
 		//можно и так, но так нехорошо, если у вас вдруг будет 4 кнопки, код увеличиться в 2 раза, согласитесь, не оч
 		$('.tab-content:not(.active)').hide(); //скрываем неактивный контент
-		$('.tab-btn').click(function(){
+		$('.tab-btn').click(function(e){
+			e.preventDefault();
 			$this = $(this); //получаем кнопку
 			if(!$this.hasClass('active')){
 				$container = $this.parent();
