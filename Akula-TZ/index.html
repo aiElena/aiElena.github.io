@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>TZ-Alexandrova</title>
+    
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="libs/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/owl.theme.default.css">			
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all" />
+
+	<!--[if lte IE 9 ]>
+		<script type="text/javascript" src="js/PIE.js"></script>
+		<script type="text/javascript" src="js/for-ie.js"></script>
+		<script type="text/javascript" src="js/modernizr-1.7.min.js"></script>
+		<script type="text/javascript" src="js/placeholder.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="main">
+		<div id="preloader">
+		  <div id="loader"></div>
+		</div>
+		<header id="header">	
+			<div id="carousel" class="carousel">
+				<input class="carousel-active" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden checked="checked">
+				<div class="carousel-item">
+					<div class="img-works">
+						<img src="images/banner1.jpg" alt="slider">
+					</div>
+				</div>
+				<input class="carousel-active" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden>
+				<div class="carousel-item">
+					<div class="img-works">
+						<img src="images/banner2.jpg" alt="slider">
+					</div>							
+				</div>
+				<input class="carousel-active" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden>
+				<div class="carousel-item">	
+					<div class="img-works">
+						<img src="images/banner3.jpg" alt="slider">
+					</div>
+				</div>
+				<ol class="carousel-indicators" aria-label="Carousel navigation" aria-hidden="true">
+					<li>
+						<label for="carousel-1" class="carousel-indicator" title="Jump to carousel item #1">●</label>
+					</li>
+					<li>
+						<label for="carousel-2" class="carousel-indicator" title="Jump to carousel item #2">●</label>
+					</li>
+					<li>
+						<label for="carousel-3" class="carousel-indicator" title="Jump to carousel item #3">●</label>
+					</li>				
+				</ol>
+			</div>	
+			<nav class="nav">
+				<div class="block-menu">
+					<div class="logo"><a href="index.html"><img src="images/logo.gif" alt="logo"></a></div>
+					<div class="menu">
+						<div class="social">
+							<ul class="info-menu">
+								<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> г. Харьков, ул Мироносицкая 10</a></li>
+								<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +38 (099) 990-81-61 (viber, telegram)</a></li>
+								<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="wrapper">
+							<div class="menuToggle">
+							    <span></span>
+							    <span></span>
+							    <span></span>
+							    <span></span>	
+							</div>
+							<ul class="top-menu clearfix">
+								<li><a class="menu__links-item scrollto" href="#">Главная</a></li>
+								<li><a class="menu__links-item scrollto" href="#">Туры <span class="fa fa-angle-down"></span></a>
+									<ul class="sub-menu">
+										<li><a href="#">Горящие туры</a></li>
+										<li><a href="#">Поиск тура</a></li>
+										<li><a href="#">Туры по Украине</a></li>
+										<li><a href="#">Экскурсионные туры</a></li>
+										<li><a href="#">Week end туры</a></li>
+									</ul>
+								</li>
+								<li><a class="menu__links-item scrollto" href="#">Страны</a></li>
+								<li><a class="menu__links-item scrollto" href="#">Услуги <span class="fa fa-angle-down"></span></a>
+									<ul class="sub-menu">
+										<li><a href="#">Авиабилеты</a></li>
+										<li><a href="#">Визовая поддержка</a></li>
+										<li><a href="#">Индивидуальный трансфер</a></li>
+										<li><a href="#">Подарочные сертификаты</a></li>
+										<li><a href="#">Бронирование отелей и аппартаментов</a></li>
+										<li><a href="#">Как забронировать и оплатить тур</a></li>
+									</ul>
+								</li>	
+								<li><a class="menu__links-item scrollto" href="#head1">О компании</a></li>
+								<li><a class="menu__links-item scrollto" href="#head2">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>			
+			<div class="wrap">
+				<div class="wrap-text">
+					<div class="title"><h1>Лучшие предложения по солнечному Египту из Харькова</h1></div>	
+					<div class="btn"><a href="#">Получить предложение</a></div>
+				</div>
+			</div>
+		</header>
+		<section class="tour-selection">
+			<div class="container">
+			    <button class="btn1">Горящие туры</button>
+			    <button class="btn2">Популярные туры</button>
+			    <div class="first_div">Горящие туры</div>
+			    <div class="second_div">Популярные туры</div>
+			</div>
+		</section>
+
+
+<script>
+     $(document).ready(function () {
+       $(".second_div").hide();
+            $(".btn1").click(function () {
+                $(".second_div").show().toggle(500);
+                $(".first_div").hide().toggle(500)
+            });
+          $(".btn2").click(function () {
+                $(".first_div").show().toggle(500);
+                $(".second_div").hide().toggle(500)
+        });
+     });
+</script>	
+		<section class="slider">
+			<div class="slider-area">
+				<div class="slider-active owl-carousel owl-theme">
+					<div class="single-slider">
+						<div class="slider-pict">
+							<img src="images/pict1.png" alt="pict">
+						</div>
+						<div class="slider-text">
+							<h4>8 марта в Cyrene Sharm hotel</h4>
+							<p>(12.03.2018 &mdash; 19.03.2018)</p>
+							<hr>
+							<p>Перелет, питание по системе all inclusive, трансфер</p>
+							<p class="price">1 295 грн <sup>&#47;за 1 человека</sup></p>
+							<a href="#">  
+								<div class="fa-stack">
+								   <i class="fa fa-chevron-right"></i>
+								</div>
+							</a>						
+						</div>
+					</div>
+					<div class="single-slider">
+						<div class="slider-pict">
+							<img src="images/pict2.png" alt="pict">
+						</div>
+						<div class="slider-text">
+							<h4>8 марта в Cyrene Sharm hotel</h4>
+							<p>(12.03.2018 &mdash; 19.03.2018)</p>
+							<hr>
+							<p>Перелет, питание по системе all inclusive, трансфер</p>
+							<p class="price">1 295 грн <sup>&#47;за 1 человека</sup></p>
+							<a href="#">  
+								<div class="fa-stack">
+								   <i class="fa fa-chevron-right"></i>
+								</div>
+							</a>						
+						</div>
+					</div>
+					<div class="single-slider">
+						<div class="slider-pict">
+							<img src="images/pict2.png" alt="pict">
+						</div>
+						<div class="slider-text">
+							<h4>8 марта в Cyrene Sharm hotel</h4>
+							<p>(12.03.2018 &mdash; 19.03.2018)</p>
+							<hr>
+							<p>Перелет, питание по системе all inclusive, трансфер</p>
+							<p class="price">1 295 грн <sup>&#47;за 1 человека</sup></p>
+							<a href="#">  
+								<div class="fa-stack">
+								   <i class="fa fa-chevron-right"></i>
+								</div>
+							</a>						
+						</div>
+					</div>
+					<div class="single-slider">
+						<div class="slider-pict">
+							<img src="images/pict1.png" alt="pict">
+						</div>
+						<div class="slider-text">
+							<h4>8 марта в Cyrene Sharm hotel</h4>
+							<p>(12.03.2018 &mdash; 19.03.2018)</p>
+							<hr>
+							<p>Перелет, питание по системе all inclusive, трансфер</p>
+							<p class="price">1 295 грн <sup>&#47;за 1 человека</sup></p>
+							<a href="#">  
+								<div class="fa-stack">
+								   <i class="fa fa-chevron-right"></i>
+								</div>
+							</a>						
+						</div>
+					</div>
+					<div class="single-slider">
+						<div class="slider-pict">
+							<img src="images/pict2.png" alt="pict">
+						</div>
+						<div class="slider-text">
+							<h4>8 марта в Cyrene Sharm hotel</h4>
+							<p>(12.03.2018 &mdash; 19.03.2018)</p>
+							<hr>
+							<p>Перелет, питание по системе all inclusive, трансфер</p>
+							<p class="price">1 295 грн <sup>&#47;за 1 человека</sup></p>
+							<a href="#">  
+								<div class="fa-stack">
+								   <i class="fa fa-chevron-right"></i>
+								</div>
+							</a>						
+						</div>
+					</div>
+					<div class="single-slider">
+						<div class="slider-pict">
+							<img src="images/pict2.png" alt="pict">
+						</div>
+						<div class="slider-text">
+							<h4>8 марта в Cyrene Sharm hotel</h4>
+							<p>(12.03.2018 &mdash; 19.03.2018)</p>
+							<hr>
+							<p>Перелет, питание по системе all inclusive, трансфер</p>
+							<p class="price">1 295 грн <sup>&#47;за 1 человека</sup></p>
+							<a href="#">  
+								<div class="fa-stack">
+								   <i class="fa fa-chevron-right"></i>
+								</div>
+							</a>						
+						</div>
+					</div>
+					<div class="single-slider">
+						<div class="slider-pict">
+							<img src="images/pict1.png" alt="pict">
+						</div>
+						<div class="slider-text">
+							<h4>8 марта в Cyrene Sharm hotel</h4>
+							<p>(12.03.2018 &mdash; 19.03.2018)</p>
+							<hr>
+							<p>Перелет, питание по системе all inclusive, трансфер</p>
+							<p class="price">1 295 грн <sup>&#47;за 1 человека</sup></p>
+							<a href="#">  
+								<div class="fa-stack">
+								   <i class="fa fa-chevron-right"></i>
+								</div>
+							</a>						
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<section class="about-company">
+			<div class="wraper">
+				<h2 id="head1">Наши преимущества</h2>
+				<div class="row">
+					<div class="pict">
+						<img src="images/swimmer.jpg">
+					</div>
+					<div class="text">
+						<p>Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения
+						в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. 
+						Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5&#42;
+						в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! 
+						Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал.
+						Отличный номер с видом на море. </p>
+					</div>				
+				</div>
+			</div>
+		</section>									
+		<section class="block-form">
+			<div class="tour-select">
+				<h2>хочу предложение по туру</h2>
+				<form action="formdata" method="post" name="form1">
+					<fieldset class="account-select">
+						<label>
+							<input type="name" name="name" placeholder="Имя" required>
+						</label>
+						<label>
+							<input type="email" name="email-address" placeholder="Email" required>
+						</label>
+						<label>
+							<input type="phone" name="phone" placeholder="Телефон" required>
+						</label>
+					
+							<select class="select" name="list1">
+								<option value="" hidden disabled selected>Страна тура</option>
+								<option>Турция</option>
+								<option>Египет</option>
+								<option>Шри-Ланка</option>
+								<option>Доминикана</option>
+							</select>
+						
+						<input class="block-form-btn" type="submit" value="Получить предложение">
+					</fieldset>							
+				</form>
+			</div>
+		</section>
+	</div>
+	<footer id="footer">
+		<section class="footer" id="head2">
+			<div class="row">
+				<div class="itemsPair">
+					<div class="item">
+						<img src="images/logo-footer.gif">
+						<hr>
+						<div class="text-footer">
+							<p>Кураж тур агенство, которое предоставляет услуги по поиску, 
+							оформлению и подбору туров для вас и ваших родных.
+							</p>
+						</div>
+						<hr>
+						<p class="txt-footer">Создание сайта &mdash; <img src="images/logo-sm-footer.gif"></p>
+					</div>
+					<div class="item">
+						<h3>Навигация</h3>
+						<ul class="footer-menu">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Туры</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Услуги</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="itemsPair">
+					<div class="item">
+						<h3>Поддержка</h3>
+						<ul class="footer-menu">
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Обратная связь</a></li>
+						</ul>
+					</div>
+					<div class="item">
+						<h3>Контакты</h3>
+						<ul class="footer-menu">
+							<li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> г. Харьков, ул Лермонтовская 10а</a></li>
+							<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +38 (099) 990-81-00</a></li>
+						</ul>
+						<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>	
+	</footer>
+	
+</div>
+	<script src="libs/jquery-3.3.1.min.js"></script>
+	<script src="libs/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
