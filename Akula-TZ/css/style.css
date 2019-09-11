@@ -500,6 +500,10 @@ ul, li {
 	padding: 70px 0 20px 43px;
 	margin: 0 auto;
 }
+.container a {
+	text-decoration: none;
+	margin-right: 5px;
+}
 .tab-content {
     color: #000;
 }
