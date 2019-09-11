@@ -20,9 +20,20 @@ jQuery(document).ready(function() {
 		});
     });
   });
+  
 })(jQuery);
 });
 
-
+     $(document).ready(function () {
+       $(".second_div").hide();
+            $(".btn1").click(function () {
+                $(".second_div").show().toggle(500);
+                $(".first_div").hide().toggle(500)
+            });
+          $(".btn2").click(function () {
+                $(".first_div").show().toggle(500);
+                $(".second_div").hide().toggle(500)
+        });
+     });
 
 
