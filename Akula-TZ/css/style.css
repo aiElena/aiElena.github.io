@@ -371,9 +371,6 @@ ul, li {
 	color: #caedf0;
     overflow: hidden;
     position: relative;
-
-  height: 0;
-  padding-bottom: 56.25%;	
 }
 .carousel-item {
   display: -webkit-box;
@@ -406,11 +403,6 @@ ul, li {
 .img-works {
 	position: relative;
     display: inline-block;
-	
-	
-	
-		background: url("../images/banner1.jpg") center center fixed;
- background-size: cover;
 }
 .carousel-active:checked + .carousel-item .carousel-caption {
   -webkit-transition: opacity 0.6s ease-in;
