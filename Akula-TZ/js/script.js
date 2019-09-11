@@ -1,6 +1,6 @@
 $(window).on('load',function (){
 
-    $('#preloader').fadeOut(3000);
+    $('#preloader').fadeOut(600);
 });
 
 jQuery(document).ready(function() {
