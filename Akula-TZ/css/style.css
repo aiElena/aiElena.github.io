@@ -396,7 +396,7 @@ ul, li {
 }
 .carousel-item img {
   display: block;
-  height: 100%;
+  height: auto;
   width: 100%; 
 }
 .img-works {
