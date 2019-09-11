@@ -396,13 +396,12 @@ ul, li {
 }
 .carousel-item img {
   display: block;
-  height: auto;
+  height: 100%;
   width: 100%; 
 }
 .img-works {
 	position: relative;
     display: inline-block;
-					padding-bottom: 20%;
 }
 .carousel-active:checked + .carousel-item .carousel-caption {
   -webkit-transition: opacity 0.6s ease-in;
