@@ -370,7 +370,10 @@ ul, li {
 .carousel {
 	color: #caedf0;
     overflow: hidden;
-    position: relative;	
+    position: relative;
+
+  height: 0;
+  padding-bottom: 56.25%;	
 }
 .carousel-item {
   display: -webkit-box;
