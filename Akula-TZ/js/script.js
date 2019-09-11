@@ -19,12 +19,9 @@ jQuery(document).ready(function() {
 		}
 		});
     });
-  });
-  
-})(jQuery);
-});
 
-     $(document).ready(function () {
+  });
+    $(function() {
        $(".second_div").hide();
             $(".btn1").click(function () {
                 $(".second_div").show().toggle(500);
@@ -34,6 +31,12 @@ jQuery(document).ready(function() {
                 $(".first_div").show().toggle(500);
                 $(".second_div").hide().toggle(500)
         });
-     });
+
+  });
+  
+})(jQuery);
+});
+
+
 
 
