@@ -397,8 +397,8 @@ ul, li {
 }
 .carousel-item img {
   display: block;
-  height: auto;
-  width: 120%; 
+  height: 120%;
+  width: 100%; 
 }
 .img-works {
 	position: relative;
