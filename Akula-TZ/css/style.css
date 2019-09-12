@@ -336,7 +336,7 @@ ul, li {
    position: absolute;
    height: 9px;
    width: 100%;
-   background: #fff;
+   background: transparent;
    opacity: 1;
    right: 0;
   -webkit-transform: rotate(0deg);
