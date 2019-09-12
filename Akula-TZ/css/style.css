@@ -380,7 +380,6 @@ section.slider-top {
 	bottom: 5%;
     display: block;
     margin: 5px 7px;
-	cursor: pointer;
 }
 .owl-theme .owl-dots .owl-dot span {
     width: 15px;
@@ -392,6 +391,7 @@ section.slider-top {
     -webkit-backface-visibility: visible;
     transition: opacity 200ms ease;
     border-radius: 50%;
+	cursor: pointer;
 }
 .owl-theme .owl-dots .owl-dot.active span,
  .owl-theme .owl-dots .owl-dot:hover span {
