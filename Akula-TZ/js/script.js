@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
     $('.menuToggle').on('click', function() {
       	$('.top-menu').slideToggle(300, function(){
 		if($(this).css('display') === 'none'){
-			$(this).removeAttr('style').closest('.top-menu').toggleClass('menu_state_open');
+			$(this).removeAttr('style');
 		}
 		});
     });
@@ -39,5 +39,9 @@ jQuery(document).ready(function() {
 })(jQuery);
 });
 
-
+$(document).ready(function(){
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 
