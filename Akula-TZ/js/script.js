@@ -15,7 +15,7 @@ jQuery(document).ready(function() {
     $('.menuToggle').on('click', function() {
       	$('.top-menu').slideToggle(300, function(){
 		if($(this).css('display') === 'none'){
-			$(this).closest('.menu').toggleClass('menu_state_open');
+			$(this).closest('.top-menu').toggleClass('menu_state_open');
 		}
 		});
     });
