@@ -40,7 +40,7 @@ jQuery(document).ready(function() {
 });
 
 $(document).ready(function(){
-	$('#nav-icon').click(function(){
+	$('.menuToggle').click(function(){
 		$(this).toggleClass('open');
 	});
 });
