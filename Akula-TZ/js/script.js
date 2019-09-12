@@ -16,6 +16,7 @@ jQuery(document).ready(function() {
       	$('.top-menu').slideToggle(300, function(){
 		if($(this).css('display') === 'none'){
 			$(this).removeAttr('style');
+			$(this).closest('.top-menu').toggleClass('menu_state_open');
 		}
 		});
     });
