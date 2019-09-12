@@ -474,7 +474,7 @@ section.slider-top {
 }
 @media screen and (max-width: 500px){
 .bg-text {
-	width: 90%;
+	width: 100%;
 }
 }
 /*------------bg-text end----------*/
