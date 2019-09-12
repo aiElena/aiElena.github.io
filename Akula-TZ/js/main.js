@@ -11,21 +11,39 @@ $(document).ready(function() {
 		autoplaySpeed: 2000,
 		navSpeed: 2000,
 		loop:true,
-    margin:5,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
+		margin:5,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			1000:{
+				items:3
+			}
+		}
 
 	});
+	$('.slider-top-active').owlCarousel({
+		items: 1,
+		dots: true,
+		autoplay: true,
+		autoplayHoverPause: true,
+		autoplaySpeed: 2000,
+		navSpeed: 2000,
+		loop:true,
+		margin:0,
+		nav:false,
+		responsive:{
+			0:{
+				items:1
+			}
 
+		}
+
+	});
+	
 
 })

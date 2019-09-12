@@ -365,109 +365,87 @@ ul, li {
   }  
 }
 /*--------------------*/
-/*carousel*/
-/*стили слайдера в шапке*/
-.carousel {
-	color: #caedf0;
-    overflow: hidden;
-    position: relative;
+
+/*----------slider-top-------------*/
+section.slider-top {
+	width: 100%;
+	margin: 0 auto;	
 }
-.carousel-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  -webkit-transition: opacity 0.6s ease-in-out;
-  -o-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
-  width: 100%;
+.slider-top-area {
+	margin: 0 auto;			
 }
-.carousel-active:checked + .carousel-item {
-  opacity: 1;
-  pointer-events: auto;
-  position: static;
-}
-.carousel-item img {
-  display: block;
-  height: auto;
-  width: 100%; 
-}
-.img-works {
-	position: relative;
-    display: inline-block;
-}
-.carousel-active:checked + .carousel-item .carousel-caption {
-  -webkit-transition: opacity 0.6s ease-in;
-  -o-transition: opacity 0.6s ease-in;
-  transition: opacity 0.6s ease-in;
-  opacity: 1;
-}
-.carousel-indicators {
-  bottom: 5%;
-  left: 19%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  right: 5%;
-  text-align: left;
-  z-index: 2;
-}
-.carousel-indicators li {
-  display: inline-block;
-}
-.carousel-indicator {
-  border-radius: 50%;
-  cursor: pointer;
-  display: block;
-  font-size: 30px;
-  line-height: 1;
-  padding: 5px 10px;
-}
-/* If you`re needing more than 3 banners, maybe you might be using another way to represent your info... ;-) */
-#carousel-1:checked ~ .carousel-indicators .carousel-indicator[for="carousel-1"],
-#carousel-2:checked ~ .carousel-indicators .carousel-indicator[for="carousel-2"],
-#carousel-3:checked ~ .carousel-indicators .carousel-indicator[for="carousel-3"] {
-								color: #fbd341;
-}
-@media (min-width: 768px) {
-.carousel-indicators {
-   background: transparent;
-}
-.carousel-control {
-   width: 5%;
-}
-.carousel-controls,
-.carousel-caption,
-.carousel-indicators {
-   position: absolute;
-}
-}
-/*стили слайдера в шапке конец*/
-/*------------wrap---------*/
-.wrap {
+.owl-dots {
 	position: absolute;
+	left: 20%;
+	bottom: 5%;
+    display: block;
+    margin: 5px 7px;
+}
+.owl-dots .active {
+	color: #ff0000;
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 14px;
+    margin: 5px 7px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.702;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 50%;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+ .owl-theme .owl-dots .owl-dot:hover span {
+	background-color: rgb(251, 211, 65);
+ }
+@media screen and (max-width: 500px){
+section.slider-top {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;			
+}
+}
+/*----------slider-end------------*/
+/*----------text-slider--------------*/
+.single-top-slider1 {
+   	width: 100%;
+	background-image: url(../images/banner1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;	
+}
+.single-top-slider2 {
+   	width: 100%;
+	background-image: url(../images/banner2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;	
+}
+.single-top-slider3 {
+   	width: 100%;
+	background-image: url(../images/banner3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;	
+}
+.bg-text {
 	width: 70%;
-	top: 30%;
-	left: 0;
 	background-image: linear-gradient(rgba(15,37,71,0.32), rgba(34,51,77,0));
 }
-.wrap-text {
+.slider-top-text {
+	padding: 80px 80px 80px 0;	
+}
+
+
+.wrap {
 	position: relative;
-	margin-left: 26%;		
-	padding: 2%;				
+	margin-left: 30%;						
 }
-.wrap-text .title {
-	padding-bottom: 2%;
+.bg-text .title {
+	padding-bottom: 3%;
 }
-.wrap-text .btn {
+.bg-text .btn {
 	max-width: 260px;
 	
 	border-radius: 10px;
@@ -479,13 +457,13 @@ ul, li {
    transition: .25s ease-in-out;
 	cursor: pointer;
 }
-.wrap-text .btn:hover {
+.bg-text .btn:hover {
 	background: #ffbf00;
 	-webkit-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
-.wrap-text .btn a {	
+.bg-text .btn a {	
 	font-size: 1.125rem;
 	font-family: "Arial";
 	color: rgb(0, 0, 0);
@@ -494,7 +472,7 @@ ul, li {
 	letter-spacing: 0.05em;
 	text-decoration: none;
 }
-/*------------wrap end----------*/
+/*------------bg-text end----------*/
 /*----------tour-selection------*/
 .tour-selection {
 	max-width: 1140px;
@@ -529,8 +507,6 @@ ul, li {
 .tab-btn.active {
 	color: rgb(251, 211, 65);
 }
-
-
 /*-----------tour-selection end--------*/
 /*----------slider-------------*/
 section.slider {
