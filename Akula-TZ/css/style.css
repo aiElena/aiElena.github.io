@@ -911,6 +911,7 @@ html{
 /* Icon  */
 
 #nav-icon {
+	padding: 10px;
 }
 
 #nav-icon span:nth-child(1) {
