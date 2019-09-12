@@ -239,6 +239,8 @@ nav.nav {
 }
 .sub-menu {
     position: absolute;
+	top: 0;
+	right: 80%;
     display: none;
     background-color: rgba(51, 151, 226, 0.8);
     box-shadow: -1.236px 3.804px 14.7px 0.3px rgba(0, 0, 0, 0.34);
