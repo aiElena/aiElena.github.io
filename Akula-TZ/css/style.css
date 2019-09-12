@@ -437,7 +437,7 @@ section.slider-top {
 	background-image: url(../images/banner1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top;	
+	background-position: bottom;	
 }
 .single-top-slider2 {
    	width: 100%;
