@@ -380,9 +380,7 @@ section.slider-top {
 	bottom: 5%;
     display: block;
     margin: 5px 7px;
-}
-.owl-dots .active {
-	color: #ff0000;
+	cursor: pointer;
 }
 .owl-theme .owl-dots .owl-dot span {
     width: 15px;
@@ -471,6 +469,11 @@ section.slider-top {
 	text-align: center;
 	letter-spacing: 0.05em;
 	text-decoration: none;
+}
+@media screen and (max-width: 500px){
+.bg-text {
+	width: 90%;
+}
 }
 /*------------bg-text end----------*/
 /*----------tour-selection------*/
