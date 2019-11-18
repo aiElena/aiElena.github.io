@@ -30,8 +30,9 @@ body {
 #content {
 	background: url(../images/bg7.jpg) no-repeat 0 0;
 	display: flex;
-	flex-direction: collumn;
+	flex-direction: column;
     justify-content: center;
+	align-items: center;
 	margin: 10px;
 	border: 4px solid #0000ff;
 }
