@@ -7,7 +7,7 @@ body {
 	color: #0000ff;
 	max-width: 1920px;
 	min-width: 320px;
-	font: 18px "century gothic", arial, helvetica, sans-serif;
+	font: 18px "BadScript-Regular", arial, helvetica, sans-serif;
 	font-weight: 700;
 	margin: 0 auto;
 }
@@ -47,48 +47,9 @@ body {
 	height: 50px;
 	margin-top: -50px;
 }
-
-/* placeholder input*/
-input:-moz-placeholder {
-	color:#999;
-	opacity:1;
+@font-face {
+font-family: "BadScript-Regular"; 
+src: url("../fonts/BadScript-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
 }
-input::-moz-placeholder {
-	color:#999;
-	opacity:1;
-}
-input::-webkit-input-placeholder {color:#999;}
-input:-ms-input-placeholder {color: #999 ;}
-/* input:focus placeholder */
-input:focus:-moz-placeholder {
-	color:#999;
-	opacity:1;
-}
-input:focus::-moz-placeholder {
-	color:#999;
-	opacity:1;
-}
-input:focus::-webkit-input-placeholder {color:#999;}
-input:focus:-ms-input-placeholder {color: #999 ;}
-/* placeholder  textarea*/
-textarea:-moz-placeholder {
-	color:#999;
-	opacity:1;
-}
-textarea::-moz-placeholder {
-	color:#999;
-	opacity:1;
-}
-textarea::-webkit-input-placeholder {color:#999;}
-textarea:-ms-input-placeholder {color: #999 ;}
-/*  textarea:focus placeholder */
-textarea:focus:-moz-placeholder {
-	color:#999;
-	opacity:1;
-}
-textarea:focus::-moz-placeholder {
-	color:#999;
-	opacity:1;
-}
-textarea:focus::-webkit-input-placeholder {color:#999;}
-textarea:focus:-ms-input-placeholder {color: #999 ;}
