@@ -44,9 +44,6 @@ body {
 #footer {
 	overflow:hidden;
 	width:100%;
-	padding:0;
-	position:relative;
-	height: 50px;
-	margin-top: -50px;
+
 }
 
