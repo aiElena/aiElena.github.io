@@ -7,7 +7,7 @@ body {
 	color: #0000ff;
 	max-width: 1920px;
 	min-width: 320px;
-	font-family: 'Tangerine', serif;
+	font-family: 'BadScript-Regular', serif;
     font-size: 18px;
 	font-weight: 700;
 	margin: 0 auto;
@@ -46,4 +46,9 @@ body {
 	width:100%;
 
 }
-
+@font-face {
+font-family: "BadScript-Regular"; 
+src: url("../font/BadScript-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
