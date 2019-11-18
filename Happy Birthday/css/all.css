@@ -7,7 +7,8 @@ body {
 	color: #0000ff;
 	max-width: 1920px;
 	min-width: 320px;
-	font: 18px "BadScript-Regular", arial, helvetica, sans-serif;
+	font-family: 'Tangerine', serif;
+    font-size: 18px;
 	font-weight: 700;
 	margin: 0 auto;
 }
@@ -36,7 +37,6 @@ body {
 }
 .txt {
 	text-align: left;
-	font-family: 'Bad Script', cursive;
 }
 /* footer */
 #footer {
@@ -47,9 +47,4 @@ body {
 	height: 50px;
 	margin-top: -50px;
 }
-@font-face {
-font-family: "BadScript-Regular"; 
-src: url("../fonts/BadScript-Regular.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-}
+
