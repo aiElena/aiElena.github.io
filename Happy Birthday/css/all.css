@@ -37,6 +37,7 @@ body {
 }
 .txt {
 	text-align: left;
+	padding-bottom: 10px;
 }
 /* footer */
 #footer {
