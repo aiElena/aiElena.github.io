@@ -30,7 +30,7 @@ CountdownTimer.prototype={
 function CDT(){
 
  // Set countdown limit
- var tl = new Date('2024/11/12 00:00:00');
+ var tl = new Date('2025/11/12 00:00:00');
 
 
  // You can add time's up message here
