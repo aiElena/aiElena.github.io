@@ -1,5 +1,4 @@
 
-
 /* Базовые стили слоя, затемнения и модального окна */
 .overlay {
 top: 0;
@@ -161,4 +160,5 @@ animation-duration: 1s;
 animation-timing-function: linear;
 -webkit-animation-iteration-count: infinite;
 animation-iteration-count: infinite;
+
 }
