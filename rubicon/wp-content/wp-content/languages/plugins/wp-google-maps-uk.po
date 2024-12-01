@@ -1,0 +1,2259 @@
+# Translation of Plugins - WP Google Maps - Development (trunk) in Ukrainian
+# This file is distributed under the same license as the Plugins - WP Google Maps - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-11-16 21:35:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - WP Google Maps - Development (trunk)\n"
+
+#: wpGoogleMaps.php:6367
+msgid "Please refer to our <a href='https://www.wpgmaps.com/privacy-policy' target='_blank'>Privacy Policy</a> for information on Data Processing"
+msgstr "Будь ласка перегляньте нашу <a href='https://www.wpgmaps.com/privacy-policy' target='_blank'>Політику конфіденційності</a> для отримання інформації про обробку даних"
+
+#: wpGoogleMaps.php:6363
+msgid "Thank you for using <a href='https://www.wpgmaps.com'>WP Google Maps</a>! Please <a href='https://wordpress.org/support/plugin/wp-google-maps/reviews/'>rate us on WordPress.org</a>"
+msgstr "Дякуємо Вам за використання <a href='https://www.wpgmaps.com'>WP Google Maps</a>! Будь ласка <a href='https://wordpress.org/support/plugin/wp-google-maps/reviews/'>оцініть нас на WordPress.org</a>"
+
+#: html/gdpr-compliance-settings.html.php:98
+msgid "For more information about WPGM and GDPR compliance, please refer to our <a href=\"https://www.wpgmaps.com/gdpr/\">GDPR information page</a> and our <a href=\"https://www.wpgmaps.com/privacy-policy/\">Privacy Policy</a>"
+msgstr "Для отримання більшої інформації про відповідність WPGM та GDPR, будь ласка перегляньте нашу <a href=\"https://www.wpgmaps.com/gdpr/\">GDPR інформаційну сторінку</a> та нашу <a href=\"https://www.wpgmaps.com/privacy-policy/\">Політику Конфіденційності</a>"
+
+#: html/gdpr-compliance-settings.html.php:87
+msgid "Override Text"
+msgstr "Перевизначити текст"
+
+#: html/gdpr-compliance-settings.html.php:78
+msgid "By checking this box, you agree to take sole responsibility for GDPR Compliance with regards to this plugin."
+msgstr "Встановивши цю позначку, Ви погоджуєтесь нести виключну відповідальність за відповідність цього плагіну нормам GDPR."
+
+#: html/gdpr-compliance-settings.html.php:70
+msgid "Override GDPR Notice"
+msgstr "Перевизначити GDPR повідомлення"
+
+#: html/gdpr-compliance-settings.html.php:61
+msgid "The GDPR regulates that you need to state why you are processing data."
+msgstr "GDPR регламентує, що Ви повинні вказати мету обробки даних."
+
+#: html/gdpr-compliance-settings.html.php:25
+msgid "GDPR Consent Notice"
+msgstr "Повідомлення про згоду GDPR"
+
+#: html/gdpr-compliance-settings.html.php:15
+msgid "The GDPR views IP Addresses as Personal Data, which requires consent before being processed. Loading the Google Maps API stores some user information, such as IP Addresses. WP Google Maps endeavours to uphold the spirit of data protection as per the GDPR. Enable this to option to prevent the Maps API from loading, until a user has consented to it."
+msgstr "GDPR розглядає IP адресу як персональні дані, що вимагає згоди для обробки. Завантаження Google Maps API зберігає певну інформацію про користувача, у тому числі IP адресу. WP Google Maps прагне підтримувати дух захисту даних відповідно до GDPR. Увімкнення цієї опції буде запобігати завантаженню API для мап, допоки користувач не надасть на це згоду."
+
+#: html/gdpr-compliance-settings.html.php:12
+msgid "Require consent before loading Maps API"
+msgstr "Потрібна згода перед завантаженням API для мап"
+
+#: html/gdpr-compliance-settings.html.php:6
+msgid "General Complicance"
+msgstr "Загальна згода"
+
+#: includes/class.gdpr-compliance.php:38
+msgid ""
+"<p>\n"
+"\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\"></span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\"></span>.\n"
+"</p>\n"
+"\n"
+"<p>\t\n"
+"\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\n"
+"</p>\n"
+"<p>\n"
+"\tSome visual components of WP Google Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\n"
+"</p>\n"
+"<p>\n"
+"\tWP Google Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Google Maps transmit this information.\n"
+"</p>\n"
+"<p>\n"
+"\tPlease <a href=\"https://developers.google.com/maps/terms\">see here</a> and <a href=\"https://maps.google.com/help/terms_maps.html\">here</a> for Google's terms. Please also see <a href=\"https://policies.google.com/privacy?hl=en-GB&amp;gl=uk\">Google's Privacy Policy</a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\n"
+"</p>\n"
+"<p>\n"
+"\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"\tЯ погоджуюсь, що мої персональні дані будуть оброблятися <span name=\"wpgmza_gdpr_company_name\"></span>, для цілі (цілей)<span name=\"wpgmza_gdpr_retention_purpose\"></span>.\n"
+"</p>\n"
+"\n"
+"<p>\t\n"
+"\tЯ погоджуюсь, що мої персональні дані, які будуть запитані через АРІ мапи, будуть оброблятися провайдером API, для цілей геокодування (конвертації адреси у координати), зворотнього геокодування та\tгенерування напрямків.\n"
+"</p>\n"
+"<p>\n"
+"\tДеякі візуальні компоненти WP Google Maps використовують сторонні бібліотеки, які завантажуються через Вашу мережу. Наразі це Google Maps, Open Street Map, jQuery DataTables та FontAwesome. Під час завантаження ресурсів через мережу, сервери стороннів сервісів отримують Вашу IP адресу та рядок User Agent серед іншої інформації. Будь ласка, перегляньте Політику конфіденційності відповідних бібліотек, щоб дізнатись, як вони використовують дані та процес для дотримання ваших прав згідно з правилами GDPR.\n"
+"</p>\n"
+"<p>\n"
+"\tWP Google Maps використовує jQuery DataTables для відображення сортування, пошукових таблиць, таких як у просунутому переліку міток та на сторінці редагування мапи. jQuery DataTables за певних обставин використовує файл cookie для збереження та подальшого нагадування про «стан» даної таблиці, тобто пошуковий запит, стовпець сортування та порядок, а також поточну сторінку. Ці дані зберігаються в локальному сховищі та зберігаються, поки це не буде очищено вручну. Жодні бібліотеки, використані WP Google Maps, не передають цю інформацію.\n"
+"</p>\n"
+"<p>\n"
+"\tБудь ласка <a href=\"https://developers.google.com/maps/terms\">перегляньте цю</a> та <a href=\"https://maps.google.com/help/terms_maps.html\">цю</a> інформацію  правил Google. Також перегляньте будь ласка <a href=\"https://policies.google.com/privacy?hl=en-GB&amp;gl=uk\">Політику Конфіденційності Google</a>. Ми не надаємо АРІ провайдеру жодну персональну ідентифікуючу інформацію, або інформацію, яка може унікально ідентифікувати Ваш пристрій.\n"
+"</p>\n"
+"<p>\n"
+"\tТам, де це повідомлення відображається замість мапи, погоджуючись із цим повідомленням, буде здійснено зберігання файлів cookie, що записують вашу згоду, тому вам не буде показно це повідомлення повторно.\n"
+"</p>"
+
+#: html/google-maps-api-settings.html.php:53
+msgid "Prevent other plugins and theme loading API:"
+msgstr "Перешкоджати іншим плагінам та темам завантажувати API:"
+
+#: includes/class.gdpr-compliance.php:171
+msgid "I agree"
+msgstr "Я погоджуюсь"
+
+#: wpGoogleMaps.php:7571
+msgid "<strong>Alternatively, please switch to the OpenLayers map engine</strong> on the maps settings page"
+msgstr "<strong>Як варіант, будь ласка змініть двигунець мап на OpenLayers</strong> на сторінці налаштування мап"
+
+#: wpGoogleMaps.php:7560
+msgid "Create an API key now"
+msgstr "Створіть API-ключ прямо зараз"
+
+#: wpGoogleMaps.php:5009
+msgid "Always rebuilds combined script files, does not load combined and minified scripts"
+msgstr "Завжди перебудовує комбіновані файли скриптів, не завантажує комбіновані та мінімізовані скрипти"
+
+#: wpGoogleMaps.php:5007
+msgid "Developer Mode"
+msgstr "Режим розробника"
+
+#: wpGoogleMaps.php:4765
+msgid "Maps Engine:"
+msgstr "Двигунець мап"
+
+#: wpGoogleMaps.php:624
+msgid "<strong>WP Google Maps:</strong> This plugin does not support PHP version 5.2 or below. Please use your cPanel or contact your host to switch version."
+msgstr "WP Google Maps: Цей плагін не підтримує версію PHP 5.2 та нижче. Будь ласка скористайтеся Вашою cPanel для зв'язку із хостинг-провайдером для зміни версії."
+
+#: includes/class.strings.php:18
+msgid "Many browsers are no longer allowing geolocation from unsecured origins. You will need to secure your site with an SSL certificate (HTTPS) or this feature may not work for your visitors"
+msgstr "Багато браузерів більше не підтримують геолокацію з незахищених з'єднань. Вам необхідно захистити свій сайт за допомогою SSL сертифікату (HTTPS) або ця можливість не буде працювати для Ваших відвідувачів"
+
+#: includes/class.maps-engine-dialog.php:139
+msgid "Select Engine"
+msgstr "Обрати двигунець"
+
+#: includes/class.maps-engine-dialog.php:121
+msgid "Use Google Maps"
+msgstr "Використовувати Google Maps"
+
+#: includes/class.maps-engine-dialog.php:113
+msgid "API Key required"
+msgstr "Вимагається API-ключ"
+
+#: includes/class.maps-engine-dialog.php:107
+msgid "Full functionality"
+msgstr "Повна функціональність"
+
+#: includes/class.maps-engine-dialog.php:99
+msgid "Google Maps"
+msgstr "Google Maps"
+
+#: includes/class.maps-engine-dialog.php:74
+msgid "Use OpenLayers"
+msgstr "Використовувати OpenLayers"
+
+#: includes/class.maps-engine-dialog.php:66
+msgid "Limited functionality"
+msgstr "Обмежена функціональність"
+
+#: includes/class.maps-engine-dialog.php:60
+msgid "No API keys required"
+msgstr "Ключі API не обов'язкові"
+
+#: includes/class.maps-engine-dialog.php:52
+msgid "OpenLayers"
+msgstr "OpenLayers"
+
+#: includes/class.maps-engine-dialog.php:37
+msgid "Choose a maps engine"
+msgstr "Оберіть двигунець для мап"
+
+#: html/ol-feature-unavailable.html.php:4
+msgid "This feature is not available when using the OpenLayers engine. Please go to settings then select and configure Google Maps to enable this feature."
+msgstr "Ця особливість не доступна під час використання двигунця OpenLayers. Будь ласка перейдіть до налаштувань та налаштуйте Google Maps для активації цієї особливості."
+
+#: html/ol-feature-coming-soon.html.php:4
+msgid "<strong>Coming soon</strong> to OpenLayers. If you need to use this feature, please go to settings then select and configure Google Maps to enable it."
+msgstr "<strong>Незабаром</strong> для OpenLayers. Якщо Вам необхідна ця ознака, будь ласка перейдіть до налаштувань, потім оберіть та налаштуйте Google Maps для її активації."
+
+#: html/google-maps-api-settings.html.php:45
+msgid "Always exclude engine API on pages:"
+msgstr "Завжди виключати API двигунця на сторінках:"
+
+#: html/google-maps-api-settings.html.php:40
+#: html/google-maps-api-settings.html.php:48
+msgid "Page IDs"
+msgstr "ID сторінок"
+
+#: html/google-maps-api-settings.html.php:37
+msgid "Always include engine API on pages:"
+msgstr "Завджи включати API двигунця на сторінках:"
+
+#: html/google-maps-api-settings.html.php:29
+msgid "Never"
+msgstr "Ніколи"
+
+#: html/google-maps-api-settings.html.php:24
+msgid "Only Back End"
+msgstr "Виключно для «Back End»"
+
+#: html/google-maps-api-settings.html.php:19
+msgid "Only Front End"
+msgstr "Виключно для «Front End»"
+
+#: html/google-maps-api-settings.html.php:14
+msgid "Always"
+msgstr "Завжди"
+
+#: html/google-maps-api-settings.html.php:9
+msgid "Where required"
+msgstr "У разі необхідності"
+
+#: html/google-maps-api-settings.html.php:3
+msgid "Load Maps Engine API:"
+msgstr "Завантажити двигунець API для мап"
+
+#: includes/class.gdpr-compliance.php:181
+msgid "GDPR Compliance"
+msgstr "Відповідність GDPR"
+
+#: includes/class.gdpr-compliance.php:160
+msgid "In light of recent EU GDPR regulation, we strongly recommend reviewing the <a target=\"_blank\" href=\"https://www.wpgmaps.com/privacy-policy\">WP Google Maps Privacy Policy</a>"
+msgstr "У світлі останнього загального регламенту із захисту даних ЄС (GDPR) ми наполегливо рекомендуємо переглянути <a target=\"_blank\" href=\"https://www.wpgmaps.com/privacy-policy\">Політику конфіденційності WP Google Maps</a>"
+
+#: html/gdpr-compliance-settings.html.php:34
+msgid "Users will be asked to accept the notice shown here, in the form of a check box."
+msgstr "Користувачам буде запропоновано прийняти повідомлення, показане тут, у вигляді прапорця."
+
+#: html/gdpr-compliance-settings.html.php:31
+msgid "GDPR Notice"
+msgstr "GDPR Повідомлення"
+
+#: html/gdpr-compliance-settings.html.php:53
+msgid "Retention Purpose(s)"
+msgstr "Визначення цілей"
+
+#: html/gdpr-compliance-settings.html.php:43
+msgid "Company Name"
+msgstr "Назва компанії"
+
+#: wpGoogleMaps.php:4745
+msgid "Use FontAwesome:"
+msgstr "Використовувати FontAwesome:"
+
+#: wpGoogleMaps.php:8670
+msgid "Show Rectangle"
+msgstr "Показати прямокутник"
+
+#: base/includes/wp-google-maps-polylines.php:165
+msgid "Show Polyline"
+msgstr "Показати ламану лінію"
+
+#: wpGoogleMaps.php:8312 wpGoogleMaps.php:8676
+#: base/includes/wp-google-maps-polygons.php:165
+#: base/includes/wp-google-maps-polylines.php:171
+msgid "Fit map bounds to shape"
+msgstr "Пристосувати карту до фігури"
+
+#: base/includes/wp-google-maps-polygons.php:160
+msgid "Show Polygon"
+msgstr "Показати багатокутник"
+
+#: wpGoogleMaps.php:8636
+msgid "Edit rectangle"
+msgstr "Редагувати прямокутник"
+
+#: wpGoogleMaps.php:8617
+msgid "Invalid rectangle ID"
+msgstr "Невірний ідентифікатор прямокутника"
+
+#: wpGoogleMaps.php:8585 wpGoogleMaps.php:8692
+msgid "Save rectangle"
+msgstr "Зберегти прямокутник"
+
+#: wpGoogleMaps.php:8580 wpGoogleMaps.php:8687
+msgid "Click or drag the rectangle to move it."
+msgstr "Натисність або перетягність прямокутник, щоб перемістити його."
+
+#: wpGoogleMaps.php:8579
+msgid "Click on the map to insert a rectangle."
+msgstr "Натисність на мапу, щоб додати прямокутник."
+
+#: wpGoogleMaps.php:8542
+msgid "Add rectangle"
+msgstr "Додати прямокутник"
+
+#: wpGoogleMaps.php:8287
+msgid "Edit circle"
+msgstr "Додати коло"
+
+#: wpGoogleMaps.php:8273
+msgid "Invalid circle ID"
+msgstr "Невірний ідентифікатор кола"
+
+#: wpGoogleMaps.php:8239 wpGoogleMaps.php:8360
+msgid "Save Circle"
+msgstr "Зберегти коло"
+
+#: wpGoogleMaps.php:8234 wpGoogleMaps.php:8355
+msgid "Click or drag the circle to move it."
+msgstr "Натисніть або перетягність коло, щоб перемістити його."
+
+#: wpGoogleMaps.php:8233
+msgid "Click on the map to insert a circle."
+msgstr "Натисність на мапу, щоб додати коло."
+
+#: wpGoogleMaps.php:8224 wpGoogleMaps.php:8346
+msgid "Please note your circle may be too small to be visible at this zoom level"
+msgstr "Зверніть увагу, що ваше коло може бути замалим, щоб бути видимим на цьому масштабі"
+
+#: wpGoogleMaps.php:8198 wpGoogleMaps.php:8320 wpGoogleMaps.php:8559
+#: wpGoogleMaps.php:8654
+msgid "Color"
+msgstr "Колір"
+
+#: wpGoogleMaps.php:8181
+msgid "Add circle"
+msgstr "Додати коло"
+
+#: wpGoogleMaps.php:7937
+msgid "Delete this rectangle"
+msgstr "Видалити цей прямокутник"
+
+#: wpGoogleMaps.php:7886
+msgid "Delete this circle"
+msgstr "Видалити це коло"
+
+#: wpGoogleMaps.php:6369
+msgid "WP Google Maps encourages you to make use of the amazing icons at "
+msgstr "WP Google Maps закликає Вас скористатися дивовижними іконками на"
+
+#: wpGoogleMaps.php:6255
+msgid "My custom field:"
+msgstr "Моє користувацьке поле"
+
+#: wpGoogleMaps.php:5686
+msgid "Radius Style"
+msgstr "Стиль радіусу"
+
+#: wpGoogleMaps.php:5679 wpGoogleMaps.php:5704
+msgid "Modern"
+msgstr "Модерн"
+
+#: wpGoogleMaps.php:5670 wpGoogleMaps.php:5695
+msgid "Legacy"
+msgstr "Спадок"
+
+#: wpGoogleMaps.php:5661
+msgid "Store Locator Style"
+msgstr "Збереження стилю локатора"
+
+#: wpGoogleMaps.php:4998
+msgid "Custom JS"
+msgstr "Власний JS"
+
+#: wpGoogleMaps.php:4989
+msgid "Custom Scripts"
+msgstr "Власні скрипти"
+
+#: wpGoogleMaps.php:4930
+msgid "Use a comma to separate values, eg: 1, 5, 10, 50, 100"
+msgstr "Використовуйте кому, щод розділяти значення, наприклад: 1, 5, 10, 50, 100"
+
+#: wpGoogleMaps.php:4927
+msgid "Store Locator Radii"
+msgstr "Магазин локатору радіусу"
+
+#: wpGoogleMaps.php:3179 wpGoogleMaps.php:5745
+msgid "km"
+msgstr "км"
+
+#: wpGoogleMaps.php:3179 wpGoogleMaps.php:5745
+msgid "mi"
+msgstr "миля"
+
+#: includes/compat/backwards_compat_v6.php:65
+#: includes/compat/backwards_compat_v6.php:67 wpGoogleMaps.php:6302
+#: wpGoogleMaps.php:6304
+msgid "Add a Rectangle"
+msgstr "Додати прямокутник"
+
+#: includes/compat/backwards_compat_v6.php:57
+#: includes/compat/backwards_compat_v6.php:59 wpGoogleMaps.php:6294
+#: wpGoogleMaps.php:6296
+msgid "Add a Circle"
+msgstr "Додати коло"
+
+#: includes/compat/backwards_compat_v6.php:53 wpGoogleMaps.php:6151
+msgid "Rectangles"
+msgstr "Прямокутники"
+
+#: base/includes/welcome.php:40
+msgid "Add custom shapes such as polygons, polylines, circles and sqaures!"
+msgstr "Додайте власну фігуру, таку як багатокутник, ламану лінію, коло або квадрат!"
+
+#: base/includes/welcome.php:39
+msgid "and Squares"
+msgstr "та Квадрати"
+
+#: includes/compat/backwards_compat_v6.php:52 wpGoogleMaps.php:6150
+#: base/includes/welcome.php:39
+msgid "Circles"
+msgstr "Кола"
+
+#: base/includes/welcome.php:4
+msgid "Welcome to WP Google Maps version %s"
+msgstr "Ласкаво просимо до WP Google Maps версії %s"
+
+#: base/includes/credits.php:36 base/includes/credits.php:42
+#: base/includes/credits.php:55 base/includes/credits.php:60
+msgid "Support &amp; Developer"
+msgstr "Підтримати &amp; Розробника"
+
+#: lib/codecabin/deactivate-feedback-form.php:60
+msgid "It's a temporary deactivation, I'm troubleshooting"
+msgstr "Це тимчасова деактивація, я вирішую проблему"
+
+#: lib/codecabin/deactivate-feedback-form.php:59
+msgid "I found a better plugin"
+msgstr "Я знайшов кращий плагін"
+
+#: lib/codecabin/deactivate-feedback-form.php:58
+msgid "I don't need this plugin any more"
+msgstr "Мені більше не потрібний цей плагін"
+
+#: lib/codecabin/deactivate-feedback-form.php:57
+msgid "The plugin broke my site"
+msgstr "Цей плагін пошкодив мій сайт"
+
+#: lib/codecabin/deactivate-feedback-form.php:56
+msgid "The plugin suddenly stopped working"
+msgstr "Цей плагін раптом припинив працювати"
+
+#: lib/codecabin/deactivate-feedback-form.php:48
+msgid "Thank you!"
+msgstr "Дякуємо Вам!"
+
+#: lib/codecabin/deactivate-feedback-form.php:47
+msgid "Please wait"
+msgstr "Будь ласка зачекайте"
+
+#: lib/codecabin/deactivate-feedback-form.php:46
+msgid "Submit &amp; Deactivate"
+msgstr "Підтвердити &amp; Деактивувати"
+
+#: lib/codecabin/deactivate-feedback-form.php:45
+msgid "Skip &amp; Deactivate"
+msgstr "Пропустити &amp; Деактивувати"
+
+#: lib/codecabin/deactivate-feedback-form.php:42
+msgid "Please give us any feedback that could help us improve"
+msgstr "Будь ласка залиште для нас відгук, який допоможе нам стати краще"
+
+#: lib/codecabin/deactivate-feedback-form.php:40
+msgid "Do not send my e-mail address with this feedback"
+msgstr "Не надсилайте адресу моєї електронної пошти у цьому відгуку"
+
+#: lib/codecabin/deactivate-feedback-form.php:39
+msgid "Please tell us the reason so we can improve the plugin"
+msgstr "Будь ласка розкажіть нам про причину, щоб ми могли покращити наш плагін"
+
+#: lib/codecabin/deactivate-feedback-form.php:38
+msgid "Please tell us which plugin?"
+msgstr "Будь ласка розкажіть нам - який плагін?"
+
+#: lib/codecabin/deactivate-feedback-form.php:37
+msgid "If you would be kind enough, please tell us why you're deactivating?"
+msgstr "Будь ласка розкажіть нам, чому ви вимикаєте плагін?"
+
+#: lib/codecabin/deactivate-feedback-form.php:36
+msgid "Quick Feedback"
+msgstr "Швидкий відгук"
+
+#: wpGoogleMaps.php:6759
+msgid "Mark"
+msgstr "Мітка"
+
+#: wpGoogleMaps.php:5856
+msgid "Show Points of Interest?"
+msgstr "Показати цікаві місця?"
+
+#: wpGoogleMaps.php:5774
+msgid "Not found message"
+msgstr "Повідомлення не знайдено"
+
+#: wpGoogleMaps.php:5739
+msgid "Default radius"
+msgstr "Звичаний радіус"
+
+#: wpGoogleMaps.php:4844
+msgid "Disable InfoWindows"
+msgstr "Вимкнути infoWindows"
+
+#: wpGoogleMaps.php:3161 wpGoogleMaps.php:5276
+msgid "No results found in this location. Please try again."
+msgstr "Не знайдено результатів для цієї локації. Будь ласка спробуйте ще раз."
+
+#: wpGoogleMaps.php:1088
+msgid "Get Pro Version"
+msgstr "Отримати Pro версію"
+
+#: wpGoogleMaps.php:1084
+msgid "Map Editor"
+msgstr "Редактор мапи"
+
+#: wpGoogleMaps.php:7634
+msgid "We have detected that you are using %s on your website. Please <a href='%s' class='button'>clear your cache</a> to ensure that your map is updated."
+msgstr "Ми помітили, що Ви використовуєте %s на Вашому веб-сайті. Будь ласка <a href='%s' class='button'>очистість Ваш кеш</a>, щоб переконатися, що Вашу мапу було оновлено."
+
+#: wpGoogleMaps.php:7632
+msgid "One or more markers have been added or changed, please <a href='%s' class='button'>clear your cache.</a>"
+msgstr "Одна або декілька міток було додано або змінено, будь ласка <a href='%s' class='button'>очистіть свій кеш.</a>"
+
+#: wpGoogleMaps.php:5769
+msgid "Default address"
+msgstr "Адреса за замовчуванням"
+
+#: wpGoogleMaps.php:4826
+msgid "Removes the need to use two fingers to move the map on mobile devices"
+msgstr "Прибирає необхідність використовувати обидва пальці для пересування мапи на мобільних пристроях"
+
+#: wpGoogleMaps.php:4824
+msgid "Disable Two-Finger Pan"
+msgstr "Вимкнути панаромування двома пальцями"
+
+#: wpGoogleMaps.php:4648
+msgid "Disable Full Screen Control"
+msgstr "Вимкнути повноекранний контроль"
+
+#: wpGoogleMaps.php:8239 wpGoogleMaps.php:8360 wpGoogleMaps.php:8585
+#: wpGoogleMaps.php:8692 base/includes/wp-google-maps-polygons.php:92
+#: base/includes/wp-google-maps-polygons.php:188
+#: base/includes/wp-google-maps-polylines.php:86
+#: base/includes/wp-google-maps-polylines.php:193
+#: lib/codecabin/deactivate-feedback-form.php:44
+msgid "Cancel"
+msgstr "Відмінити"
+
+#: base/includes/full-screen-module.php:50
+msgid "Close Full Screen String"
+msgstr "Закрити повноекранний рядок"
+
+#: base/includes/full-screen-module.php:44
+msgid "Open Full Screen String"
+msgstr "Відкрити повноекранний рядок"
+
+#: base/includes/full-screen-module.php:38
+msgid "Enable Full Screen Option"
+msgstr "Увімкнути повноекранний варіант"
+
+#: base/includes/full-screen-module.php:34
+#: base/includes/full-screen-module.php:67
+#: base/includes/full-screen-module.php:91
+msgid "Close full screen"
+msgstr "Закрити повний екран"
+
+#: base/includes/full-screen-module.php:33
+#: base/includes/full-screen-module.php:66
+#: base/includes/full-screen-module.php:90
+msgid "Full screen"
+msgstr "Повний екран"
+
+#: wpGoogleMaps.php:2860
+msgid "WP Google Maps Error"
+msgstr "Помилка WP Google Maps"
+
+#: wpGoogleMaps.php:2855
+msgid "In order for your map to display, please make sure you insert your Google Maps JavaScript API key in the <a href='%s' target='_BLANK'>Maps->Settings->Advanced tab</a>."
+msgstr "Для правильного відображення Вашої мапи будь ласка переконайтеся, що ви вказали свій ключ Google Maps Javascript API в <a href='%s' target='_BLANK'>Maps->Settings->Розширеній панелі</a>."
+
+#: base/includes/welcome.php:83
+msgid "Submit and create a map"
+msgstr "Підтвердити та створити мапу"
+
+#: base/includes/welcome.php:10
+msgid "Skip intro and create a map"
+msgstr "Пропустити вступ та створити мапу"
+
+#: wpGoogleMaps.php:7564
+msgid "paste your Google Maps JavaScript API Key here"
+msgstr "Вставте тут свій ключ від Google Maps JavaScript API "
+
+#: wpGoogleMaps.php:7563
+msgid "Paste your API key here and press save:"
+msgstr "Вставте свій API-ключ тут та натисність зберегти:"
+
+#: wpGoogleMaps.php:7557
+msgid "Before creating a map please follow these steps:"
+msgstr "Перед створенням мапи будь ласка виконайте ці кроки:"
+
+#: wpGoogleMaps.php:7555
+msgid "*ALL* Google Maps now require an API key to function."
+msgstr "*УСІ* Google мапи теперь вимагають АРІ-ключ для роботи."
+
+#: base/includes/welcome.php:6
+msgid "Build amazing maps through a simple interface and powerful functionality along with world class support."
+msgstr "Створюйте неперевершені мапи за допомогою простого інтерфейсу та потужної функціональності за підтримки міжнародного рівня."
+
+#: base/includes/welcome.php:104
+msgid "Support Desk"
+msgstr "Стіл підтримки"
+
+#: base/includes/welcome.php:35
+msgid "Select from various <a href='http://wpgmaps.com/map-themes/' target='_BLANK'>map themes</a>, or make your own."
+msgstr "Оберіть з переліку <a href='http://wpgmaps.com/map-themes/' target='_BLANK'>тем мап</a>, або створіть свою власну."
+
+#: base/includes/welcome.php:23
+msgid "Create as many markers as you like"
+msgstr "Створіть стільки міток, скільки забажаєте"
+
+#: base/includes/welcome.php:22
+msgid "Unlimited Markers"
+msgstr "Необмежені мітки"
+
+#: base/includes/credits.php:87
+msgid "Get involved on GitHub."
+msgstr "Залучайтесь на GitHub."
+
+#: base/includes/credits.php:87
+msgid "Want to see your name on this page?"
+msgstr "Бажаєте бачити своє ім'я на цій сторінці?"
+
+#: base/includes/credits.php:83
+msgid "Security suggestions"
+msgstr "Пропозиції щодо безпеки"
+
+#: base/includes/credits.php:50
+msgid "Marketing"
+msgstr "Маркетинг"
+
+#: base/includes/credits.php:27
+msgid "Lead Developer &amp; Support"
+msgstr "Передовий розробник  &amp; Підтримка"
+
+#: base/includes/credits.php:30
+msgid "Contributors"
+msgstr "Вкладники"
+
+#: base/includes/credits.php:22
+msgid "Founder &amp; Lead Developer"
+msgstr "Засновник &amp; Передовий розробник"
+
+#: base/includes/credits.php:16
+msgid "Project Leaders"
+msgstr "Керівники проекту"
+
+#: base/includes/credits.php:15
+msgid "WP Google Maps is created by an international team of developers."
+msgstr "WP Google Maps створено міжнародною командою розробників."
+
+#: base/includes/credits.php:11 base/includes/welcome.php:16
+msgid "Credits"
+msgstr "Credits"
+
+#: base/includes/credits.php:10 base/includes/welcome.php:15
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+
+#: base/includes/credits.php:5
+msgid "Thank you for updating! WP Google Maps version 7 helps you build amazing maps through a simple interface and powerful functionality along with world class support."
+msgstr "Дякуємо Вам за оновлення! WP Google Maps версії 7 допоможе Вам створювати неперевершені мапи за допомогою простого інтерфейсу та потужної функціональності разом з підтримкою міжнародного рівня."
+
+#: base/includes/credits.php:3
+msgid "Welcome to WP Google Maps version 7.0"
+msgstr "Вітаємо Вам у WP Google Maps версії 7.0"
+
+#: wpGoogleMaps.php:4728
+msgid "Do not load the Google Maps API (Only check this if your theme loads the Google Maps API by default)"
+msgstr "Не завантажувати Google Maps API (встановлюйте цю позначку лише якщо Ваша тема завантажує Google Maps API за замовчуванням)"
+
+#: wpGoogleMaps.php:7573
+msgid "Need help? %s or %s."
+msgstr "Потрібна допомога? %s чи %s."
+
+#: wpGoogleMaps.php:7554
+msgid "You can read more about that here."
+msgstr "Тут Ви можете прочитати про це більше."
+
+#: wpGoogleMaps.php:7553
+msgid "Important Notification"
+msgstr "Важливе сповіщення."
+
+#: wpGoogleMaps.php:7552
+msgid "Read the documentation"
+msgstr "Прочитати документацію"
+
+#: wpGoogleMaps.php:7551
+msgid "View the instruction video"
+msgstr "Переглянути відеоінструкцію"
+
+#: wpGoogleMaps.php:6311
+msgid "View a demo."
+msgstr "Переглянути демо-версію"
+
+#: wpGoogleMaps.php:6310
+msgid "with the Pro version."
+msgstr "з Pro-версією"
+
+#: wpGoogleMaps.php:6310
+msgid "Add dynamic heatmap data"
+msgstr "Додайте динамічні дані про зони активності"
+
+#: wpGoogleMaps.php:6149 wpGoogleMaps.php:6309
+msgid "Heatmaps"
+msgstr "Зони активності"
+
+#: wpGoogleMaps.php:7564
+msgid "Save"
+msgstr "Зберегти"
+
+#: wpGoogleMaps.php:7535
+msgid "United States of America"
+msgstr "Сполучені Штати Америки"
+
+#: wpGoogleMaps.php:6736
+msgid "Edit this marker location"
+msgstr "Редагувати розміщення мітки"
+
+#: wpGoogleMaps.php:6462
+msgid "Copied to clipboard"
+msgstr "Скопійовано у буфері обміну"
+
+#: wpGoogleMaps.php:5717
+msgid "No country selected"
+msgstr "Країна не обрана"
+
+#: wpGoogleMaps.php:5443
+msgid "Create your Map"
+msgstr "Створість Вашу мапу"
+
+#: wpGoogleMaps.php:5153
+msgid "Shortcode"
+msgstr "Скорочений код"
+
+#: wpGoogleMaps.php:5085
+msgid "Wizard"
+msgstr "Майстер"
+
+#: wpGoogleMaps.php:4947
+msgid "Google Maps API Key (required)"
+msgstr "Ключ Google Maps API (обов'язково)"
+
+#: wpGoogleMaps.php:4818
+msgid "Allow us to anonymously track how you use your maps and we will send you a 15% Sola Plugins coupon as a token of our gratitude (Coupon will be sent to the administrator's email address)"
+msgstr "Дозвольте нам анонімно збирати інформацію про те, як Ви використовуєте мапи, і ми надішлимо Вам купон 15% на плагін Sola як знак нашої вдячності (купон буде надіслано на електронну пошту адміністратора)"
+
+#: wpGoogleMaps.php:4816
+msgid "Enable Usage Tracking"
+msgstr "Увімкнути збір інформації"
+
+#: wpGoogleMaps.php:1453
+msgid "Your Google Maps API key has been successfully saved. This API key can be changed in the %s page"
+msgstr "Ваш ключ Google Maps API було успішно збережено. Цей API-ключ може бути змінено на сторінці %s"
+
+#: wpGoogleMaps.php:1452
+msgid "settings"
+msgstr "налаштування"
+
+#: wpGoogleMaps.php:4707
+msgid "Over-ride current jQuery with version 1.11.3 (Tick this box if you are receiving jQuery related errors after updating to WordPress 4.5)"
+msgstr "Перезаписує поточну версію jQuery версією 1.11.3 (встановлюйте цю позначку, якщо ви отримуєте пов'язані з jQuery помилки після оновлення до WordPress 4.5)"
+
+#: wpGoogleMaps.php:4472
+msgid "We have detected a conflict between your current theme's version and our plugin. Should you be experiencing issues with your maps displaying, please update Avada to version 3.9.4 or check the checkbox labelled 'Over-ride current jQuery with version 1.11.3'."
+msgstr "Ми помітили конфлікт між версією поточної теми та нашим плагіном. Ви можете переживати помилки з відображенням Ваших мап. Будь ласка оновіть Avada до версії 3.9.4 або встановіть позначку 'Перезаписує поточну версію jQuery версією 1.11.3'"
+
+#: wpGoogleMaps.php:4952
+msgid "This API key can be obtained from the <a href='https://console.developers.google.com' target='_BLANK'>Google Developers Console</a>. Our <a href='http://www.wpgmaps.com/documentation/creating-a-google-maps-api-key/' target='_BLANK'>documentation</a> provides a full guide on how to obtain this. "
+msgstr "Такий API-ключ може бути отриманий у <a href='https://console.developers.google.com' target='_BLANK'>Google Developers Console</a>. Наша <a href='http://www.wpgmaps.com/documentation/creating-a-google-maps-api-key/' target='_BLANK'>документація</a> надає повне пояснення як його отримати. "
+
+#: wpGoogleMaps.php:4943
+msgid "Google Maps API Key"
+msgstr "Ключ Google Maps API"
+
+#: wpGoogleMaps.php:5586
+msgid "Preview"
+msgstr "Прев'ю"
+
+#: wpGoogleMaps.php:5584
+msgid "Paste your custom theme data here:"
+msgstr "Вставте дані Вашої власної теми тут:"
+
+#: wpGoogleMaps.php:5583
+msgid "Browse the theme directory"
+msgstr "Оглянути директорію теми"
+
+#: wpGoogleMaps.php:5582
+msgid "Or use a custom theme"
+msgstr "Або скористайтеся власною темою"
+
+#: wpGoogleMaps.php:5060
+msgid "<h3>We need your love!</h3><p>If you are enjoying our plugin, please consider <a href=\"%1$s\" target=\"_blank\" class=\"button button-primary\">reviewing WP Google Maps</a>. It would mean the world to us! If you are experiencing issues with the plugin, please <a href=\"%2$s\" target=\"_blank\"  class=\"button button-secondary\">contact us</a> and we will help you as soon as humanly possible!</p>"
+msgstr "<h3>Ми потребуємо Вашої любові!</h3><p>Якщо Ви насолоджуєтесь нашим плагіном перегляньте <a href=\"%1$s\" target=\"_blank\" class=\"button button-primary\">відгуки WP Google Maps</a>. Це означатиме цілий світ для нас! Якщо Ви переживаєте помилки з плагіном, будь ласка <a href=\"%2$s\" target=\"_blank\"  class=\"button button-secondary\">зв'яжіться з нами</a> й ми допоможемо Вам так швидко, як це тільки можливо!</p>"
+
+#: wpGoogleMaps.php:5065
+msgid "We will not nag you again, promise!"
+msgstr "Обіцяємо, що ми ніколи не будемо чіплятися до Вам знову!"
+
+#: wpGoogleMaps.php:5065
+msgid "Close"
+msgstr "Закрити"
+
+#. Description of the plugin
+#: js/v8/3rd-party-integration/gutenberg/dist/gutenberg.js:141
+#: js/v8/wp-google-maps.combined.js:4613
+msgid "The easiest to use Google Maps plugin! Create custom Google Maps with high quality markers containing locations, descriptions, images and links. Add your customized map to your WordPress posts and/or pages quickly and easily with the supplied shortcode. No fuss."
+msgstr "Найпростіше використовувати плагін Google Maps! Створіть власні мапи Google з високоякісними маркерами, які будуть містити локації, описи, зображення та посилання. Додайте свою власну мапу до записів та/або сторінок WordPress швидко та просто за допомогою підтримуваних скорочених кодів. Немає проблем."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.wpgmaps.com"
+msgstr "https://www.wpgmaps.com"
+
+#: wpGoogleMaps.php:7440
+msgid "Contact us"
+msgstr "Зв'яжіться з нами"
+
+#: wpGoogleMaps.php:7439
+msgid "Support forum"
+msgstr "Форум підтримки"
+
+#: wpGoogleMaps.php:7437
+msgid "Still need help? Use one of these links below."
+msgstr "Досі потрібна допомога? Використайте оде з посилань нижче."
+
+#: wpGoogleMaps.php:7431
+msgid "I'm getting jQuery errors showing on my website"
+msgstr "Я бачу jQuery помилки на моєму веб-сайті"
+
+#: wpGoogleMaps.php:7430
+msgid "My markers are not showing on my map in the front-end"
+msgstr "Мої мітки не відображаються на моїй мапі в фронт-енді"
+
+#: wpGoogleMaps.php:7429
+msgid "My map is not showing on my website"
+msgstr "Моя мапа не відображається на моєму веб-сайті"
+
+#: wpGoogleMaps.php:7427
+msgid "Common issues:"
+msgstr "Загальні помилки:"
+
+#: wpGoogleMaps.php:7426
+msgid "WP Google Maps has a diverse and wide range of features which may, from time to time, run into conflicts with the thousands of themes and other plugins on the market."
+msgstr "WP Google Maps має різноманітний і широкий спектр можливостей, які час від часу можуть зіткнутися з тисячами тем та інших плагінів на ринку."
+
+#: wpGoogleMaps.php:7424
+msgid "Troubleshooting"
+msgstr "Усунення неполадок"
+
+#: wpGoogleMaps.php:7420
+msgid "View all documentation."
+msgstr "Переглянути документацію"
+
+#: wpGoogleMaps.php:7420
+msgid "WP Google Maps Documentation"
+msgstr "WP Google Maps документація"
+
+#: wpGoogleMaps.php:7419
+msgid "Changing the Google Maps language"
+msgstr "Змінити мову для мап Google"
+
+#: wpGoogleMaps.php:7418
+msgid "Using your map as a Widget"
+msgstr "Використайте свою мапу як віджет"
+
+#: wpGoogleMaps.php:7417
+msgid "Creating your first map"
+msgstr "Створіть свою першу мапу"
+
+#: wpGoogleMaps.php:7415
+msgid "Documentation:"
+msgstr "Документація:"
+
+#: wpGoogleMaps.php:7414
+msgid "Getting started? Read through some of these articles to help you along your way."
+msgstr "Готові розпочати? Ознайомлення з деякими з цих статей допоможе на Вашому шляху."
+
+#: includes/class.strings.php:22 wpGoogleMaps.php:7412
+#: base/includes/credits.php:72
+msgid "Documentation"
+msgstr "Документація"
+
+#: wpGoogleMaps.php:7409
+msgid "WP Google Maps Support"
+msgstr "Підтримка WP Google Maps"
+
+#: wpGoogleMaps.php:7398
+msgid " to 755 or 777, or change the directory in the Maps->Settings page. (Current file permissions are "
+msgstr "755 чи 777, або змініть теку на сторінці Мапи->Налаштування. (Дозвіл поточного файлу -"
+
+#: wpGoogleMaps.php:7398
+msgid "WP Google Maps does not have write permission to the marker location directory. This is required to store marker data. Please CHMOD the folder "
+msgstr "WP Google Maps не має дозволу для запису в теці розташування міток. Це обов'язкова умова для збереження даних про мітки. Будь ласка CHMOD теку"
+
+#: wpGoogleMaps.php:6946
+msgid "for help on how to do it."
+msgstr "про допомогу як це зробити."
+
+#: wpGoogleMaps.php:6942
+msgid "in order for this plugin to work! Please see "
+msgstr "для правильної роботи цього плагіна! Будь ласка перегляньте"
+
+#: wpGoogleMaps.php:6940
+msgid "The plugin directory does not have 'write' permissions. Please enable 'write' permissions (755) for "
+msgstr "Тека плагіну не містить дозволу для запису. Будь ласка увімкніть дозвіл для запису (755) для"
+
+#: wpGoogleMaps.php:6766
+msgid "Image"
+msgstr "Зображення"
+
+#: wpGoogleMaps.php:6740
+msgid "Delete this marker"
+msgstr "Видалити цей маркер"
+
+#: wpGoogleMaps.php:6738
+msgid "Approve this marker"
+msgstr "Одобрити цей маркер"
+
+#: wpGoogleMaps.php:6735
+msgid "Edit this marker"
+msgstr "Редагувати цей маркер"
+
+#: wpGoogleMaps.php:6707
+msgid "View this link"
+msgstr "Переглянути це посилання"
+
+#: wpGoogleMaps.php:6656
+msgid "There are too many markers to make use of the live edit function. The maximum amount for this functionality is 5000 markers. Anything more than that could crash your browser. In order to edit your markers, you would need to download the table in CSV format, edit it and re-upload it."
+msgstr "Забагато маркерів для використання функції живого редагування. Максимальна кількість для цієї функції - 5000 маркерів. Більша кількість може викликати помилку Вашого браузера. Для правильного редаування Ваших маркерів Вам потрібно завантажити таблицю у CSV форматі, редагувати та відвантажити її."
+
+#: wpGoogleMaps.php:6424
+msgid "This is normally caused by a conflict with another plugin or a JavaScript error that is preventing our plugin's Javascript from executing. Please try disable all plugins one by one and see if this problem persists. If it persists, please contact nick@wpgmaps.com for support."
+msgstr "Як правило, це викликано конфліктом з іншим плагіном або JavaScript помилкою, яка забороняє виконання Javascript нашого плагіна. Будь ласка спробуйте вимикати всі плагіни один за один та перевіряти збереження проблеми після цього. Якщо проблема залишиться, то зв'яжіться з nick@wpgmaps.com для отримання підтримки."
+
+#: wpGoogleMaps.php:6418
+msgid "Tip: Use your mouse to change the location of the marker. Simply click and drag it to your desired location."
+msgstr "Підказка: Використовуйте мишку для зміни розміщення маркера. Просто клікніть для тягніть його на позицію, яка Вам необхідна."
+
+#: wpGoogleMaps.php:6417
+msgid "Save Marker Location"
+msgstr "Зберегти розміщення маркера."
+
+#: wpGoogleMaps.php:6412
+msgid "Marker Longitude"
+msgstr "Довгота маркера"
+
+#: wpGoogleMaps.php:6408
+msgid "Marker Latitude"
+msgstr "Широта маркера"
+
+#: wpGoogleMaps.php:6399
+msgid "Edit Marker Location"
+msgstr "Змінити розміщення маркера"
+
+#: wpGoogleMaps.php:6356
+msgid "Allow your visitors to get directions to your markers!"
+msgstr "Дозвольте Вашим відвідувачам прокрадати маршрути до Вашим маркерів!"
+
+#: wpGoogleMaps.php:6352
+msgid "Add different marker icons, or your own icons to make your map really stand out!"
+msgstr "Додайте інші іканки для міток або свої власні іконки, щоб зробити Вашу мапу дійсно вражаючою!"
+
+#: wpGoogleMaps.php:6348 wpGoogleMaps.php:6352 wpGoogleMaps.php:6356
+msgid "here"
+msgstr "тут"
+
+#: wpGoogleMaps.php:6348 wpGoogleMaps.php:6352 wpGoogleMaps.php:6356
+msgid "Click"
+msgstr "Натиснути"
+
+#: wpGoogleMaps.php:6348
+msgid "Add detailed information to your markers for only"
+msgstr "Додайте докладну інформацію лише для своїх мітки"
+
+#: wpGoogleMaps.php:6347 wpGoogleMaps.php:6351 wpGoogleMaps.php:6355
+msgid "Add custom markers to your map!"
+msgstr "Додайте власні мітки до своєї мапи!"
+
+#: wpGoogleMaps.php:6347
+msgid "Add detailed information to your markers!"
+msgstr "Додайте детальну інформацію до своїх міток!"
+
+#: wpGoogleMaps.php:6340
+msgid "Your Markers"
+msgstr "Ваші мітки"
+
+#: wpGoogleMaps.php:6326
+msgid "Remember to save your map!"
+msgstr "Не забудьте зберегти свою мапу!"
+
+#: wpGoogleMaps.php:6320
+msgid "This is normally caused by a conflict with another plugin or a JavaScript error that is preventing our plugin's Javascript from executing. Please try disable all plugins one by one and see if this problem persists."
+msgstr "Зазвичай це пов'язано із конфліктом з іншим плагіном або помилкою JavaScript, яка перешкоджає виконанню javascript нашого плагіну. Будь ласка спробуйте вимикати усі плагіни по черзі з перевіркою збереження проблеми."
+
+#: wpGoogleMaps.php:6320 wpGoogleMaps.php:6424
+msgid "The map could not load."
+msgstr "Мапа не може бути завантажена."
+
+#: wpGoogleMaps.php:6288
+msgid "Add a New Polyline"
+msgstr "Додати нову ламану лінію"
+
+#: wpGoogleMaps.php:6283
+msgid "Add a New Polygon"
+msgstr "Додати новий багатокутник"
+
+#: wpGoogleMaps.php:6265
+msgid "Select"
+msgstr "Вибір"
+
+#: wpGoogleMaps.php:6251
+msgid "Custom Marker"
+msgstr "Власна мітка"
+
+#: wpGoogleMaps.php:6249
+msgid "Link URL"
+msgstr "URL посилання"
+
+#: wpGoogleMaps.php:6247
+msgid "Pic URL"
+msgstr "Зображення URL"
+
+#: wpGoogleMaps.php:6211
+msgid "with the Pro version"
+msgstr "з Pro-версією"
+
+#: wpGoogleMaps.php:6211
+msgid "Add advanced markers"
+msgstr "Додати просунуті мітки"
+
+#: wpGoogleMaps.php:6197
+msgid "Please add the current marker before trying to add another marker"
+msgstr "Будь ласка додайте поточну мітку перед тим як спробувати додати іншу"
+
+#: wpGoogleMaps.php:6191
+msgid "Remember to save your marker"
+msgstr "Не забудьте зберегти свою мітку"
+
+#: wpGoogleMaps.php:6188
+msgid "Saving"
+msgstr "Збереження"
+
+#: wpGoogleMaps.php:6188
+msgid "Save Marker"
+msgstr "Зберегти мітку"
+
+#: wpGoogleMaps.php:6187
+msgid "Adding"
+msgstr "Додання"
+
+#: wpGoogleMaps.php:6187 wpGoogleMaps.php:6271
+msgid "Add Marker"
+msgstr "Додати мітку"
+
+#: wpGoogleMaps.php:6177 wpGoogleMaps.php:6232
+msgid "InfoWindow open by default"
+msgstr "InfoWindow відкрито за замовчуванням"
+
+#: wpGoogleMaps.php:6171 wpGoogleMaps.php:6226
+msgid "Drop"
+msgstr "Прибрати"
+
+#: wpGoogleMaps.php:6170 wpGoogleMaps.php:6225
+msgid "Bounce"
+msgstr "Підстрибнути"
+
+#: wpGoogleMaps.php:6166 wpGoogleMaps.php:6221
+msgid "Animation"
+msgstr "Анімація"
+
+#: wpGoogleMaps.php:6161
+msgid "Or right click on the map"
+msgstr "Або натисність правою кнопкою миші на мапі"
+
+#: wpGoogleMaps.php:6160 wpGoogleMaps.php:6215
+msgid "Address/GPS"
+msgstr "Адреса/GPS"
+
+#: wpGoogleMaps.php:6147
+msgid "Polygon"
+msgstr "Багатокутник"
+
+#: wpGoogleMaps.php:6146 wpGoogleMaps.php:6209
+msgid "Advanced markers"
+msgstr "Просунуті мітки"
+
+#: wpGoogleMaps.php:6145 wpGoogleMaps.php:6156
+msgid "Markers"
+msgstr "Мітки"
+
+#: wpGoogleMaps.php:6138
+msgid "Tip: Use your mouse to change the layout of your map. When you have positioned the map to your desired location, press \"Save Map\" to keep your settings."
+msgstr "Підказка: Використовуйте Вашу мишу для зміни шарів мапи. Коли ви помістите карту в потрібне місце, натисніть \"Зберегти карту\", щоб зберегти свої налаштування."
+
+#: wpGoogleMaps.php:6135
+msgid "Save Map"
+msgstr "Зберегти мапу"
+
+#: wpGoogleMaps.php:6020
+msgid "Advanced, tabular marker listing functionality with real time filtering"
+msgstr "Розширена таблична мітка створює список з сортуванням у реальному часі"
+
+#: wpGoogleMaps.php:6019
+msgid "Tabular"
+msgstr "Табличний"
+
+#: wpGoogleMaps.php:6011
+msgid "Beautiful, responsive, mobile-friendly carousel marker listing"
+msgstr "Прекрасна, адаптивна, дружня для мобільних пристрої карусель відображення списку міток"
+
+#: wpGoogleMaps.php:6002
+msgid "Show a basic list of your markers"
+msgstr "Показакує базовий перелік Ваших міток"
+
+#: wpGoogleMaps.php:6001
+msgid "Basic"
+msgstr "Базово"
+
+#: wpGoogleMaps.php:5985
+msgid "Bottom Right"
+msgstr "Внизу праворуч"
+
+#: wpGoogleMaps.php:5984
+msgid "Bottom Left"
+msgstr "Внизу ліворуч"
+
+#: wpGoogleMaps.php:5983
+msgid "Bottom Center"
+msgstr "Внизу по центру"
+
+#: wpGoogleMaps.php:5982
+msgid "Right Bottom"
+msgstr "Праворуч внизу"
+
+#: wpGoogleMaps.php:5981
+msgid "Left Bottom"
+msgstr "Ліворуч внизу"
+
+#: wpGoogleMaps.php:5980
+msgid "Right Center"
+msgstr "Праворуч по центру"
+
+#: wpGoogleMaps.php:5979
+msgid "Left Center"
+msgstr "Ліворуч по центру"
+
+#: wpGoogleMaps.php:5978
+msgid "Right Top"
+msgstr "Праворуч зверху"
+
+#: wpGoogleMaps.php:5977
+msgid "Left Top "
+msgstr "Ліворуч зверху"
+
+#: wpGoogleMaps.php:5976
+msgid "Top Right"
+msgstr "Вверху праворуч"
+
+#: wpGoogleMaps.php:5975
+msgid "Top Left"
+msgstr "Вверху ліворуч"
+
+#: wpGoogleMaps.php:5974
+msgid "Top Center"
+msgstr "Вверху по центру"
+
+#: wpGoogleMaps.php:5972
+msgid "Placement: "
+msgstr "Розташування:"
+
+#: wpGoogleMaps.php:5970
+msgid "Move your marker list inside the map area"
+msgstr "Перемістіть список маших міток всередину області мапи"
+
+#: wpGoogleMaps.php:5967
+msgid "Move list inside map"
+msgstr "Перемістити перелік всередину мапи"
+
+#: wpGoogleMaps.php:5955
+msgid "Descending"
+msgstr "Низхідний"
+
+#: wpGoogleMaps.php:5954
+msgid "Ascending"
+msgstr "Висхідний"
+
+#: wpGoogleMaps.php:5950 wpGoogleMaps.php:6245 wpGoogleMaps.php:6765
+#: wpGoogleMaps.php:6784
+msgid "Description"
+msgstr "Опис"
+
+#: wpGoogleMaps.php:5944
+msgid "Order markers by"
+msgstr "Сортувати мітки по"
+
+#: wpGoogleMaps.php:5939
+msgid "Allow users to filter by category?"
+msgstr "Дозволити користувачамсортувати по категоріям?"
+
+#: wpGoogleMaps.php:5936
+msgid "Filter by Category"
+msgstr "Сортувати по категоріям"
+
+#: wpGoogleMaps.php:5930
+msgid "beta"
+msgstr "бета"
+
+#: wpGoogleMaps.php:5930 wpGoogleMaps.php:6010
+msgid "Carousel"
+msgstr "Карусель"
+
+#: wpGoogleMaps.php:5929
+msgid "Advanced table with real time search and filtering"
+msgstr "Просунута таблиця з пошуком та сортуванням у реальному часі"
+
+#: wpGoogleMaps.php:5928
+msgid "Basic table"
+msgstr "Базова таблиця"
+
+#: wpGoogleMaps.php:5924
+msgid "List Markers"
+msgstr "Список міток"
+
+#: wpGoogleMaps.php:5910
+msgid "Read data directly from your Fusion Table."
+msgstr "Зчитувати дані напряму з Вашої з'єднаної таблиці."
+
+#: wpGoogleMaps.php:5908
+msgid "Fusion table ID"
+msgstr "Ідентифікатор об'єднаної таблиці"
+
+#: wpGoogleMaps.php:5904
+msgid "The KML/GeoRSS layer will over-ride most of your map settings"
+msgstr "KML/GeoRSS шар перезапише майже всі налаштування вашої мапи"
+
+#: wpGoogleMaps.php:5902
+msgid "KML/GeoRSS URL"
+msgstr "KML/GeoRSS URL"
+
+#: wpGoogleMaps.php:5888
+msgid "Show User's Location?"
+msgstr "Показати розташування користувача?"
+
+#: wpGoogleMaps.php:5884 wpGoogleMaps.php:6248 wpGoogleMaps.php:6252
+msgid "Upload Image"
+msgstr "Завантажити зображення"
+
+#: wpGoogleMaps.php:5883
+msgid "Default Marker Image"
+msgstr "Зображення мітки за замовчуванням"
+
+#: wpGoogleMaps.php:5827
+msgid "Maximum Zoom Level"
+msgstr "Максимальний рівень масштабування"
+
+#: wpGoogleMaps.php:5816
+msgid "Enable Public Transport Layer?"
+msgstr "Увімкнути шар громадського транспорту?"
+
+#: wpGoogleMaps.php:5805
+msgid "Enable Traffic Layer?"
+msgstr "Увімкнути шар дорожнього руху?"
+
+#: wpGoogleMaps.php:5796
+msgid "Enable Bicycle Layer?"
+msgstr "Увімкнути велосипедний шар?"
+
+#: wpGoogleMaps.php:5789
+msgid "Store Locator Documentation"
+msgstr "Документація магазину локатору"
+
+#: wpGoogleMaps.php:5789
+msgid "View"
+msgstr "Перегляд"
+
+#: wpGoogleMaps.php:5779
+msgid "Show bouncing icon"
+msgstr "Показати підстрибуючу іконку"
+
+#: wpGoogleMaps.php:5764
+msgid "Query string"
+msgstr "Рядок запиту"
+
+#: wpGoogleMaps.php:5734
+msgid "Kilometers"
+msgstr "Кілометрів"
+
+#: wpGoogleMaps.php:5734
+msgid "Miles"
+msgstr "Милі"
+
+#: wpGoogleMaps.php:5731
+msgid "Show distance in"
+msgstr "Показувати дистанцію в"
+
+#: wpGoogleMaps.php:5711
+msgid "Restrict to country"
+msgstr "Обмежити країною"
+
+#: wpGoogleMaps.php:5653
+msgid "Enable Store Locator"
+msgstr "Увімкнути магазин локатору"
+
+#: wpGoogleMaps.php:5639
+msgid "Directions Box Width"
+msgstr "Ширина поля маршрутів"
+
+#: wpGoogleMaps.php:5633
+msgid "Yes, below"
+msgstr "Так, внизу"
+
+#: wpGoogleMaps.php:5632
+msgid "Yes, above"
+msgstr "Так, зверху"
+
+#: wpGoogleMaps.php:5631
+msgid "Yes, on the right"
+msgstr "Так, праворуч"
+
+#: wpGoogleMaps.php:5630
+msgid "Yes, on the left"
+msgstr "Так, ліворуч"
+
+#: wpGoogleMaps.php:5625
+msgid "Directions Box Open by Default?"
+msgstr "Область напрямків відкрита за замовчуванням?"
+
+#: wpGoogleMaps.php:5613
+msgid "Enable Directions?"
+msgstr "Увімкнути маршрути?"
+
+#: wpGoogleMaps.php:5548
+msgid "Select a theme for your map"
+msgstr "Оберіть тему для своєї мапи"
+
+#: wpGoogleMaps.php:5535
+msgid "Map type"
+msgstr "Тип мапи"
+
+#: wpGoogleMaps.php:4751 wpGoogleMaps.php:5530 wpGoogleMaps.php:5927
+#: wpGoogleMaps.php:6169 wpGoogleMaps.php:6224
+msgid "None"
+msgstr "Немає"
+
+#: wpGoogleMaps.php:5529
+msgid "Right"
+msgstr "Праворуч"
+
+#: wpGoogleMaps.php:5528 wpGoogleMaps.php:8305
+msgid "Center"
+msgstr "Посередині"
+
+#: wpGoogleMaps.php:5527
+msgid "Left"
+msgstr "Ліворуч"
+
+#: wpGoogleMaps.php:5525
+msgid "Map Alignment"
+msgstr "Вирівнювання мапи"
+
+#: wpGoogleMaps.php:5519
+msgid "Zoom Level"
+msgstr "Рівень масштабування"
+
+#: wpGoogleMaps.php:5514
+msgid "We recommend that you leave your height in PX. Depending on your theme, using % for the height may break your map."
+msgstr "Ми рекомендуємо Вам залишити висоту у пікселях. Залежно від вашої теми, використання % для висоти може пошкодити вашу карту."
+
+#: wpGoogleMaps.php:5504
+msgid "Set to 100% for a responsive map"
+msgstr "Встановіть 100% для адаптивної мапи"
+
+#: wpGoogleMaps.php:5493
+msgid "Map Name"
+msgstr "Назва мапи"
+
+#: wpGoogleMaps.php:5490
+msgid "copy this into your post or page to display the map"
+msgstr "Скопіюйте це на у свій запис або сторінку, щоб відобразити мапу"
+
+#: wpGoogleMaps.php:5489
+msgid "Short code"
+msgstr "Скорочений код"
+
+#: wpGoogleMaps.php:5457
+msgid "Pro Upgrade"
+msgstr "Оновлення до Pro"
+
+#: wpGoogleMaps.php:5456
+msgid "Marker Listing Options"
+msgstr "Параметри створення списків міток"
+
+#: wpGoogleMaps.php:5453
+msgid "Directions"
+msgstr "Напрямки"
+
+#: wpGoogleMaps.php:5452 base/includes/welcome.php:34
+msgid "Themes"
+msgstr "Теми"
+
+#: wpGoogleMaps.php:5451
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: wpGoogleMaps.php:5391
+msgid "We've noticed that you are using W3 Total Cache and that you have CDN enabled.<br /><br />In order for the markers to show up on your map, you need to add '<strong><em>{uploads_dir}/wp-google-maps*</strong></em>' to the '<strong>rejected files</strong>' list in the <a href='admin.php?page=w3tc_cdn#advanced'>CDN settings page</a> of W3 Total Cache"
+msgstr "Ми звернули увагу, що у Ви використовуєте W3 Total Cache та у Вас ввімкнено CDN. <br /><br /> Для правильного відображення міток на Вашій мапі, Вам потрібно додати '<strong><em>{uploads_dir}/wp-google-maps*</strong></em>' до списку '<strong>відхилених файлів</strong>'на <a href='admin.php?page=w3tc_cdn#advanced'>сторінці налаштування CDN</a> W3 Total Cache"
+
+#: wpGoogleMaps.php:5391
+msgid "Please note"
+msgstr "Зверніть увагу будь ласка"
+
+#: wpGoogleMaps.php:5366
+msgid "of WP Google Maps and save your markers to a CSV file!"
+msgstr "WP Google Maps і збережіть Ваші мітки у CSV файл!"
+
+#: wpGoogleMaps.php:5366
+msgid "Purchase the Pro Edition"
+msgstr "Придбати Pro-версію"
+
+#: wpGoogleMaps.php:5365
+msgid "of this plugin for just"
+msgstr "цього плагіну всього за"
+
+#: wpGoogleMaps.php:5365 wpGoogleMaps.php:5366 wpGoogleMaps.php:6352
+#: wpGoogleMaps.php:6356
+msgid "Pro Edition"
+msgstr "Pro-версія"
+
+#: wpGoogleMaps.php:5365
+msgid "Add custom icons, titles, descriptions, pictures and links to your markers with the"
+msgstr "Додавайте власні іконки, назва, описи, зображення та посилання до ваших міток разом з"
+
+#: wpGoogleMaps.php:5211
+msgid "Pic"
+msgstr "Зображення"
+
+#: wpGoogleMaps.php:5210
+msgid "GPS"
+msgstr "GPS"
+
+#: wpGoogleMaps.php:5209 wpGoogleMaps.php:5949 wpGoogleMaps.php:6764
+#: wpGoogleMaps.php:6783
+msgid "Address"
+msgstr "Адреса"
+
+#: wpGoogleMaps.php:5207
+msgid "Linked to"
+msgstr "Пов'язані з"
+
+#: wpGoogleMaps.php:5206 wpGoogleMaps.php:6761
+msgid "Icon"
+msgstr "Іконка"
+
+#: wpGoogleMaps.php:5186
+msgid "My Markers"
+msgstr "Мої мітки"
+
+#: wpGoogleMaps.php:5164
+msgid "Trash"
+msgstr "Сміття"
+
+#: wpGoogleMaps.php:5162 wpGoogleMaps.php:5540
+msgid "Terrain"
+msgstr "Місцевості"
+
+#: wpGoogleMaps.php:5161 wpGoogleMaps.php:5539
+msgid "Hybrid"
+msgstr "Гібрид"
+
+#: wpGoogleMaps.php:5160 wpGoogleMaps.php:5538
+msgid "Satellite"
+msgstr "Супутник"
+
+#: wpGoogleMaps.php:5159 wpGoogleMaps.php:5537
+msgid "Roadmap"
+msgstr "Дорожня карта"
+
+#: wpGoogleMaps.php:5152
+msgid "Type"
+msgstr "Тип"
+
+#: wpGoogleMaps.php:5151 wpGoogleMaps.php:5509
+msgid "Height"
+msgstr "Висота"
+
+#: wpGoogleMaps.php:5150 wpGoogleMaps.php:5497
+msgid "Width"
+msgstr "Ширина"
+
+#: wpGoogleMaps.php:5129 wpGoogleMaps.php:5189
+msgid "Problems with the plugin? See the troubleshooting manual."
+msgstr "Проблеми з плагіном? Подивіться керівництво з усунення несправностей."
+
+#: wpGoogleMaps.php:5107
+msgid "of WP Google Maps for only"
+msgstr "WP Google Maps виключно"
+
+#: wpGoogleMaps.php:5107
+msgid "with the"
+msgstr "із"
+
+#: wpGoogleMaps.php:5107
+msgid "Create unlimited maps"
+msgstr "Створити необмежені мапи"
+
+#: wpGoogleMaps.php:5085 wpGoogleMaps.php:5186
+msgid "Add New"
+msgstr "Додати нове"
+
+#: wpGoogleMaps.php:5085 wpGoogleMaps.php:5106
+msgid "My Maps"
+msgstr "Мої мапи"
+
+#: wpGoogleMaps.php:5017
+msgid "Save Settings"
+msgstr "Зберегти налаштування"
+
+#: wpGoogleMaps.php:4992
+msgid "Custom CSS"
+msgstr "Користувацький код CSS"
+
+#: wpGoogleMaps.php:4979
+msgid "Marker data XML URL"
+msgstr "XML URL дані мітки"
+
+#: wpGoogleMaps.php:4975 wpGoogleMaps.php:4985
+msgid "Currently using"
+msgstr "Наразі використовується"
+
+#: wpGoogleMaps.php:4974 wpGoogleMaps.php:4984
+msgid "You can use the following"
+msgstr "Ви можете використовувати наступні"
+
+#: wpGoogleMaps.php:4970
+msgid "Marker data XML directory"
+msgstr "XML тека даних мітки"
+
+#: wpGoogleMaps.php:4968
+msgid "We suggest that you change the two fields below ONLY if you are experiencing issues when trying to save the marker XML files."
+msgstr "Ми пропонуємо Вам змінювати два поля нижче ВИКЛЮЧНО, якщо Ви маєте проблеми, коли намагаєтесь зберегти мітки у XML файл."
+
+#: wpGoogleMaps.php:4965
+msgid "XML File  (Great for large amounts of markers)"
+msgstr "XML файл (чудово для великої кількості міток)"
+
+#: wpGoogleMaps.php:4964
+msgid "Database (Great for small amounts of markers)"
+msgstr "База даних (чудово для малої кількості міток)"
+
+#: wpGoogleMaps.php:4962
+msgid "Pull marker data from"
+msgstr "Витягнути дані мітки з"
+
+#: wpGoogleMaps.php:4959
+msgid "Marker Data Location"
+msgstr "Розміщення даних мітки"
+
+#: wpGoogleMaps.php:4937 wpGoogleMaps.php:5455
+msgid "Advanced Settings"
+msgstr "Розришені налаштування"
+
+#: wpGoogleMaps.php:4917
+msgid "Autoplay after x milliseconds (1000 = 1 second)"
+msgstr "Автопрогравання після x мілісекунд (1000 = 1 секунда)"
+
+#: wpGoogleMaps.php:4916
+msgid "Items"
+msgstr "Елементи"
+
+#: wpGoogleMaps.php:4915
+msgid "Enable navigation"
+msgstr "Увімкнути навігацію"
+
+#: wpGoogleMaps.php:4914
+msgid "Enable pagination"
+msgstr "Увімкнути посторінкову навігацію"
+
+#: wpGoogleMaps.php:4913
+msgid "Enable autoheight"
+msgstr "Увімкнути автовисоту"
+
+#: wpGoogleMaps.php:4912
+msgid "Enable lazyload of images"
+msgstr "Увімкнути lazyload для зображень"
+
+#: wpGoogleMaps.php:4911
+msgid "Hide the Directions Link"
+msgstr "Приховати посилання маршрутів"
+
+#: wpGoogleMaps.php:4910
+msgid "Hide the Marker Link"
+msgstr "Приховати посилання маркерів"
+
+#: wpGoogleMaps.php:4909
+msgid "Hide the Description"
+msgstr "Приховати опис"
+
+#: wpGoogleMaps.php:4908
+msgid "Hide the Address"
+msgstr "Приховати адресу"
+
+#: wpGoogleMaps.php:4907
+msgid "Hide the Marker Icon"
+msgstr "Приховати іконку мітки"
+
+#: wpGoogleMaps.php:4906
+msgid "Hide the Title"
+msgstr "Приховати заголовок"
+
+#: wpGoogleMaps.php:4905
+msgid "Hide the Image"
+msgstr "Приховати зображення"
+
+#: wpGoogleMaps.php:4903
+msgid "Carousel settings"
+msgstr "Налаштування каруселі"
+
+#: wpGoogleMaps.php:4898
+msgid "Black"
+msgstr "Чорний"
+
+#: wpGoogleMaps.php:4897
+msgid "White"
+msgstr "Білий"
+
+#: wpGoogleMaps.php:4896
+msgid "PinkPurple"
+msgstr "Рожево-фіолетовий"
+
+#: wpGoogleMaps.php:4895
+msgid "Monotone"
+msgstr "Монотонний"
+
+#: wpGoogleMaps.php:4894
+msgid "Earth"
+msgstr "Земля"
+
+#: wpGoogleMaps.php:4893
+msgid "Sun"
+msgstr "Сонце"
+
+#: wpGoogleMaps.php:4892
+msgid "Sky"
+msgstr "Небо"
+
+#: wpGoogleMaps.php:4889
+msgid "Theme selection"
+msgstr "Вибір теми"
+
+#: wpGoogleMaps.php:4886
+msgid "Carousel Marker Listing"
+msgstr "Створення списку міток каруселі"
+
+#: wpGoogleMaps.php:4880
+msgid "Hide the Description column"
+msgstr "Приховати колонку опису"
+
+#: wpGoogleMaps.php:4879
+msgid "Hide the Category column"
+msgstr "Приховати колонку категорії"
+
+#: wpGoogleMaps.php:4878
+msgid "Hide the Address column"
+msgstr "Приховати колонку адреси"
+
+#: wpGoogleMaps.php:4877
+msgid "Hide the Title column"
+msgstr "Приховати колонку заголовку"
+
+#: wpGoogleMaps.php:4876
+msgid "Hide the Icon column"
+msgstr "Приховати колонку іконки"
+
+#: wpGoogleMaps.php:4874
+msgid "Column settings"
+msgstr "Налаштування колонки"
+
+#: wpGoogleMaps.php:4871
+msgid "Advanced Marker Listing"
+msgstr "Розширений список міток"
+
+#: wpGoogleMaps.php:4865
+msgid "Changing these settings will alter the way the marker list appears on your website."
+msgstr "Зміна цих налаштувань змінить спосіб відображення списку міток на вашому веб-сайті."
+
+#: wpGoogleMaps.php:4864
+msgid "Marker Listing Settings"
+msgstr "Налаштування відображення списку міток"
+
+#: wpGoogleMaps.php:4838
+msgid "Open Marker InfoWindows by"
+msgstr "Відкрити мітку InfoWindows у"
+
+#: wpGoogleMaps.php:4835
+msgid "Marker InfoWindow Settings"
+msgstr "Налаштування міток InfoWindow"
+
+#: wpGoogleMaps.php:4803
+msgid "Lowest level of access to the map editor"
+msgstr "Найнижчий рівень доступу для доступу до редактора мап"
+
+#: wpGoogleMaps.php:4705
+msgid "Troubleshooting Options"
+msgstr "Параметри усунення неполадок"
+
+#: wpGoogleMaps.php:4700
+msgid "Disable Mouse Double Click Zooming"
+msgstr "Вимкнути масштабування подвійним кліком миші"
+
+#: wpGoogleMaps.php:4699
+msgid "Disable Mouse Dragging"
+msgstr "Вимкнути переміщення мишею"
+
+#: wpGoogleMaps.php:4698
+msgid "Disable Mouse Wheel Zoom"
+msgstr "Вимкнути масштабування колесом миші"
+
+#: wpGoogleMaps.php:4693
+msgid "Disable Map Type Controls"
+msgstr "Вимкнути керування типом мапи"
+
+#: wpGoogleMaps.php:4675
+msgid "Disable Pan Controls"
+msgstr "Вимкнути керування контейнерами"
+
+#: wpGoogleMaps.php:4668
+msgid "Disable Zoom Controls"
+msgstr "Вимкнути керування масштабуванням"
+
+#: wpGoogleMaps.php:4662
+msgid "Disable StreetView"
+msgstr "Вимкнути вуличний режим"
+
+#: wpGoogleMaps.php:4646
+msgid "General Map Settings"
+msgstr "Основні налаштування мапи"
+
+#: wpGoogleMaps.php:4643
+#: js/v8/3rd-party-integration/gutenberg/dist/gutenberg.js:102
+#: js/v8/wp-google-maps.combined.js:4574
+msgid "Map Settings"
+msgstr "Налаштування мапи"
+
+#: wpGoogleMaps.php:4635
+msgid "Marker Listing"
+msgstr "Створення списку міток"
+
+#: wpGoogleMaps.php:4634
+msgid "InfoWindows"
+msgstr "InfoWindows"
+
+#: wpGoogleMaps.php:4605
+msgid " - The plugin does not have write access to this folder. Please CHMOD this folder to 755 or 777, or change the location"
+msgstr " - Плагін не маж прав на запис у цій теці. Будь ласка встановіть CHMOD цієї теки на 755 або 777, або змініть розташування"
+
+#: wpGoogleMaps.php:4605
+msgid "File Permissions:"
+msgstr "Дозволи файлу:"
+
+#: wpGoogleMaps.php:4602 wpGoogleMaps.php:7395
+msgid "This folder does not exist. Please create it."
+msgstr "Папка не існує. Будь ласка створіть її."
+
+#: wpGoogleMaps.php:4492
+msgid "WP Google Map Settings"
+msgstr "Налаштування WP Google Map"
+
+#: wpGoogleMaps.php:4451
+msgid "Are you sure you want to delete this marker:"
+msgstr "Ви впевнені, що бажаєте видалити цю мітку:"
+
+#: wpGoogleMaps.php:4451
+msgid "Delete Marker"
+msgstr "Видалити мітку"
+
+#: wpGoogleMaps.php:4447
+msgid "There was a problem deleting the marker."
+msgstr "Виникла помилка під час видалення мітки."
+
+#: wpGoogleMaps.php:4330
+msgid "There was a problem duplicating the map."
+msgstr "Виникла помилка під час дублювання мапи."
+
+#: wpGoogleMaps.php:4320 wpGoogleMaps.php:4451 wpGoogleMaps.php:4707
+#: wpGoogleMaps.php:4726 wpGoogleMaps.php:4818 wpGoogleMaps.php:4826
+#: wpGoogleMaps.php:4849 wpGoogleMaps.php:5615 wpGoogleMaps.php:5619
+#: wpGoogleMaps.php:5629 wpGoogleMaps.php:5656 wpGoogleMaps.php:5782
+#: wpGoogleMaps.php:5800 wpGoogleMaps.php:5809 wpGoogleMaps.php:5820
+#: wpGoogleMaps.php:5869 wpGoogleMaps.php:5890 wpGoogleMaps.php:5895
+#: wpGoogleMaps.php:6180 wpGoogleMaps.php:6235
+#: base/includes/full-screen-module.php:40
+msgid "No"
+msgstr "Ні"
+
+#: wpGoogleMaps.php:4320 wpGoogleMaps.php:4451 wpGoogleMaps.php:4707
+#: wpGoogleMaps.php:4725 wpGoogleMaps.php:4818 wpGoogleMaps.php:4826
+#: wpGoogleMaps.php:4849 wpGoogleMaps.php:5616 wpGoogleMaps.php:5656
+#: wpGoogleMaps.php:5782 wpGoogleMaps.php:5800 wpGoogleMaps.php:5809
+#: wpGoogleMaps.php:5820 wpGoogleMaps.php:5869 wpGoogleMaps.php:5891
+#: wpGoogleMaps.php:5895 wpGoogleMaps.php:6181 wpGoogleMaps.php:6236
+#: base/includes/full-screen-module.php:40
+msgid "Yes"
+msgstr "Так"
+
+#: wpGoogleMaps.php:4320
+msgid "Are you sure you want to delete the map"
+msgstr "Ви впевнені, що бажаєте видалити мапу"
+
+#: wpGoogleMaps.php:4320
+msgid "Delete your map"
+msgstr "Видаляє Вашу мапу"
+
+#: wpGoogleMaps.php:4316
+msgid "There was a problem deleting the map."
+msgstr "Виникла помилка під час видалення мапи."
+
+#: wpGoogleMaps.php:4309
+msgid "Support forum."
+msgstr "Форум підтримки."
+
+#: wpGoogleMaps.php:4309
+msgid "Or ask a question on our "
+msgstr "Або поставте запитання на нашому"
+
+#: wpGoogleMaps.php:4309 wpGoogleMaps.php:4438
+msgid "See the troubleshooting manual."
+msgstr "Перегляньте керівництво к з усунення несправностей."
+
+#: wpGoogleMaps.php:4309 wpGoogleMaps.php:4438
+msgid "Experiencing problems with the plugin?"
+msgstr "Виникли проблеми з плагіном?"
+
+#: wpGoogleMaps.php:4287 wpGoogleMaps.php:7435 base/includes/credits.php:66
+#: base/includes/credits.php:77
+msgid "Support"
+msgstr "підтримка"
+
+#: wpGoogleMaps.php:1086 wpGoogleMaps.php:4286
+msgid "Settings"
+msgstr "Налаштування"
+
+#: wpGoogleMaps.php:4270 wpGoogleMaps.php:4637
+msgid "Advanced"
+msgstr "Розширений"
+
+#: wpGoogleMaps.php:4263
+msgid "Categories"
+msgstr "Категорії"
+
+#: wpGoogleMaps.php:4261 wpGoogleMaps.php:4633
+#: js/v8/3rd-party-integration/gutenberg/dist/gutenberg.js:144
+#: js/v8/wp-google-maps.combined.js:4616
+msgid "Maps"
+msgstr "Мапи"
+
+#: wpGoogleMaps.php:3897 wpGoogleMaps.php:3901
+msgid "Thank you for your feedback!"
+msgstr "Дякуємо за Ваш відгук!"
+
+#: wpGoogleMaps.php:3723 wpGoogleMaps.php:4211
+msgid "Your polyline has been saved."
+msgstr "Ваша ламана лінія була збережена."
+
+#: wpGoogleMaps.php:3680 wpGoogleMaps.php:4179
+msgid "Your polyline has been created."
+msgstr "Ваша ламана лінія була створена."
+
+#: wpGoogleMaps.php:3648 wpGoogleMaps.php:3694
+msgid "You cannot save a blank polyline"
+msgstr "Ви не можете зберегти порожню ламану."
+
+#: wpGoogleMaps.php:3635 wpGoogleMaps.php:4148
+msgid "Your polygon has been saved."
+msgstr "Ваш багатокутник було збережено."
+
+#: wpGoogleMaps.php:3574 wpGoogleMaps.php:4112
+msgid "Your polygon has been created."
+msgstr "Ваш багатокутник було створено."
+
+#: wpGoogleMaps.php:3527 wpGoogleMaps.php:3588
+msgid "You cannot save a blank polygon"
+msgstr "Ви не можете створити порожній багатокутник"
+
+#: wpGoogleMaps.php:3516 wpGoogleMaps.php:4078
+msgid "Your marker location has been saved."
+msgstr "Розташування Вашої мітки було збережено."
+
+#: wpGoogleMaps.php:3486 wpGoogleMaps.php:4047 wpGoogleMaps.php:4242
+msgid "Your settings have been saved."
+msgstr "Ваші налаштування було збережено."
+
+#: wpGoogleMaps.php:3205
+msgid "Search"
+msgstr "Шукати"
+
+#: wpGoogleMaps.php:3197 wpGoogleMaps.php:5951 wpGoogleMaps.php:6262
+#: wpGoogleMaps.php:6763 wpGoogleMaps.php:6782
+msgid "Category"
+msgstr "Категорія"
+
+#: wpGoogleMaps.php:3173 wpGoogleMaps.php:8214 wpGoogleMaps.php:8336
+msgid "Radius"
+msgstr "Радіус"
+
+#: wpGoogleMaps.php:3155 wpGoogleMaps.php:5274
+msgid "ZIP / Address:"
+msgstr "ZIP / Адреса:"
+
+#: wpGoogleMaps.php:2849
+msgid "does not exist"
+msgstr "не існує"
+
+#: wpGoogleMaps.php:2849
+msgid "Error: The map ID"
+msgstr "Помилка: Ідентифікатор мапи"
+
+#: wpGoogleMaps.php:2343
+msgid "Could not save XML file"
+msgstr "Неможливо зберети XML файл"
+
+#: wpGoogleMaps.php:2231
+msgid "DOMDocument is not enabled"
+msgstr "DOMDocument не увімкнено"
+
+#: wpGoogleMaps.php:1611 wpGoogleMaps.php:2191 wpGoogleMaps.php:3099
+msgid "km away"
+msgstr "км"
+
+#: wpGoogleMaps.php:1612 wpGoogleMaps.php:2192 wpGoogleMaps.php:3100
+msgid "miles away"
+msgstr "миль"
+
+#: wpGoogleMaps.php:1197
+msgid "for help on how to do it. Alternatively, you can disable the use of Timthumb in Maps->Settings"
+msgstr "за допомогою, як це зробити. Або Ви можете вимкнути використання Timthumb на сторінці Мапи->Налаштування"
+
+#: wpGoogleMaps.php:1195 wpGoogleMaps.php:6944
+msgid "this page"
+msgstr "ця сторінка"
+
+#: wpGoogleMaps.php:1193
+msgid "in order for images to show up while using Timthumb. Please see "
+msgstr "для правильного відображення зображень під час використання Timthumb. Будь ласка перегляньте"
+
+#: wpGoogleMaps.php:1191
+msgid "Timthumb does not have 'write' permission for the cache directory. Please enable 'write' permissions (755 or 777) for "
+msgstr "Timthumb не має права на запис для теки кешу. Будь ласка увімкніть право запису (755 або 777) для"
+
+#: wpGoogleMaps.php:1177
+msgid "</em>exists. Please also ensure that you assign file permissions of 755 (or 777) to this directory."
+msgstr "</em>існує. Будь ласка переконайтесь також, що Ви встановили дозволити файлу на 755 (чи 777) в цій теці."
+
+#: wpGoogleMaps.php:1177
+msgid "<strong>WP Google Maps cannot find the directory it uses to save marker data to. Please confirm that <em>"
+msgstr "<strong>WP Google Maps не може знайти теку для збереження даних міток. Будь ласка підтвердіть це <em>"
+
+#: wpGoogleMaps.php:816
+msgid "My first map"
+msgstr "Моя перша мапа"
+
+#: base/includes/wp-google-maps-polylines.php:753
+msgid "Delete this polyline"
+msgstr "Видалити цю ламану"
+
+#: base/includes/wp-google-maps-polylines.php:124
+msgid "Edit Polyline"
+msgstr "Редагувати ламану лінію"
+
+#: base/includes/wp-google-maps-polylines.php:86
+#: base/includes/wp-google-maps-polylines.php:193
+msgid "Save Polyline"
+msgstr "Зберегти ламану лінію"
+
+#: base/includes/wp-google-maps-polylines.php:60
+#: base/includes/wp-google-maps-polylines.php:155
+msgid "Line Thickness"
+msgstr "Товщина лінії"
+
+#: base/includes/wp-google-maps-polylines.php:30
+msgid "Add a Polyline"
+msgstr "Додати ламану лінію"
+
+#: base/includes/wp-google-maps-polygons.php:754
+msgid "Delete this polygon"
+msgstr "Видалити цей багатокутник"
+
+#: wpGoogleMaps.php:5170 wpGoogleMaps.php:7880 wpGoogleMaps.php:7931
+#: base/includes/wp-google-maps-polygons.php:753
+#: base/includes/wp-google-maps-polylines.php:752
+msgid "Edit"
+msgstr "Редагувати"
+
+#: wpGoogleMaps.php:6768 wpGoogleMaps.php:7864 wpGoogleMaps.php:7915
+#: base/includes/wp-google-maps-polygons.php:727
+#: base/includes/wp-google-maps-polylines.php:726
+msgid "Action"
+msgstr "Дія"
+
+#: wpGoogleMaps.php:5148 wpGoogleMaps.php:5205 wpGoogleMaps.php:5947
+#: wpGoogleMaps.php:6399 wpGoogleMaps.php:6760 wpGoogleMaps.php:7862
+#: wpGoogleMaps.php:7913 base/includes/wp-google-maps-polygons.php:725
+#: base/includes/wp-google-maps-polylines.php:724
+msgid "ID"
+msgstr "ID"
+
+#: base/includes/wp-google-maps-polygons.php:123
+msgid "Edit Polygon"
+msgstr "Редагувати багатокутник"
+
+#: base/includes/wp-google-maps-polygons.php:92
+#: base/includes/wp-google-maps-polygons.php:188
+msgid "Save Polygon"
+msgstr "Зберегти багатокутник"
+
+#: base/includes/wp-google-maps-polygons.php:85
+msgid "Drag a vertex to move it."
+msgstr "Перетягніть вершину, щоб перемістити її."
+
+#: base/includes/wp-google-maps-polygons.php:84
+msgid "Click on a vertex to remove it."
+msgstr "Натисніть на вершину, щоб прибрати її."
+
+#: base/includes/wp-google-maps-polygons.php:83
+msgid "Click on the map to insert a vertex."
+msgstr "Натисніть на мапі, щоб додати вершину."
+
+#: base/includes/wp-google-maps-polygons.php:71
+#: base/includes/wp-google-maps-polygons.php:157
+msgid "On Hover Opacity"
+msgstr "Прозорість при наведенні"
+
+#: base/includes/wp-google-maps-polygons.php:68
+#: base/includes/wp-google-maps-polygons.php:154
+msgid "On Hover Fill Color"
+msgstr "Заповнення кольором при наведенні"
+
+#: base/includes/wp-google-maps-polygons.php:65
+#: base/includes/wp-google-maps-polygons.php:151
+msgid "On Hover Line Color"
+msgstr "Колір лінії при наведенні"
+
+#: wpGoogleMaps.php:8206 wpGoogleMaps.php:8328 wpGoogleMaps.php:8567
+#: wpGoogleMaps.php:8662 base/includes/wp-google-maps-polygons.php:62
+#: base/includes/wp-google-maps-polygons.php:148
+#: base/includes/wp-google-maps-polylines.php:52
+#: base/includes/wp-google-maps-polylines.php:147
+msgid "Opacity"
+msgstr "Прозорість"
+
+#: base/includes/wp-google-maps-polygons.php:59
+#: base/includes/wp-google-maps-polygons.php:145
+msgid "Fill Color"
+msgstr "Заповнити кольором"
+
+#: base/includes/wp-google-maps-polygons.php:56
+#: base/includes/wp-google-maps-polygons.php:142
+msgid "Line Opacity"
+msgstr "Прозорість лінії"
+
+#: base/includes/wp-google-maps-polygons.php:53
+#: base/includes/wp-google-maps-polygons.php:139
+#: base/includes/wp-google-maps-polylines.php:44
+#: base/includes/wp-google-maps-polylines.php:139
+msgid "Line Color"
+msgstr "Колір лінії"
+
+#: wpGoogleMaps.php:5212 wpGoogleMaps.php:6767
+#: base/includes/wp-google-maps-polygons.php:50
+#: base/includes/wp-google-maps-polygons.php:136
+msgid "Link"
+msgstr "Посилання "
+
+#: base/includes/wp-google-maps-polygons.php:47
+#: base/includes/wp-google-maps-polygons.php:133
+msgid "Get the Pro add-on"
+msgstr "Отримати Pro-додаток"
+
+#: wpGoogleMaps.php:5107 base/includes/wp-google-maps-polygons.php:47
+#: base/includes/wp-google-maps-polygons.php:133
+msgid "Pro Version"
+msgstr "Pro-версія"
+
+#: base/includes/wp-google-maps-polygons.php:47
+#: base/includes/wp-google-maps-polygons.php:65
+#: base/includes/wp-google-maps-polygons.php:68
+#: base/includes/wp-google-maps-polygons.php:71
+#: base/includes/wp-google-maps-polygons.php:133
+#: base/includes/wp-google-maps-polygons.php:151
+#: base/includes/wp-google-maps-polygons.php:154
+#: base/includes/wp-google-maps-polygons.php:157
+msgid "Pro version only"
+msgstr "Лише Pro-версія"
+
+#: wpGoogleMaps.php:7863 wpGoogleMaps.php:7914 wpGoogleMaps.php:8190
+#: wpGoogleMaps.php:8297 wpGoogleMaps.php:8551 wpGoogleMaps.php:8646
+#: base/includes/wp-google-maps-polygons.php:44
+#: base/includes/wp-google-maps-polygons.php:130
+#: base/includes/wp-google-maps-polygons.php:726
+#: base/includes/wp-google-maps-polylines.php:36
+#: base/includes/wp-google-maps-polylines.php:131
+#: base/includes/wp-google-maps-polylines.php:725
+msgid "Name"
+msgstr "Ім’я"
+
+#: base/includes/wp-google-maps-polygons.php:38
+msgid "Add a Polygon"
+msgstr "Додати багатокутник"
+
+#: base/classes/widget_module.class.php:69
+msgid "Select your map:"
+msgstr "Оберіть свою мапу:"
+
+#: wpGoogleMaps.php:5149 wpGoogleMaps.php:5208 wpGoogleMaps.php:5948
+#: wpGoogleMaps.php:6240 wpGoogleMaps.php:6762 wpGoogleMaps.php:6781
+#: base/includes/wp-google-maps-polygons.php:47
+#: base/includes/wp-google-maps-polygons.php:133
+#: base/classes/widget_module.class.php:64
+msgid "Title"
+msgstr "Назва"
+
+#: base/classes/widget_module.class.php:16
+msgid "Add your map as a widget"
+msgstr "Додайте свою мапу як віджет"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: includes/class.maps-engine-dialog.php:146
+#: base/classes/widget_module.class.php:14
+#: js/v8/3rd-party-integration/gutenberg/dist/gutenberg.js:43
+#: js/v8/3rd-party-integration/gutenberg/dist/gutenberg.js:140
+#: js/v8/wp-google-maps.combined.js:4515 js/v8/wp-google-maps.combined.js:4612
+msgid "WP Google Maps"
+msgstr "WP Google Maps"
+
+#: base/includes/credits.php:89 base/includes/welcome.php:112
+#: base/classes/WPGM_templates.php:127
+msgid "OK! Let's start"
+msgstr "Чудово! Давайте розпочнемо"
+
+#: base/includes/welcome.php:108 base/classes/WPGM_templates.php:123
+msgid "and we'll act on it as soon as humanly possible."
+msgstr "ми відреагуємо так швидко, як тільки можливо."
+
+#: base/includes/welcome.php:108 base/classes/WPGM_templates.php:123
+msgid "Send us your feedback"
+msgstr "Надайте нам свій відгук"
+
+#: base/includes/welcome.php:108 base/classes/WPGM_templates.php:123
+msgid "We need you to help us make this plugin better."
+msgstr "Нам потрібна Ваша допомога, щоб зробити наш плагін кращим."
+
+#: base/includes/welcome.php:107 base/classes/WPGM_templates.php:122
+msgid "Feedback"
+msgstr "Зворотній зв'язок"
+
+#: base/includes/welcome.php:104 base/classes/WPGM_templates.php:119
+msgid "for quick and friendly help. We'll answer your request within 24hours."
+msgstr "для швидкої та дружньої підтримки. Ми відповімо на Ваш запит впродовж 24 годин."
+
+#: base/classes/WPGM_templates.php:119
+msgid "Support Forum"
+msgstr "Форум підтримки"
+
+#: base/includes/welcome.php:104 base/classes/WPGM_templates.php:119
+msgid "Visit our"
+msgstr "Відвідайте наш"
+
+#: base/includes/welcome.php:103 base/classes/WPGM_templates.php:118
+msgid "Help me!"
+msgstr "Допоможіть мені!"
+
+#: base/includes/welcome.php:100 base/classes/WPGM_templates.php:115
+msgid "before you get started. If you're a tech-savvy individual, you may skip this step."
+msgstr "перед тим, як Ви розпочнете. Якщо Ви технічно підковані, то можете пропустити цей крок."
+
+#: base/includes/welcome.php:100 base/classes/WPGM_templates.php:115
+msgid "review our documentation"
+msgstr "переглянути нашу документацію"
+
+#: base/includes/welcome.php:100 base/classes/WPGM_templates.php:115
+msgid "You may want to"
+msgstr "Ви можете захотіти"
+
+#: base/includes/welcome.php:99 base/classes/WPGM_templates.php:114
+msgid "New to WP Google Maps?"
+msgstr "Новенький у WP Google Maps?"
+
+#: base/includes/welcome.php:77 base/classes/WPGM_templates.php:92
+msgid "Please explain"
+msgstr "Будь ласка поясніть"
+
+#: base/includes/welcome.php:76 base/classes/WPGM_templates.php:91
+#: lib/codecabin/deactivate-feedback-form.php:61
+msgid "Other"
+msgstr "Інше"
+
+#: base/includes/welcome.php:72 base/classes/WPGM_templates.php:87
+msgid "Friend recommendation"
+msgstr "Рекомендація друга"
+
+#: base/includes/welcome.php:68 base/classes/WPGM_templates.php:83
+msgid "Google or other search engine"
+msgstr "Google або інший двигунець пошуку"
+
+#: base/includes/welcome.php:64 base/classes/WPGM_templates.php:79
+msgid "What search term did you use?"
+msgstr "Який пошуковий запит Ви використовували?"
+
+#: base/includes/welcome.php:63 base/classes/WPGM_templates.php:78
+msgid "WordPress.org plugin repository"
+msgstr "WordPress.org репозиторій плагіну"
+
+#: base/includes/welcome.php:56 base/classes/WPGM_templates.php:71
+msgid "How did you find out about us?"
+msgstr "Як Ви дізналися про нас?"
+
+#: base/classes/WPGM_templates.php:56
+msgid "Create custom routes or outlines using polylines"
+msgstr "Створюйте власні маршрути або обриси, використовуючи ламані лінії"
+
+#: wpGoogleMaps.php:6148 wpGoogleMaps.php:6287 base/includes/welcome.php:39
+#: base/classes/WPGM_templates.php:55
+msgid "Polylines"
+msgstr "Ламані лінії"
+
+#: base/classes/WPGM_templates.php:51
+msgid "Create service areas or coverage maps with polygons"
+msgstr "Створіть сервісні зони або карти покриття, використовуючи багатокутники"
+
+#: wpGoogleMaps.php:6282 base/includes/welcome.php:39
+#: base/classes/WPGM_templates.php:50
+msgid "Polygons"
+msgstr "Багатокутники"
+
+#: base/includes/welcome.php:28 base/classes/WPGM_templates.php:46
+msgid "Let users search for products, branches and stores near them"
+msgstr "Дозвольте користувачам шукати продукти, філії та магазини поблизу них"
+
+#: wpGoogleMaps.php:4636 wpGoogleMaps.php:4924 wpGoogleMaps.php:5454
+#: base/includes/welcome.php:27 base/classes/WPGM_templates.php:45
+msgid "Store Locator"
+msgstr "Магазин Локатору"
+
+#: base/classes/WPGM_templates.php:41
+msgid "What's new?"
+msgstr "Що нового?"
+
+#: base/classes/WPGM_templates.php:39
+msgid "Amazing maps. Simple interface. Powerful functionality. World Class Support."
+msgstr "Чудові мапи. Простий інтерфейс. Потужна функціональність. Підтримка світового рівня."
+
+#: base/classes/WPGM_templates.php:37
+msgid "Welcome to"
+msgstr "Ласкаво просимо до"

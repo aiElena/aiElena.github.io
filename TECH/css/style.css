@@ -85,6 +85,10 @@ p{
 	text-transform: uppercase;
 	text-decoration: none;
 }
+
+
+
+
 .menu__icon{
    display: none;
    width: 45px;
@@ -141,6 +145,8 @@ p{
   width: 0%;
   left: 50%;
 }
+
+
 .menu.menu_state_open .menu__links{
   opacity: 1;  
 }

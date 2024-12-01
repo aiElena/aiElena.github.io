@@ -1,0 +1,495 @@
+html,body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	margin: 0;
+	color: #111111;
+	min-width: 320px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 70px;
+	white-space: pre-line;
+}
+h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 55px;
+	letter-spacing: -0.03em;
+	white-space: pre-line;
+}
+h3 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.05em;
+	white-space: pre-line;
+}
+p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.01em;
+}
+p.small {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: -0.01em;
+}
+span.italic {
+	font-style: italic;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Nav */
+
+nav.navbar {
+	max-width: 1262px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff!important;
+}
+.navbar-collapse {
+	flex-grow: 0;
+}
+.navbar-collapse ul li a {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.01em;
+	color: #111111;	
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+.custom-caret {
+  display: inline-block;
+}
+.custom-caret svg{
+  vertical-align: baseline;
+}
+
+/*  section hero-section  */
+
+.container-fluid{
+	padding: 0;
+}
+.hero-section {
+	background-color: #dcc1ab;
+}
+.jumbotron {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	max-width: 596px;
+	margin: auto 0;
+}
+
+.btn-kontakt,
+.btn-realizacje {
+	padding: 12px 24px 14px;
+	border: 1px solid #1b5b31;
+	border-radius: 200px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	
+}
+.btn-kontakt {
+	color: #f5f0ec;
+	background-color: #1b5b31;
+}
+
+.btn-kontakt:hover,
+.btn-kontakt:focus,
+.btn1-kontakt:visited{
+	background-color: transparent;
+	border: 1px solid #1b5b31!important;
+	color: #1b5b31!important;
+}
+.btn-realizacje {
+	color: #1b5b31;
+	background-color: transparent;
+}
+.btn-realizacje:hover,
+.btn-realizacje:focus,
+.btn1-realizacje:visited{
+	background-color: #1b5b31!important;
+	border: 1px solid #1b5b31!important;
+	color: #f5f0ec!important;
+}
+.btn-realizacje span {
+	font-size: 22px;
+	vertical-align: text-top;
+}
+
+/*  carousel slide */
+
+.carousel {
+	position: relative;
+}
+
+/*  section oferta  */
+ 
+section.oferta {
+	padding: 120px 0 160px 0;
+	background: #f5f0ec;
+}
+.oferta-info {
+	max-width: 1040px;
+}
+section.oferta p.small {
+	color: #1b5b31;
+}
+section.oferta p.oferta-txt {
+	padding-bottom: 80px;
+	max-width: 72%;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 48px 40px;
+	max-width: 378px;
+	background: #ffffff;
+	border: 1px solid #fff;
+	border-radius: 28px;
+}
+
+.card-icon {
+	width: 44px;
+	height: 44px;
+	margin-bottom: 32px;
+}
+.card-body {
+	padding: 0;
+	margin-bottom: 15px;
+}
+.card-txt {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.01em;
+	padding-bottom: 10px;
+	
+}
+.card-footer {
+	padding: 0;
+	border-bottom: 1px solid #1b5b31;
+}
+.card-footer:last-child {
+	border-radius: 0;
+}
+.card-footer {
+	background: #ffffff;
+	border-top: none;
+}
+.card-btn {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #1b5b31;
+	padding-left: 0;
+}
+a.card-btn {
+	text-decoration: none;
+}
+a.card-btn:hover {
+	color: #1b5b31;
+}
+/* Realizacje-block */
+section.realizacje {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 120px 0px 0 0;
+	background-color: #dcc1ab;	
+}
+.realizacje-info {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	max-width: 1040px;
+	margin: 0 auto 96px;
+	padding: 0 110px;
+}
+.photo-img {
+	padding: 0;
+}
+section.realizacje p.small {
+	color: #1b5b31;
+}
+/* firmie  */
+
+.firmie {
+	background-color: #1b5b31;
+	padding: 0;
+}
+.firmie-info {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	max-width: 596px;
+	margin: auto 0;
+}
+.firmie p.small,
+.firmie h2,
+.firmie p.firmie-txt {
+	color: #f5f0ec;
+}
+.firmie h2 {
+	margin-bottom: 45px;
+}
+.firmie p.firmie-txt {
+	margin-bottom: 40px;
+}
+.firmie-btn {
+	border: 1px solid #f5f0ec;
+	border-radius: 200px;
+	padding: 12px 22px 14px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #f5f0ec;
+}
+a.firmie-btn {
+	text-decoration: none;
+	color: #f5f0ec;
+}
+.firmie-info .arrow-circle {
+    color: #f5f0ec;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+}
+.firmie-info .arrow-circle:hover,
+.firmie-info .arrow-circle:focus,
+.firmie-info .arrow-circle:visited {
+    color: #f5f0ec;
+}
+
+/*--------instagram------*/
+
+section.instagram {
+	padding: 60px 0;
+	background-color: #f5f0ec;
+	/*background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);*/
+}
+section.instagram .kontakt {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	max-width: 1040px;
+	background-color: #1b5b31;
+	margin: auto;
+	padding: 120px 110px;
+}
+section.instagram .kontakt h3,
+section.instagram .kontakt p {
+	color: #f5f0ec;
+}
+section.instagram .kontakt h3 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -2px;
+	color: #f5f0ec;	
+}
+section.instagram .kontakt p {
+	margin-bottom: 24px;
+	white-space: pre-line;
+}
+section.instagram .inst-btn {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #f5f0ec;
+	color: #1b5b31;
+	border: 1px solid #1b5b31;
+	border-radius: 200px;
+	padding: 10px 24px 12px 24px;
+}
+section.instagram .inst-btn:hover,
+section.instagram .inst-btn:focus {
+	background-color: #1b5b31;
+	color: #f5f0ec;
+	border: 1px solid #f5f0ec;
+}
+
+a.inst-btn {
+	text-decoration: none;
+}
+/*-------arrow-up------------*/
+footer#footer {
+	position: relative;
+	
+}
+#go-top {
+  position: fixed; 
+  bottom: 2%; 
+  right: 23%;
+  text-align: center;
+  cursor:pointer; 
+  display:none;
+}
+.arrow-up {
+    margin: 30px;
+}
+.arrow-up span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #1b5b31;
+    border-right: 5px solid #1b5b31;
+    transform: rotate(-135deg);
+    margin: -16px;
+    animation: arrow-up 2s infinite;
+}
+.arrow-up span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-up span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-up {
+    0%{
+        opacity: 0;
+        transform: rotate(-135deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(-135deg) translate(20px,20px);
+    }
+}
+/*---------------*/
+.arrow-circle {
+    color: #1b5b31;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+}
+
+.arrow-circle .arrow-circle-icon {
+    position: relative;
+	color: #1b5b31;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+.arrow-circle .arrow-circle-iconcircle {
+    transition: stroke-dashoffset .3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+.arrow-circle:hover .arrow-circle-icon {
+    transform: translate3d(5px, 0, 0);
+}
+.arrow-circle:hover .arrow-circle-iconcircle {
+    stroke-dashoffset: 0;
+}
+/*--------masonry----------*/
+/* Контейнер блоков Masonry */
+.masonry {
+	column-count: 3; 
+	column-gap: 44px; 
+	-webkit-column-count: 3; -moz-column-count: 3; column-count: 3;
+	-webkit-column-gap: 44px; -moz-column-gap: 44px; column-gap: 44px;
+	background-color: #dcc1ab;
+	padding: 96px 0 44px;
+}
+/* Блоки Masonry */
+.masonry .item {
+	display: inline-block; 
+	width: 100%;           
+	margin-bottom: 1em;
+}
+/*  footer  */
+#footer {
+	background-color: #111111;
+	color: #f5f0ec;
+}
+.footer {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	max-width: 1040px;
+	background-color: #111111;
+	margin: auto;
+	padding: 120px 110px;
+				border: 2px solid #ff0000;
+}
+section.instagram .kontakt {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	max-width: 1040px;
+	background-color: #1b5b31;
+	margin: auto;
+	/*padding: 120px 110px;*/
+}
+.logo-footer {
+	width: 114px;
+}
+.line {
+	max-width: 1040px;
+	height: 0px;
+	border: 1px solid #f5f0ec;
+}
+
+
+
+
+
+
+
+
+
+

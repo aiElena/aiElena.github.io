@@ -1,0 +1,1 @@
+$('#lightSlider').lightSlider({gallery:true,item:1,loop:true,vertical:true,verticalHeight:295,vThumbWidth:50,thumbItem:8,slideMargin:0,thumbItem:5,vThumbWidth:150});

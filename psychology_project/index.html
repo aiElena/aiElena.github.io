@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание вашего сайта">
+    <title>Главная страница</title>
+	<link rel="icon" href="img/favicons/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+<body class="body">
+
+    <!-- Шапка сайта -->
+    <header class="header" id="top">
+		<div class="header__container-top">
+			<div class="top__info">
+				<p><i class="fa fa-home" aria-hidden="true"></i>Лично в Харькове и онлайн по всему миру</p>
+			</div>
+			<div class="top__time">
+				<p><i class="fa fa-clock-o" aria-hidden="true"></i>Часы работы с 10.00 до 22.00</p>
+			</div>
+			<div class="top__tel">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<a href=”tel:+380441234567”>+38 (044) 123-45-67</a>
+			</div>
+			<div class="top__btn">
+				<button type="button" class="open-modal">Записаться на консультацию</button>
+			</div>			
+		</div>
+        <div class="header__container">
+			<a href="#" class="header__logo">
+				<img src="img/logo.png" alt="Логотип" class="header__logo-image">
+			</a>
+            <nav class="header__nav nav">
+						
+				<div class="menuToggle menu__icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>			
+				</div>
+			
+                <ul class="nav__list clearfix">
+                    <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+			<nav class="header__nav-lang nav">
+				<ul class="nav__lang">
+					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>
+					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"><img src="img/uk.jpg" alt="ukflag" width="35px"></button></li>
+				</ul>
+			</nav>
+			<nav class="header__nav-login nav">
+				<ul class="nav__login">
+					<li class="nav__item-login"><a href="#" id="openModal">Войти</a></li>
+					<li class="nav__item-login"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
+				</ul>
+			</nav>			
+        </div>
+    </header>
+
+
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2>Вход на сайт</h2>
+            <form id="loginForm" class="form">
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" placeholder="Введите вашу почту" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" placeholder="Введите ваш пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+            <div id="loginMessage" style="display: none;"></div>
+        </div>
+    </div>
+	
+	
+	
+    <!-- Модальное окно-register -->
+    <div id="modal__register" class="modal__register">
+        <div class="modal__register-content">
+            <span class="close__register-btn" id="closeModalRegisterBtn">&times;</span>
+            <h2>Записаться на консультацию</h2>
+			<form class="appointment-form" action="/submit-form" method="POST">
+				<h2>Записаться на консультацию</h2>				
+				<!-- Имя -->
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="registration-name" name="name" placeholder="Введите ваше имя" required>
+				
+				<!-- Электронная почта -->
+				<label for="email">Электронная почта:</label>
+				<input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+				
+				<!-- Телефон -->
+				<label for="phone">Телефон:</label>
+				<input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+	
+				<!-- Дата и время -->
+				<label for="date">Выберите дату:</label>
+				<input type="date" id="date" name="date" required>
+				
+				<label for="time">Выберите время:</label>
+				<input type="time" id="time" name="time" required>
+				
+				<!-- Сообщение -->
+				<label for="message">Ваши пожелания или вопросы:</label>
+				<textarea id="message" name="message" rows="4" placeholder="Напишите ваши пожелания или вопросы"></textarea>
+				
+				<!-- Кнопка отправки -->
+				<button type="submit" class="appointment-button">Записаться</button>
+			</form>	
+        </div>
+    </div>	
+	
+	
+
+    <!-- Основной контент -->
+    <main class="main">
+        <section class="intro">
+            <div class="intro__container">
+                <h1 class="intro__title">Добро пожаловать!</h1>
+				<div class="intro__container-info">
+					<div class="intro__container-img">
+						<img src="img/pict.png" alt="pict" class="blog__item-image">
+					</div>
+					<div class="intro__container-txt">
+						<p class="intro__description">Здесь вы найдете поддержку, понимание и профессиональную помощь в решении жизненных сложностей. Наш сайт создан для того, чтобы помочь вам лучше понять себя, справиться с тревогой, стрессом, эмоциональными трудностями и обрести внутреннюю гармонию.</p>
+
+						<p class="intro__description">Мы предлагаем индивидуальные консультации, полезные статьи и ресурсы для личностного роста. Независимо от того, на каком этапе жизненного пути вы находитесь, здесь вы всегда найдете пространство для душевного комфорта и развития.</p>
+
+						<p class="intro__description">Ваше благополучие — наша главная цель!</p>
+						
+						<h3>Расписание консультаций и групповых занятий</h3>
+						<p class="intro__description">Запись на индивидуальные консультации по телефону</p>
+						<a href=”tel:+380441234567”>+38 (044) 123-45-67</a>
+						<p class="intro__description">По вопросам лекций и с предложениями обращаться по адресу</p>
+						<a href="mailto:mail@example.com">test@test.ua</a>
+						<div class="intro__container-btn">
+							<a href="#price__consultation" class="intro__button button">Узнать больше</a>
+						</div>
+					</div>
+					<div class="socialbar">
+						<div class="icon facebook"><a href="#"></a></div>
+						<div class="icon instagram"><a href="#"></a></div>
+						<div class="icon tiktok"><a href="#"></a></div>
+						<div class="icon youtube"><a href="#"></a></div>
+						<div class="icon telegram"><a href="#"></a></div>
+					</div>					
+				</div>
+            </div>
+        </section>
+        <section id="oferty" class="oferty">
+                <h2 class="oferty__title">Наши преимущества</h2>
+				<div class="oferty__list">
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Опытные специалисты</div>
+						<div class="oferty__item-txt">
+							<p>Наша команда состоит из высококвалифицированных психологов с многолетним опытом работы в различных направлениях психологии.</p>
+						</div>
+					</div>
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Индивидуальный подход</div>
+						<div class="oferty__item-txt">
+							<p>Мы учитываем уникальные потребности каждого клиента, создавая персонализированные программы консультаций и терапии.</p>
+						</div>
+					</div>
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Конфиденциальность и доверие</div>
+						<div class="oferty__item-txt">
+							<p>Мы строго соблюдаем принцип конфиденциальности, создавая безопасную атмосферу для открытого общения.</p>
+						</div>
+					</div>
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Современные методы и подходы</div>
+						<div class="oferty__item-txt">
+							<p>Мы применяем только научно обоснованные и актуальные методы работы, адаптированные под ваши цели и задачи.</p>
+						</div>
+					</div>
+			
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Удобство и доступность</div>
+						<div class="oferty__item-txt">
+							<p>Предлагаем очные консультации в уютной обстановке или удобный формат онлайн-встреч из любой точки мира.</p>
+						</div>
+					</div>
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Быстрая запись и гибкий график</div>
+						<div class="oferty__item-txt">
+							<p>Мы ценим ваше время и готовы подобрать удобное для вас время встречи.</p>
+						</div>
+					</div>
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Широкий спектр услуг</div>
+						<div class="oferty__item-txt">
+							<p>Психологическая помощь для взрослых, подростков и детей, работа с семьями, парами и группами.</p>
+						</div>
+					</div>
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Положительные отзывы</div>
+						<div class="oferty__item-txt">
+							<p>Нам доверяют клиенты, что подтверждают многочисленные благодарности и успешные истории.</p>
+						</div>
+					</div>
+
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Доступные цены</div>
+						<div class="oferty__item-txt">
+							<p>Мы предлагаем качественную психологическую помощь по разумной стоимости.</p>
+						</div>
+					</div>
+                    <div class="oferty__item">
+						<div class="oferty__item-title">Поддержка на каждом этапе</div>
+						<div class="oferty__item-txt">
+							<p>Мы сопровождаем вас на пути к гармонии и душевному равновесию, поддерживая и вдохновляя на позитивные изменения.</p>
+						</div>
+					</div>				
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <div class="blog__container">
+                <h2 class="blog__title">Популярные статьи</h2>
+                <div class="blog__list">
+                    <div class="blog__item">
+						<a href="blog__item1.html" class="blog__item-img">
+							<img src="img/pict1.jpg" alt="pict" class="blog__item-image">
+						</a>	
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Заголовок1</span>
+                        </div>								
+					</div>			
+                    <div class="blog__item">
+						<a href="blog__item2.html" class="blog__item-img">
+							<img src="img/pict2.jpg" alt="pict" class="blog__item-image">
+						</a>
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Что такое чувство вины и какие могут быть последствия</span>
+                        </div>							
+					</div>
+                    <div class="blog__item">
+						<a href="blog__item3.html" class="blog__item-img">
+							<img src="img/pict3.jpg" alt="pict" class="blog__item-image">
+						</a>
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Что такое пассивная агрессия, как ее распознать и что с ней делать</span>
+                        </div>							
+					</div>
+                    <div class="blog__item">
+						<a href="blog__item4.html" class="blog__item-img">
+							<img src="img/pict4.jpg" alt="pict" class="blog__item-image">
+						</a>
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Иногда хорошо сказать НЕТ!</span>
+                        </div>							
+					</div>
+                    <div class="blog__item">
+						<a href="blog__item5.html" class="blog__item-img">
+							<img src="img/pict5.jpg" alt="pict" class="blog__item-image">
+						</a>
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Заголовок</span>
+                        </div>							
+					</div>
+                    <div class="blog__item">
+						<a href="blog__item6.html" class="blog__item-img">
+							<img src="img/pict6.jpg" alt="pict" class="blog__item-image">
+						</a>
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Заголовок</span>
+                        </div>							
+					</div>				
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq">
+            <div class="faq__container">
+                <h2 class="faq__title">Часто задаваемые вопросы</h2>
+                <div class="faq__list">
+                    <div class="faq__item">
+						<div class="faq__item_faqAsk">
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							<h3>Что такое психологическая консультация и как она проходит?</h3>
+						</div>
+						<div class="faq__item_faqAnswer">
+							<p>Психологическая консультация — это встреча с профессиональным психологом для обсуждения ваших вопросов, переживаний или сложностей. На консультации вы сможете в безопасной и доверительной атмосфере выразить свои чувства и получить поддержку. Обычно встреча длится 50–60 минут и может проходить очно или онлайн.</p>
+						</div>					
+					</div>
+                    <div class="faq__item">
+						<div class="faq__item_faqAsk">
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							<h3>С какими проблемами вы работаете?</h3>
+						</div>
+						<div class="faq__item_faqAnswer">
+							<p>Я помогаю клиентам справляться с такими проблемами, как тревожность, стресс, выгорание, низкая самооценка, конфликты в отношениях, трудности с принятием решений и многие другие вопросы, связанные с личным развитием и эмоциональным состоянием.</p>
+						</div>					
+					</div>
+                    <div class="faq__item">
+						<div class="faq__item_faqAsk">
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							<h3>Нужно ли готовиться к первой консультации?</h3>
+						</div>
+						<div class="faq__item_faqAnswer">
+							<p>Специальной подготовки не требуется. Однако, если вы хотите, вы можете заранее подумать о том, какие вопросы или ситуации вы хотите обсудить, а также записать основные моменты, которые кажутся важными. Это поможет вам почувствовать себя более уверенно на встрече.</p>
+						</div>					
+					</div>
+					<div class="faq__item">
+						<div class="faq__item_faqAsk">
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							<h3>Конфиденциальна ли информация, обсуждаемая на консультации?</h3>
+						</div>
+						<div class="faq__item_faqAnswer">
+							<p>Да, абсолютно. Всё, что вы делитесь с психологом, остаётся между вами. Конфиденциальность является основным принципом работы психолога, за исключением ситуаций, предусмотренных законодательством (например, если есть угроза жизни и здоровью).</p>
+						</div>					
+					</div>
+                    <div class="faq__item">
+						<div class="faq__item_faqAsk">
+							<i class="fa fa-chevron-down" aria-hidden="true"></i>
+							<h3>Как понять, что мне нужна помощь психолога?</h3>
+						</div>
+						<div class="faq__item_faqAnswer">
+							<p>Если вы чувствуете, что ваши эмоции, мысли или переживания мешают вам жить полноценно, справляться с повседневными задачами или вы ощущаете постоянную усталость и апатию, консультация психолога может помочь. Психологическое здоровье важно так же, как и физическое, и своевременная помощь позволяет справиться с трудностями быстрее и эффективнее.</p>
+						</div>					
+					</div>					
+                </div>
+            </div>
+        </section>
+		<section id="price__consultation" class="price__consultation">
+			<h2>Стоимость консультации психолога</h2>
+			<div class="price__info">
+				<div class="price__item">
+					<div class="price__item-title">Первая консультация</div>
+					<div class="price__item-txt">
+						<p><span>100грн</span></p>
+						<p>Знакомимся</p>
+						<p>Намечаем план работы</p>
+						<p>Составляем график</p>
+					</div>
+					<button type="button" class="price__btn open-modal">Записаться</button>
+				</div>
+				<div class="price__item">
+					<div class="price__item-title">Разовая консультация</div>
+					<div class="price__item-txt">
+						<p><span>100грн</span></p>
+					</div>
+					<button type="button" class="price__btn open-modal">Записаться</button>
+				</div>
+				<div class="price__item">
+					<div class="price__item-title">Абонемент на 4 консультации</div>
+					<div class="price__item-txt">
+						<p><span>100грн</span></p>
+					</div>
+					<button type="button" class="price__btn open-modal">Записаться</button>
+				</div>				
+			</div>
+		</section>
+
+		<section id="about" class="about">	
+			<h2>О нас говорят</h2>
+			<div class="carousel-container">
+				<!-- Карусель -->
+				<div class="carousel">
+					<div class="carousel-item">
+						<p>"Отличная консультация! Очень помогло."</p>
+						<p>- Алексей</p>
+						<div class="stars" data-rating="5"></div>
+					</div>
+					<div class="carousel-item">
+						<p>"Очень профессионально и полезно. Рекомендую!"</p>
+						<p>- Марина</p>
+						<div class="stars" data-rating="4"></div>
+					</div>
+					<div class="carousel-item">
+						<p>"Сеанс был очень продуктивным. Благодарю!"</p>
+						<p>- Сергей</p>
+						<div class="stars" data-rating="5"></div>
+					</div>
+				</div>
+			</div>
+			<!-- Форма для добавления нового отзыва -->
+			<form id="review-form">
+			<h3>Оставьте ваш отзыв</h3>
+				<label for="name">Имя:</label>
+				<input type="text" id="name" name="name" placeholder="Ваше имя" required>
+				<label for="review">Отзыв:</label>
+				<textarea id="review" name="review" placeholder="Ваш отзыв" required></textarea>
+				<label>Рейтинг:</label>
+				<div id="rating-container" class="rating">
+					<span data-value="1">★</span>
+					<span data-value="2">★</span>
+					<span data-value="3">★</span>
+					<span data-value="4">★</span>
+					<span data-value="5">★</span>
+				</div>
+				<input type="hidden" id="rating" name="rating" required>
+				<button type="submit">Отправить отзыв</button>
+			</form>
+		</section>
+		
+    </main>
+	
+	<div>
+	<a id="go_top" title="Вверх" stile="display: inline;"></a>	
+	</div>
+	
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">© 2024 Все права защищены</p>
+            <nav class="footer__nav footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Подключение JS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

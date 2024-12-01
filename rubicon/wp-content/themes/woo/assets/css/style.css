@@ -1,0 +1,33 @@
+/*otet*/
+li {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+
+
+.card {
+    box-shadow: none;
+}
+/*----footer*/
+#footer-top-menu-objects {
+    border-bottom: 1px solid #5e666f;
+    margin: 30px 0;
+}
+.footer-block {
+text-align: center;    
+    
+}
+.footer-block-img i{
+    /*margin: 0 auto;*/
+    color: #007bff;
+}
+.menu-footer_offices-container {
+    text-align: left;
+}
+#footer-bottom .container .copyright a{
+    color: #7c8ca0;
+    font-size: 12px;
+    padding-top: 25px;
+    padding-left: 5px;
+}

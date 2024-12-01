@@ -1,0 +1,160 @@
+# Translation of Plugins - Custom Taxonomy Order - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Custom Taxonomy Order - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-24 14:18:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Custom Taxonomy Order - Stable (latest release)\n"
+
+#: taxonomies.php:73
+msgid "No taxonomies found"
+msgstr "Таксономий не найдено"
+
+#: admin-customtaxorder.php:60 taxonomies.php:20 taxonomies.php:49
+msgid "Order Taxonomies"
+msgstr "Порядок таксономий"
+
+#: admin-customtaxorder.php:58
+msgid "Term Order"
+msgstr "Сортировка Рубрик"
+
+#: page-customtaxorder.php:132 admin-customtaxorder.php:65
+msgid "Order "
+msgstr "Сортировать "
+
+#: page-customtaxorder.php:94
+msgid "Order by ID (default)."
+msgstr "По ID (по умолчанию)."
+
+#: page-customtaxorder.php:96
+msgid "Custom Order as defined above."
+msgstr "Уникальный порядок, как отсортировано выше."
+
+#: taxonomies.php:50
+msgid "Order the taxonomies by dragging and dropping them into the desired order."
+msgstr "Отсортируйте рубрики перетаскивая и устанавливая их в необходимом порядке."
+
+#: page-customtaxorder.php:162
+msgid "Return to Parent"
+msgstr "Вернуться к родителю"
+
+#: page-customtaxorder.php:167 taxonomies.php:64
+msgid "Update Order"
+msgstr "Сохранить порядок"
+
+#: page-customtaxorder.php:168
+msgid "Sort Alphabetical"
+msgstr "Сортировать по алфавиту"
+
+#: page-customtaxorder.php:182
+msgid "Sub-"
+msgstr "Вложенные "
+
+#: page-customtaxorder.php:182
+msgid "Choose a term from the drop down to order its sub-terms."
+msgstr "Выбрать рубрику из выпадающего меню для сортировки вложенных рубрик."
+
+#: page-customtaxorder.php:187
+msgid "Order Sub-terms"
+msgstr "Сортировать Вложенные рубрики"
+
+#: page-customtaxorder.php:193
+msgid "No terms found"
+msgstr "Рубрики не найдены"
+
+#: page-customtaxorder.php:203
+msgid "Auto-Sort Queries of this Taxonomy"
+msgstr "Как сортировать эти рубрики?"
+
+#: page-customtaxorder.php:211
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: page-customtaxorder.php:270 taxonomies.php:104
+msgid "Order updated successfully."
+msgstr "Порядок сохранен."
+
+#: page-customtaxorder.php:273 taxonomies.php:106
+msgid "An error occured, order has not been saved."
+msgstr "Ошибка, порядок не сохранен."
+
+#: page-customtaxorder.php:200 admin-customtaxorder.php:297
+msgid "Settings"
+msgstr "Настройки"
+
+#. Author of the plugin
+msgid "Marcel Pol"
+msgstr "Marcel Pol"
+
+#: admin-customtaxorder.php:67
+msgid "About"
+msgstr "Про плагин"
+
+#: page-customtaxorder.php:75 page-customtaxorder.php:77
+msgid "Taxonomies"
+msgstr "Таксономии"
+
+#: admin-customtaxorder.php:276
+msgid "The plugin page at wordpress.org."
+msgstr "Страница плагина на wordpress.org."
+
+#: admin-customtaxorder.php:282
+msgid "PayPal"
+msgstr "PayPal"
+
+#: admin-customtaxorder.php:266
+msgid "About Custom Taxonomy Order NE"
+msgstr "О Custom Taxonomy Order NE"
+
+#: admin-customtaxorder.php:269
+msgid "About this plugin."
+msgstr "О плагине."
+
+#: admin-customtaxorder.php:270
+msgid "This plugin is being maintained by Marcel Pol from"
+msgstr "Этот плагин поддерживает Marcel Pol из"
+
+#: admin-customtaxorder.php:274
+msgid "Review this plugin."
+msgstr "Оставить отзыв о плагине."
+
+#: admin-customtaxorder.php:275
+msgid "If this plugin has any value to you, then please leave a review at"
+msgstr "Если вам понравился данный плагин, то, пожалуйста, оставьте свой отзыв на"
+
+#: admin-customtaxorder.php:277
+msgid "the plugin page at wordpress.org"
+msgstr "странице плагина на wordpress.org"
+
+#: admin-customtaxorder.php:280 admin-customtaxorder.php:282
+msgid "Donate to the maintainer."
+msgstr "Поддержать разработчика."
+
+#: admin-customtaxorder.php:282
+msgid "Donate through"
+msgstr "Пожертвовать через"
+
+#: admin-customtaxorder.php:283
+msgid "to"
+msgstr "для"
+
+#: page-customtaxorder.php:72
+msgid "The ordering of categories and custom taxonomy terms through a simple drag-and-drop interface."
+msgstr "Сортировка категорий и терминов таксономий, с помощью простого интерфейса путем перетаскивания."
+
+#. Description of the plugin
+msgid "Allows for the ordering of categories and custom taxonomy terms through a simple drag-and-drop interface."
+msgstr "Позволяет вам отсортировать категории и термины таксономий, с помощью простого интерфейса путем перетаскивания."
+
+#: admin-customtaxorder.php:281
+msgid "If you want to donate to the maintainer of the plugin, you can donate through PayPal."
+msgstr "Если вы хотите поддержать разработчика плагина, вы можете сделать это через PayPal."
+
+#: page-customtaxorder.php:45 page-customtaxorder.php:66 taxonomies.php:10
+msgid "Cheatin&#8217; uh?"
+msgstr "Эй! Жульничаем?!"

@@ -1,0 +1,458 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Lightbox\n"
+"POT-Creation-Date: 2018-12-14 14:34-0500\n"
+"PO-Revision-Date: 2018-12-14 14:35-0500\n"
+"Last-Translator: \n"
+"Language-Team: Etoile Web Design\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Functions/EWD_ULB_Add_Attachment_Options.php:15
+msgid "Remove Pairing"
+msgstr ""
+
+#: Functions/EWD_ULB_Add_Attachment_Options.php:20
+msgid "Lightbox?"
+msgstr ""
+
+#: Functions/EWD_ULB_Add_Attachment_Options.php:28
+msgid "Curtain Slide Paired Image?"
+msgstr ""
+
+#: Functions/EWD_ULB_Add_Attachment_Options.php:30
+msgid "Select Pair"
+msgstr ""
+
+#: Functions/EWD_ULB_Deactivation_Survey.php:41
+msgid "Quick Feedback"
+msgstr ""
+
+#: Functions/EWD_ULB_Deactivation_Survey.php:42
+msgid ""
+"If you have a moment, please share why you are deactivating Ultimate "
+"Lightbox:"
+msgstr ""
+
+#: Functions/EWD_ULB_Deactivation_Survey.php:57
+msgid "Submit and Deactivate"
+msgstr ""
+
+#: Functions/EWD_ULB_Deactivation_Survey.php:58
+msgid "Skip and Deactivate"
+msgstr ""
+
+#: Functions/Update_EWD_ULB_Admin_Databases.php:73
+msgid "Options have been succesfully updated."
+msgstr ""
+
+#: Functions/Update_EWD_ULB_Content.php:11
+msgid "The form has not worked correctly. Please contact the plugin developer."
+msgstr ""
+
+#: html/AdminHeader.php:2
+msgid "Ultimate Lightbox Plugin"
+msgstr ""
+
+#: html/OptionsPage.php:71
+msgid "Basic"
+msgstr ""
+
+#: html/OptionsPage.php:72
+msgid "Premium"
+msgstr ""
+
+#: html/OptionsPage.php:73
+msgid "WooCommerce"
+msgstr ""
+
+#: html/OptionsPage.php:74
+msgid "Controls"
+msgstr ""
+
+#: html/OptionsPage.php:75 html/OptionsPage.php:631 html/OptionsPage.php:795
+msgid "Icons"
+msgstr ""
+
+#: html/OptionsPage.php:76
+msgid "Styling"
+msgstr ""
+
+#: html/OptionsPage.php:87
+msgid "Basic Options"
+msgstr ""
+
+#: html/OptionsPage.php:91
+msgid "Add Lightbox Options"
+msgstr ""
+
+#: html/OptionsPage.php:97
+msgid "Use this section to choose which images have lightboxes."
+msgstr ""
+
+#: html/OptionsPage.php:101
+msgid "All Images"
+msgstr ""
+
+#: html/OptionsPage.php:102
+msgid "All WordPress Galleries"
+msgstr ""
+
+#: html/OptionsPage.php:103
+msgid "All YouTube Videos"
+msgstr ""
+
+#: html/OptionsPage.php:104
+msgid "WooCommerce Product Page Images"
+msgstr ""
+
+#: html/OptionsPage.php:105
+msgid "Images with the Class: "
+msgstr ""
+
+#: html/OptionsPage.php:106
+msgid ""
+"Can be a comma-separated list of classes to apply the lightbox to, with no "
+"extra spaces between the elements."
+msgstr ""
+
+#: html/OptionsPage.php:107
+msgid "Images with the Following CSS Selectors: "
+msgstr ""
+
+#: html/OptionsPage.php:108
+msgid ""
+"Can be a comma-separated list of CSS selectors to apply the lightbox to, "
+"with no extra spaces between the elements."
+msgstr ""
+
+#: html/OptionsPage.php:116
+msgid "Settings"
+msgstr ""
+
+#: html/OptionsPage.php:129
+msgid "Close on Background Click"
+msgstr ""
+
+#: html/OptionsPage.php:133 html/OptionsPage.php:160 html/OptionsPage.php:176
+#: html/OptionsPage.php:296 html/OptionsPage.php:400 html/OptionsPage.php:433
+#: html/OptionsPage.php:454
+msgid "Yes"
+msgstr ""
+
+#: html/OptionsPage.php:134 html/OptionsPage.php:161 html/OptionsPage.php:177
+#: html/OptionsPage.php:297 html/OptionsPage.php:401 html/OptionsPage.php:434
+#: html/OptionsPage.php:455
+msgid "No"
+msgstr ""
+
+#: html/OptionsPage.php:140
+msgid "Should the lightbox close when the background is clicked?"
+msgstr ""
+
+#: html/OptionsPage.php:145
+msgid "Show Thumbnail Images"
+msgstr ""
+
+#: html/OptionsPage.php:148
+msgid "Top"
+msgstr ""
+
+#: html/OptionsPage.php:149
+msgid "Bottom"
+msgstr ""
+
+#: html/OptionsPage.php:150
+msgid "None"
+msgstr ""
+
+#: html/OptionsPage.php:151
+msgid "Should thumbnails of other images in a specific gallery be shown?"
+msgstr ""
+
+#: html/OptionsPage.php:156
+msgid "Show Overlay Text"
+msgstr ""
+
+#: html/OptionsPage.php:167
+msgid "Should the text overlay show for images in the lightbox?"
+msgstr ""
+
+#: html/OptionsPage.php:172
+msgid "Start Autoplay on Opening"
+msgstr ""
+
+#: html/OptionsPage.php:183
+msgid "Should autoplay start automatically when a gallery is opened?"
+msgstr ""
+
+#: html/OptionsPage.php:188
+msgid "Autoplay Interval (milliseconds)"
+msgstr ""
+
+#: html/OptionsPage.php:192
+msgid ""
+"How long should there be between transitions when autoplay is enabled? "
+"(Should be greater than 0)"
+msgstr ""
+
+#: html/OptionsPage.php:197
+msgid "Minimum Image Height"
+msgstr ""
+
+#: html/OptionsPage.php:201
+msgid ""
+"What is the minimum height an image should have to be eligible to be opened "
+"in a lightbox?"
+msgstr ""
+
+#: html/OptionsPage.php:206
+msgid "Minimum Image Width"
+msgstr ""
+
+#: html/OptionsPage.php:210
+msgid ""
+"What is the minimum width an image should have to be eligible to be opened "
+"in a lightbox?"
+msgstr ""
+
+#: html/OptionsPage.php:215
+msgid "Transition Type"
+msgstr ""
+
+#: html/OptionsPage.php:222
+msgid ""
+"Select the transition that happens when cycling through images in the "
+"lightbox."
+msgstr ""
+
+#: html/OptionsPage.php:234
+msgid "Premium Options"
+msgstr ""
+
+#: html/OptionsPage.php:292
+msgid "Gallery Loop"
+msgstr ""
+
+#: html/OptionsPage.php:303
+msgid ""
+"Should it be possible to navigate from the last element back to the first?"
+msgstr ""
+
+#: html/OptionsPage.php:376
+msgid "Hide Elements from Mobile View"
+msgstr ""
+
+#: html/OptionsPage.php:379 html/OptionsPage.php:443 html/OptionsPage.php:691
+msgid "Title"
+msgstr ""
+
+#: html/OptionsPage.php:380 html/OptionsPage.php:444 html/OptionsPage.php:717
+msgid "Description"
+msgstr ""
+
+#: html/OptionsPage.php:381 html/OptionsPage.php:445 html/OptionsPage.php:903
+#: html/OptionsPage.php:907
+msgid "Thumbnails"
+msgstr ""
+
+#: html/OptionsPage.php:386
+msgid "Overlay Text Source"
+msgstr ""
+
+#: html/OptionsPage.php:389
+msgid "Alt Text"
+msgstr ""
+
+#: html/OptionsPage.php:390
+msgid "Caption"
+msgstr ""
+
+#: html/OptionsPage.php:391
+msgid ""
+"Should the overlay text that shows on an image be pulled from the image alt "
+"text or the image caption?"
+msgstr ""
+
+#: html/OptionsPage.php:396
+msgid "Disable Other Lightboxes"
+msgstr ""
+
+#: html/OptionsPage.php:407
+msgid ""
+"Should other lightboxes be disabled? This option should only be used if "
+"there's no other way to disbale a hardcoded lightbox, and only works for a "
+"number of the most popular lightboxes."
+msgstr ""
+
+#: html/OptionsPage.php:430
+msgid "Open Products in Lightbox"
+msgstr ""
+
+#: html/OptionsPage.php:435
+msgid ""
+"Should products on the catalog page of WooCommerce open in a lightbox "
+"instead of going to the product page?"
+msgstr ""
+
+#: html/OptionsPage.php:440
+msgid "Product Information to Display"
+msgstr ""
+
+#: html/OptionsPage.php:446
+msgid ""
+"Should a link to the product page be added for WooCommerce products "
+"displayed in the lightbox?"
+msgstr ""
+
+#: html/OptionsPage.php:451
+msgid "Link to Product Page"
+msgstr ""
+
+#: html/OptionsPage.php:456
+msgid ""
+"Should a link to the product page be added for WooCommerce catalog products "
+"displayed in the lightbox?"
+msgstr ""
+
+#: html/OptionsPage.php:467
+msgid "Control Options"
+msgstr ""
+
+#: html/OptionsPage.php:491 html/OptionsPage.php:519 html/OptionsPage.php:547
+#: html/OptionsPage.php:575
+msgid "Remove"
+msgstr ""
+
+#: html/OptionsPage.php:492 html/OptionsPage.php:520 html/OptionsPage.php:548
+#: html/OptionsPage.php:576
+msgid "Add"
+msgstr ""
+
+#: html/OptionsPage.php:495
+msgid "What control options should be in the top right toolbar area?"
+msgstr ""
+
+#: html/OptionsPage.php:499
+msgid "Top Left Controls"
+msgstr ""
+
+#: html/OptionsPage.php:523
+msgid "What control options should be in the top left toolbar area?"
+msgstr ""
+
+#: html/OptionsPage.php:527
+msgid "Bottom Right Controls"
+msgstr ""
+
+#: html/OptionsPage.php:551
+msgid "What control options should be in the bottom right toolbar area?"
+msgstr ""
+
+#: html/OptionsPage.php:555
+msgid "Bottom Left Controls"
+msgstr ""
+
+#: html/OptionsPage.php:579
+msgid "What control options should be in the bottom left toolbar area?"
+msgstr ""
+
+#: html/OptionsPage.php:600
+msgid "Premium Icon Options"
+msgstr ""
+
+#: html/OptionsPage.php:604 html/OptionsPage.php:759
+msgid "Arrows"
+msgstr ""
+
+#: html/OptionsPage.php:687
+msgid "Title and Description"
+msgstr ""
+
+#: html/OptionsPage.php:694 html/OptionsPage.php:720 html/OptionsPage.php:798
+#: html/OptionsPage.php:834 html/OptionsPage.php:854 html/OptionsPage.php:874
+msgid "Color"
+msgstr ""
+
+#: html/OptionsPage.php:703 html/OptionsPage.php:729
+msgid "Font Family"
+msgstr ""
+
+#: html/OptionsPage.php:709 html/OptionsPage.php:735
+msgid "Font Size"
+msgstr ""
+
+#: html/OptionsPage.php:755
+msgid "Arrows and Icons"
+msgstr ""
+
+#: html/OptionsPage.php:762 html/OptionsPage.php:910
+msgid "Colors"
+msgstr ""
+
+#: html/OptionsPage.php:765 html/OptionsPage.php:877
+msgid "Arrow"
+msgstr ""
+
+#: html/OptionsPage.php:769 html/OptionsPage.php:831
+msgid "Background"
+msgstr ""
+
+#: html/OptionsPage.php:775
+msgid "Arrow Size (<span>in \"px\", \"em\", \"%\", etc.</span>)"
+msgstr ""
+
+#: html/OptionsPage.php:781
+msgid "Arrow Background Opacity (<span>e.g. \"0.4\"</span>)"
+msgstr ""
+
+#: html/OptionsPage.php:787
+msgid "Arrow Background Hover Opacity (<span>e.g. \"0.7\"</span>)"
+msgstr ""
+
+#: html/OptionsPage.php:807
+msgid "Size (<span>in \"px\", \"em\", \"%\", etc.</span>)"
+msgstr ""
+
+#: html/OptionsPage.php:827
+msgid "Background, Toolbars, Overlay"
+msgstr ""
+
+#: html/OptionsPage.php:843
+msgid "Opacity (<span>e.g. \"0.8\"</span>)"
+msgstr ""
+
+#: html/OptionsPage.php:851
+msgid "Toolbars"
+msgstr ""
+
+#: html/OptionsPage.php:863 html/OptionsPage.php:883
+msgid "Opacity (<span>e.g. \"0.4\"</span>)"
+msgstr ""
+
+#: html/OptionsPage.php:871
+msgid "Image Overlay"
+msgstr ""
+
+#: html/OptionsPage.php:913
+msgid "Thumbnail Bar"
+msgstr ""
+
+#: html/OptionsPage.php:917
+msgid "Thumbnail Scroll Arrow"
+msgstr ""
+
+#: html/OptionsPage.php:921
+msgid "Active Thumbnail Border"
+msgstr ""
+
+#: html/OptionsPage.php:927
+msgid "Thumbnail Bar Opacity (<span>e.g. \"0.4\"</span>)"
+msgstr ""
