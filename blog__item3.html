@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание вашего сайта">
+    <title>Главная страница</title>
+	<!--link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"-->
+	<link rel="icon" href="img/favicons/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="body">
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__container">
+			<a href="index.html" class="header__logo">
+				<img src="img/logo.png" alt="Логотип" class="header__logo-image">
+			</a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+					 <li class="nav__item"><a href="#" id="openModal">Войти</a></li>
+
+                <li class="nav__item"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <section class="intro">
+            <div class="intro__container-atcl">
+                <h2 class="intro__title">Что такое пассивная агрессия, как ее распознать и что с ней делать</h2>
+				<div class="blog__item-img">
+					<img src="img/pict3.jpg" alt="pict" class="blog__item-image-atcl">
+				</div>
+                <p class="intro__description-atcl">
+					Что такое пассивная агрессия, как ее распознать и что с ней делать
+				</p>
+				<p class="intro__description-atcl">
+					Пассивную агрессию, в наши дни мы очень часто можем испытать на себе. В большинстве случаев мы не знаем, как это распознать, и часто заканчиваем ситуацию чувством угрызения совести, пересматривая свое отношение и поведение, хотя на самом деле мы даже не осознаем того, что мы жертвы.
+				</p>
+				<p class="intro__description-atcl">
+					Агрессия не всегда бывает такой бурной и драматичной, как мы могли ожидать вначале. Взрывные и внезапные реакции привлекают внимание окружающих, вызывают напряжение, страх, опасения, что конфликт не перерастет и не расширится, особенно когда ситуация угрожает физической угрозой безопасности присутствующих. Явной физической агрессии, направленной на других, уделяется гораздо больше внимания, чем другим формам агрессивного поведения, именно потому, что ее последствия настолько непосредственны и очевидны. С другой стороны, пассивная агрессия является неявной, скрытой, часто замаскированной другими чертами характера, но именно по этим причинам она может быть гораздо более разрушительной как для других, так и для человека, который ее проявляет.				
+				</p>
+                <div class="blog__item-img">
+					<img src="img/pict3-1.jpg" alt="pict" class="blog__item-image-atcl3-1">
+				</div>
+				<h3>Пассивно-агрессивное отношение</h3>
+				<p class="intro__description-atcl">
+					Пассивная агрессия выражается в негативном отношении или враждебности к кому-то или чему-то и в то же время в пассивном сопротивлении этому. Если этот паттерн проявляется постоянно и представляет собой основной способ реагирования, мы можем говорить о пассивно-агрессивном расстройстве личности. Хотя небольшое количество людей обладает настолько обобщенным паттерном пассивно-агрессивного поведения, что его можно назвать расстройством, большое количество из них обладает значительными пассивно-агрессивными чертами, которые затрудняют жизнь как для них самих, так и для их окружения. С другой стороны, даже если мы не склонны к пассивно-агрессивному способу реагирования, это произойдет в ситуации, требования которой нам угрожают, и в которой мы не в состоянии отреагировать открытым отказом.
+				</p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">© 2024 Все права защищены</p>
+            <nav class="footer__nav footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Подключение JS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
