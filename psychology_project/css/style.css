@@ -264,7 +264,7 @@ button.btn-uk {
 }
 /*-----nav__item-login--------*/
 li.nav__item-login a {
-	color: #0000cd;
+	color: #00ae51;
 	background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ li.nav__item-login a:hover {
 	display: flex;
 	gap: 20px;
 	padding: 10px 20px;
-	color: #0000cd;
+	color: #00ae51;
 }
 
 .top__info {
