@@ -3,9 +3,7 @@ $('.faq__item_faqAsk').click(function(){
 	$(this).toggleClass('active');
 });
 
-
-
-
+/*-----modal---loginForm-----*/
 
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("modal");
@@ -80,33 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 });
 
-
-/*-----to-top------*/
-
-$(document).ready(function(){
-  $('body').append('<a href="#" id="go-top" title="Вверх">Вверх</a>');
-});
-
-$(function() {
- $.fn.scrollToTop = function() {
-  $(this).hide().removeAttr("href");
-  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
-  var scrollDiv = $(this);
-  $(window).scroll(function() {
-   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
-   else $(scrollDiv).fadeIn("slow")
-  });
-  $(this).click(function() {
-   $("html, body").animate({scrollTop: 0}, "slow")
-  })
- }
-});
-
-$(function() {
- $("#go-top").scrollToTop();
-});
-
-
 /*------menu----------*/
 
 $(function(){
@@ -125,11 +96,7 @@ $(function(){
 	});
 });
 
-
-
 /*------reviews--------*/
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector('.carousel');
@@ -255,12 +222,29 @@ document.addEventListener("DOMContentLoaded", function () {
   loopCarousel();
 });
 
+/*---------upbtn-----------*/
 
+$('body').append('<div class="upbtn"></div>');
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $('.upbtn').css({
+            transform: 'scale(1)'
+        });
+        } else {
+        $('.upbtn').css({
+            transform: 'scale(0)'
+        });
+    }
+});
+$('.upbtn').on('click',function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+});
 
-/*---------------------*/
+/*-------modal__register----------*/
 
-
-/*-----------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal__register");
   const openModalBtns = document.querySelectorAll(".open-modal");
