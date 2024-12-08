@@ -13,31 +13,93 @@
 <body class="body">
 
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header" id="top">
+		<div class="header__container-top">
+			<div class="top__info">
+				<p><i class="fa fa-home" aria-hidden="true"></i>Лично в Харькове и онлайн по всему миру</p>
+			</div>
+			<div class="top__time">
+				<p><i class="fa fa-clock-o" aria-hidden="true"></i>Часы работы с 10.00 до 22.00</p>
+			</div>
+			<div class="top__tel">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<a href=”tel:+380441234567”>+38 (044) 123-45-67</a>
+			</div>
+			<div class="top__btn">
+				<button type="button" class="open-modal">Записаться на консультацию</button>
+			</div>			
+		</div>
         <div class="header__container">
-			<a href="index.html" class="header__logo">
+			<a href="#" class="header__logo">
 				<img src="img/logo.png" alt="Логотип" class="header__logo-image">
 			</a>
             <nav class="header__nav nav">
-                <ul class="nav__list">
+						
+				<div class="menuToggle menu__icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>			
+				</div>
+			
+                <ul class="nav__list clearfix">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
+                    <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-					 <li class="nav__item"><a href="#" id="openModal">Войти</a></li>
-
-                <li class="nav__item"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
                 </ul>
             </nav>
+
+			<nav class="header__nav-lang nav">
+				<ul class="nav__lang">
+					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>
+					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"><img src="img/uk.jpg" alt="ukflag" width="35px"></button></li>
+				</ul>
+			</nav>		
         </div>
     </header>
-
+    <!-- Модальное окно-register -->
+    <div id="modal__register" class="modal__register">
+        <div class="modal__register-content">
+            <span class="close__register-btn" id="closeModalRegisterBtn">&times;</span>
+            <h2>Записаться на консультацию</h2>
+			<form class="appointment-form" action="/submit-form" method="POST">
+				<h2>Записаться на консультацию</h2>				
+				<!-- Имя -->
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="registration-name" name="name" placeholder="Введите ваше имя" required>
+				
+				<!-- Электронная почта -->
+				<label for="email">Электронная почта:</label>
+				<input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+				
+				<!-- Телефон -->
+				<label for="phone">Телефон:</label>
+				<input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+	
+				<!-- Дата и время -->
+				<label for="date">Выберите дату:</label>
+				<input type="date" id="date" name="date" required>
+				
+				<label for="time">Выберите время:</label>
+				<input type="time" id="time" name="time" required>
+				
+				<!-- Сообщение -->
+				<label for="message">Ваши пожелания или вопросы:</label>
+				<textarea id="message" name="message" rows="4" placeholder="Напишите ваши пожелания или вопросы"></textarea>
+				
+				<!-- Кнопка отправки -->
+				<button type="submit" class="appointment-button">Записаться</button>
+			</form>	
+        </div>
+    </div>
     <!-- Основной контент -->
     <main class="main">
-        <section class="intro">
-            <div class="intro__container-atcl">
-			<img src="img/pict1.jpg" alt="pict" class="blog__item-image-atcl">
-                <h2 class="intro__title-atcl">Статья первая</h2>
-                <p class="intro__description-atcl">
+        <section class="blog__article">
+            <div class="blog__container-article">
+			<img src="img/pict1.jpg" alt="pict" class="blog__image-article">
+                <h2 class="blog__title-article">Статья первая</h2>
+                <p class="blog__txt-article">
 Lorem Ipsum — это текст-«рыба», часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной «рыбой» для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых				
 				</p>
                 
@@ -52,12 +114,12 @@ Lorem Ipsum — это текст-«рыба», часто используем�
     <footer class="footer">
         <div class="footer__container">
             <p class="footer__text">© 2024 Все права защищены</p>
-            <nav class="footer__nav footer-nav">
-                <ul class="footer-nav__list">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></li>
-                </ul>
-            </nav>
+            <div class="footer__nav">
+                <div class="footer-nav__list">
+                    <div class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></div>
+                    <div class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></div>
+                </div>
+            </div>
         </div>
     </footer>
 

@@ -13,46 +13,106 @@
 <body class="body">
 
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header" id="top">
+		<div class="header__container-top">
+			<div class="top__info">
+				<p><i class="fa fa-home" aria-hidden="true"></i>Лично в Харькове и онлайн по всему миру</p>
+			</div>
+			<div class="top__time">
+				<p><i class="fa fa-clock-o" aria-hidden="true"></i>Часы работы с 10.00 до 22.00</p>
+			</div>
+			<div class="top__tel">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<a href=”tel:+380441234567”>+38 (044) 123-45-67</a>
+			</div>
+			<div class="top__btn">
+				<button type="button" class="open-modal">Записаться на консультацию</button>
+			</div>			
+		</div>
         <div class="header__container">
-			<a href="index.html" class="header__logo">
+			<a href="#" class="header__logo">
 				<img src="img/logo.png" alt="Логотип" class="header__logo-image">
 			</a>
             <nav class="header__nav nav">
-                <ul class="nav__list">
+						
+				<div class="menuToggle menu__icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>			
+				</div>
+			
+                <ul class="nav__list clearfix">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
+                    <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-					 <li class="nav__item"><a href="#" id="openModal">Войти</a></li>
-
-                <li class="nav__item"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
                 </ul>
             </nav>
+
+			<nav class="header__nav-lang nav">
+				<ul class="nav__lang">
+					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>
+					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"><img src="img/uk.jpg" alt="ukflag" width="35px"></button></li>
+				</ul>
+			</nav>		
         </div>
     </header>
-
+    <!-- Модальное окно-register -->
+    <div id="modal__register" class="modal__register">
+        <div class="modal__register-content">
+            <span class="close__register-btn" id="closeModalRegisterBtn">&times;</span>
+            <h2>Записаться на консультацию</h2>
+			<form class="appointment-form" action="/submit-form" method="POST">
+				<h2>Записаться на консультацию</h2>				
+				<!-- Имя -->
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="registration-name" name="name" placeholder="Введите ваше имя" required>
+				
+				<!-- Электронная почта -->
+				<label for="email">Электронная почта:</label>
+				<input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+				
+				<!-- Телефон -->
+				<label for="phone">Телефон:</label>
+				<input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+	
+				<!-- Дата и время -->
+				<label for="date">Выберите дату:</label>
+				<input type="date" id="date" name="date" required>
+				
+				<label for="time">Выберите время:</label>
+				<input type="time" id="time" name="time" required>
+				
+				<!-- Сообщение -->
+				<label for="message">Ваши пожелания или вопросы:</label>
+				<textarea id="message" name="message" rows="4" placeholder="Напишите ваши пожелания или вопросы"></textarea>
+				
+				<!-- Кнопка отправки -->
+				<button type="submit" class="appointment-button">Записаться</button>
+			</form>	
+        </div>
+    </div>
     <!-- Основной контент -->
     <main class="main">
-        <section class="intro">
-            <div class="intro__container-atcl">
-                <h2 class="intro__title">Что такое пассивная агрессия, как ее распознать и что с ней делать</h2>
-				<div class="blog__item-img">
-					<img src="img/pict3.jpg" alt="pict" class="blog__item-image-atcl">
-				</div>
-                <p class="intro__description-atcl">
+        <section class="blog__article">
+            <div class="blog__container-article">
+                <h2 class="blog__title-article">Что такое пассивная агрессия, как ее распознать и что с ней делать</h2>
+					<img src="img/pict3.jpg" alt="pict" class="blog__image-article">
+                <p class="blog__txt-article">
 					Что такое пассивная агрессия, как ее распознать и что с ней делать
 				</p>
-				<p class="intro__description-atcl">
+				<p class="blog__txt-article">
 					Пассивную агрессию, в наши дни мы очень часто можем испытать на себе. В большинстве случаев мы не знаем, как это распознать, и часто заканчиваем ситуацию чувством угрызения совести, пересматривая свое отношение и поведение, хотя на самом деле мы даже не осознаем того, что мы жертвы.
 				</p>
-				<p class="intro__description-atcl">
+				<p class="blog__txt-article">
 					Агрессия не всегда бывает такой бурной и драматичной, как мы могли ожидать вначале. Взрывные и внезапные реакции привлекают внимание окружающих, вызывают напряжение, страх, опасения, что конфликт не перерастет и не расширится, особенно когда ситуация угрожает физической угрозой безопасности присутствующих. Явной физической агрессии, направленной на других, уделяется гораздо больше внимания, чем другим формам агрессивного поведения, именно потому, что ее последствия настолько непосредственны и очевидны. С другой стороны, пассивная агрессия является неявной, скрытой, часто замаскированной другими чертами характера, но именно по этим причинам она может быть гораздо более разрушительной как для других, так и для человека, который ее проявляет.				
 				</p>
                 <div class="blog__item-img">
 					<img src="img/pict3-1.jpg" alt="pict" class="blog__item-image-atcl3-1">
 				</div>
 				<h3>Пассивно-агрессивное отношение</h3>
-				<p class="intro__description-atcl">
+				<p class="blog__txt-article">
 					Пассивная агрессия выражается в негативном отношении или враждебности к кому-то или чему-то и в то же время в пассивном сопротивлении этому. Если этот паттерн проявляется постоянно и представляет собой основной способ реагирования, мы можем говорить о пассивно-агрессивном расстройстве личности. Хотя небольшое количество людей обладает настолько обобщенным паттерном пассивно-агрессивного поведения, что его можно назвать расстройством, большое количество из них обладает значительными пассивно-агрессивными чертами, которые затрудняют жизнь как для них самих, так и для их окружения. С другой стороны, даже если мы не склонны к пассивно-агрессивному способу реагирования, это произойдет в ситуации, требования которой нам угрожают, и в которой мы не в состоянии отреагировать открытым отказом.
 				</p>
             </div>
@@ -66,12 +126,12 @@
     <footer class="footer">
         <div class="footer__container">
             <p class="footer__text">© 2024 Все права защищены</p>
-            <nav class="footer__nav footer-nav">
-                <ul class="footer-nav__list">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></li>
-                </ul>
-            </nav>
+            <div class="footer__nav">
+                <div class="footer-nav__list">
+                    <div class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></div>
+                    <div class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></div>
+                </div>
+            </div>
         </div>
     </footer>
 

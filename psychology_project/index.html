@@ -44,11 +44,12 @@
 			
                 <ul class="nav__list clearfix">
                     <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
                     <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
-
+			
 			<nav class="header__nav-lang nav">
 				<ul class="nav__lang">
 					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>
@@ -80,7 +81,9 @@
         </div>
     </div>
 	
-    <!-- Модальное окно-register -->
+	
+	
+    <!-- Модальное окно-registerregisterregisterregister -->
     <div id="modal__register" class="modal__register">
         <div class="modal__register-content">
             <span class="close__register-btn" id="closeModalRegisterBtn">&times;</span>
@@ -116,6 +119,8 @@
         </div>
     </div>	
 	
+	
+
     <!-- Основной контент -->
     <main class="main">
         <section class="intro">
@@ -147,7 +152,8 @@
 						<div class="icon tiktok"><a href="#"></a></div>
 						<div class="icon youtube"><a href="#"></a></div>
 						<div class="icon telegram"><a href="#"></a></div>
-					</div>					
+					</div>
+										
 				</div>
             </div>
         </section>
@@ -276,7 +282,25 @@
                             <span class="caption-data">Дата</span>
                             <span class="caption-title">Заголовок</span>
                         </div>							
-					</div>				
+					</div>
+                    <div class="blog__item">
+						<a href="blog__item7.html" class="blog__item-img">
+							<img src="img/pict7.jpg" alt="pict" class="blog__item-image">
+						</a>
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Психотехнологии гипнотического манипулирования сознанием человека</span>
+                        </div>							
+					</div>
+                    <div class="blog__item">
+						<a href="blog__item8.html" class="blog__item-img">
+							<img src="img/podr.jpg" alt="pict" class="blog__item-image">
+						</a>
+                        <div class="caption">
+                            <span class="caption-data">Дата</span>
+                            <span class="caption-title">Осторожно — подросток</span>
+                        </div>							
+					</div>					
                 </div>
             </div>
         </section>
@@ -361,65 +385,107 @@
 				</div>				
 			</div>
 		</section>
-		<section id="about" class="about">	
+
+		<section id="about__review" class="about__review">	
 			<h2>О нас говорят</h2>
-			<div class="carousel-container">
-				<!-- Карусель -->
-				<div class="carousel">
-					<div class="carousel-item">
-						<p>"Отличная консультация! Очень помогло."</p>
-						<p>- Алексей</p>
-						<div class="stars" data-rating="5"></div>
-					</div>
-					<div class="carousel-item">
-						<p>"Очень профессионально и полезно. Рекомендую!"</p>
-						<p>- Марина</p>
-						<div class="stars" data-rating="4"></div>
-					</div>
-					<div class="carousel-item">
-						<p>"Сеанс был очень продуктивным. Благодарю!"</p>
-						<p>- Сергей</p>
-						<div class="stars" data-rating="5"></div>
-					</div>
-				</div>
-			</div>
+
+
+
+			
+<div id="slider">
+    <ul class="slider__review">
+        <li>
+            <div class="slider-container">
+                <img src="https://via.placeholder.com/100" alt="Client Photo">
+                <h4>Client 1</h4>
+                <p>This is a review text.</p>
+                <p>Rating: ★★★★☆</p>
+            </div>
+        </li>
+        <li>
+            <div class="slider-container">
+                <img src="https://via.placeholder.com/100" alt="Client Photo">
+                <h4>Client 2</h4>
+                <p>This is a review text.</p>
+                <p>Rating: ★★★★☆</p>
+            </div>
+        </li>
+        <li>
+            <div class="slider-container">
+                <img src="https://via.placeholder.com/100" alt="Client Photo">
+                <h4>Client 3</h4>
+                <p>Review content here.</p>
+                <p>Rating: ★★★★★</p>
+            </div>
+        </li>
+        <li>
+            <div class="slider-container">
+                <img src="https://via.placeholder.com/100" alt="Client Photo">
+                <h4>Client 4</h4>
+                <p>This is a great product.</p>
+                <p>Rating: ★★★★☆</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+	
+			
 			<!-- Форма для добавления нового отзыва -->
-			<form id="review-form">
-			<h3>Оставьте ваш отзыв</h3>
-				<label for="name">Имя:</label>
-				<input type="text" id="name" name="name" placeholder="Ваше имя" required>
-				<label for="review">Отзыв:</label>
-				<textarea id="review" name="review" placeholder="Ваш отзыв" required></textarea>
-				<label>Рейтинг:</label>
-				<div id="rating-container" class="rating">
-					<span data-value="1">★</span>
-					<span data-value="2">★</span>
-					<span data-value="3">★</span>
-					<span data-value="4">★</span>
-					<span data-value="5">★</span>
-				</div>
-				<input type="hidden" id="rating" name="rating" required>
-				<button type="submit">Отправить отзыв</button>
-			</form>
+
+<!-- Форма для добавления отзыва -->
+<form id="review-form">
+    <h3>Оставьте ваш отзыв</h3>
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+    
+    <label for="review">Отзыв:</label>
+    <textarea id="review" name="review" placeholder="Ваш отзыв" required></textarea>
+    
+    <label>Рейтинг:</label>
+    <div id="rating-container" class="rating">
+        <span data-value="1">★</span>
+        <span data-value="2">★</span>
+        <span data-value="3">★</span>
+        <span data-value="4">★</span>
+        <span data-value="5">★</span>
+    </div>
+    <input type="hidden" id="rating" name="rating" required>
+    
+    <label for="photo">Фото:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+    
+    <button type="submit">Отправить отзыв</button>
+</form>
+
 		</section>
 		
     </main>
-	
+
+
+
+
     <!-- Подвал сайта -->
     <footer class="footer">
         <div class="footer__container">
             <p class="footer__text">© 2024 Все права защищены</p>
-            <nav class="footer__nav footer-nav">
-                <ul class="footer-nav__list">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></li>
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></li>
-                </ul>
-            </nav>
+            <div class="footer__nav">
+                <div class="footer-nav__list">
+                    <div class="footer-nav__item"><a href="#" class="footer-nav__link">Политика конфиденциальности</a></div>
+                    <div class="footer-nav__item"><a href="#" class="footer-nav__link">Условия использования</a></div>
+                </div>
+            </div>
         </div>
     </footer>
 
     <!-- Подключение JS -->
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
+	<script src="js/index.js"></script>
+	
+	
+
 </body>
 </html>

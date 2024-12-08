@@ -26,7 +26,7 @@
 				<a href=”tel:+380441234567”>+38 (044) 123-45-67</a>
 			</div>
 			<div class="top__btn">
-				<a href="#register">Записаться на консультацию</a>
+				<button type="button" class="open-modal">Записаться на консультацию</button>
 			</div>			
 		</div>
         <div class="header__container">
@@ -44,7 +44,8 @@
 			
                 <ul class="nav__list clearfix">
                     <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
+                    <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
@@ -55,21 +56,46 @@
 					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"><img src="img/uk.jpg" alt="ukflag" width="35px"></button></li>
 				</ul>
 			</nav>
-			<nav class="header__nav-login nav">
-				<ul class="nav__login">
-					<li class="nav__item-login"><a href="#" id="openModal">Войти</a></li>
-					<li class="nav__item-login"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
-				</ul>
-			</nav>			
+			
         </div>
     </header>
 
 
-
-<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-
+    <!-- Модальное окно-register -->
+    <div id="modal__register" class="modal__register">
+        <div class="modal__register-content">
+            <span class="close__register-btn" id="closeModalRegisterBtn">&times;</span>
+            <h2>Записаться на консультацию</h2>
+			<form class="appointment-form" action="/submit-form" method="POST">
+				<h2>Записаться на консультацию</h2>				
+				<!-- Имя -->
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="registration-name" name="name" placeholder="Введите ваше имя" required>
+				
+				<!-- Электронная почта -->
+				<label for="email">Электронная почта:</label>
+				<input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+				
+				<!-- Телефон -->
+				<label for="phone">Телефон:</label>
+				<input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+	
+				<!-- Дата и время -->
+				<label for="date">Выберите дату:</label>
+				<input type="date" id="date" name="date" required>
+				
+				<label for="time">Выберите время:</label>
+				<input type="time" id="time" name="time" required>
+				
+				<!-- Сообщение -->
+				<label for="message">Ваши пожелания или вопросы:</label>
+				<textarea id="message" name="message" rows="4" placeholder="Напишите ваши пожелания или вопросы"></textarea>
+				
+				<!-- Кнопка отправки -->
+				<button type="submit" class="appointment-button">Записаться</button>
+			</form>	
+        </div>
+    </div>
 
 
     <!-- Основной контент -->
