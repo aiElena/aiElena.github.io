@@ -44,15 +44,19 @@ html, body {
 }
 
 .main {
+	position: relative;
+	padding: 10px 20px 20px 20px;;
 	background-image: url("../img/bg1.jpg"); 
 	background-size: cover;
 	background-repeat: no-repeat;
-	 /*background-size: contain;*/
-    /*width: 100%;
-    height: 100%;*/
-    /*object-fit: cover;*/
 	background-position: center;
     flex: 1; /* Занимает всё свободное пространство между шапкой и футером */
+}
+
+section {
+	max-width: 1930px;
+	margin: 0 auto;
+	padding-bottom: 10px;
 }
 
 /* Стили для ссылок */
@@ -149,6 +153,15 @@ img {
 	margin: 0 10px;
 }
 
+button.btn-uk img,
+button.btn-ru img {
+	border: 1px solid #027500;
+}
+
+button.btn-uk img {
+	margin-right: 5px;
+}
+
 /*-------menu------------*/
 .menu__icon {
      display: none;
@@ -164,7 +177,7 @@ img {
     position: absolute;
     height: 4px;
     width: 100%;
-    background: #007bff;
+    background: #027500;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -175,6 +188,7 @@ img {
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
+
 .menu__icon span:nth-child(1) {
     top: 0;
 }
@@ -201,6 +215,12 @@ img {
     background-size: 0% 2px;
     transition: background-size .3s;
 }
+
+.nav__link.active {
+    border-bottom: 2px solid #04aa4c;
+    padding-bottom: 3px;
+}
+
 .nav__item:hover {
 	background-size: 100% 2px;
 }
@@ -267,6 +287,7 @@ button.btn-ru,
 button.btn-uk {
 	background: transparent;
 }
+
 /*-----nav__item-login--------*/
 li.nav__item-login a {
 	color: #027500;
@@ -309,21 +330,26 @@ li.nav__item-login a:hover {
 	box-shadow: inset 0 0 0 3px #027500;
 }
 
+button.open-modal {
+	padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #027500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.open-modal:hover {
+	background: rgba(0,0,0,0);
+	color: #027500;
+	box-shadow: inset 0 0 0 3px #027500;
+}
+
 i.fa {
 	margin-right: 5px;
 }
 
-/*--------main----------------*/
-main.main {
-	padding: 20px;
-}
-
-section {
-	max-width: 1930px;
-	margin: 0 auto;
-	padding-bottom: 10px;
-}
-
+/*--------intro__container----------------*/
 .intro__container {
 	text-align: center;
 }
@@ -376,7 +402,7 @@ a.intro__button:hover {
 	margin-top: 10px;
 }
 
-/*--------------socialbar------*/
+/*-------socialbar------*/
 
 .socialbar {
     position: absolute;
@@ -619,7 +645,6 @@ a.intro__button:hover {
 /* Стили для модального окна */
 .modal {
     display: none; /* Скрыто по умолчанию */
-    /*position: fixed;*/
 	position: absolute;
     top: 0;
     left: 0;
@@ -756,6 +781,7 @@ a.intro__button:hover {
 }
 
 .blog__image-article {
+	float: left;
 	max-width: 450px;
     padding: 10px;
 }
@@ -854,7 +880,7 @@ a.read-more {
 }
 
 /*----------carousel-reviews-------*/
-button {
+button.rating-btn {
     background-color: #027500;
     color: #fff;
     padding: 10px;
@@ -863,7 +889,7 @@ button {
 	transition: background-color 0.3s ease;
 }
 
-button:hover {
+button.rating-btn:hover {
     background: rgba(0,0,0,0);
 	color: #027500;
 	box-shadow: inset 0 0 0 3px #027500;
@@ -951,6 +977,121 @@ form input, form textarea, form button {
 
 .upbtn:hover {
     transform: scale(1.2)!important;
+}
+
+/*--------about--------*/
+.about__info-txt {
+	text-align: justify;
+	max-width: 500px;
+	padding: 10px;
+}
+
+.about__info-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__info-img-order {
+	order: 2;
+	padding: 10px;
+}
+
+.about__info-img {
+	padding: 10px;
+}
+
+.about__info-text,
+.about__info-text-order {
+	padding: 10px;
+}
+
+/*---contact-form-----*/
+.contacts {
+    display: flex; /* Включаем флекс-контейнер */
+    gap: 20px; /* Расстояние между блоками */
+}
+
+h3.contacts__title {
+	padding-bottom: 15px;
+    text-align: center;
+}
+
+.contacts__info, .contacts__info-form {
+    flex: 1; /* Задает равное распределение ширины между блоками */
+    padding: 20px; /* Отступ внутри блоков */
+    box-sizing: border-box; /* Учитываем padding и border в ширину блока */
+}
+
+.contacts__info {
+   padding-bottom: 20px;
+}
+
+.contacts__info-txt {
+   padding-top: 40px;
+}
+
+.contacts__info-txt p {
+	padding-bottom: 10px;
+}
+
+form.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background: #f9f9f9;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+	font-weight: bold;
+    color: #555;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-form button {
+	font-size: 1rem;
+	padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #027500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+   	background: rgba(0,0,0,0);
+	color: #027500;
+	box-shadow: inset 0 0 0 3px #027500;
+}
+
+#response-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #04aa4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+#response-message.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*------container__404----------*/
@@ -1063,6 +1204,23 @@ form input, form textarea, form button {
 	
 	.faq__list {
 		padding: 0; 
+	}
+	
+	.about__info-block {
+		flex-wrap: wrap;
+    }
+	
+	.about__info-img-order {
+		order: 0;
+	}
+	
+	.about__info-txt {
+		max-width: 100%;
+		padding: 10px;
+	}
+	
+	.about__info-text, .about__info-text-order {
+		
 	}	
 }
 
@@ -1121,6 +1279,7 @@ form input, form textarea, form button {
 	
 	.blog__image-article {
 		max-width: 320px;
+		float: none;
 	}
 	
 	a.read-more {
@@ -1130,6 +1289,37 @@ form input, form textarea, form button {
 	.blog__txt-article {
 		padding: 10px 10px;
 	}
+	
+	.about__info-block {
+		flex-wrap: wrap;
+    }
+	
+	.about__info-img-order {
+		order: 0;
+	}
+	
+	.about__info-text, .about__info-text-order {
+		/*max-width: 100%;*/
+	}
+	
+	.contacts {
+        flex-direction: column; /* Расположение блоков друг под другом */
+    }
+	
+    .contacts__info, .contacts__info-form {
+        flex: none; /* Сбрасываем flex-свойства */
+        width: 100%; /* Каждый блок занимает 100% ширины */
+		padding: 0;
+    }
+	
+	.contacts__info-txt {
+		padding-top: 0;
+	}
+
+	.contacts__info {
+	   padding-bottom: 0;
+	}
+
 }
 
 /* Для больших экранов (ширина экрана от 1200px) */
@@ -1382,6 +1572,73 @@ form input, form textarea, form button {
 	flex-direction: column;
 }	
 }
+
+/*--------------*/
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #04aa4c;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #04aa4c;
+    color: #fff;
+    border-color: #027500;
+}
+
+
+/*-------breadcrumbs----------*/
+
+.breadcrumbs {
+    font-size: 16px;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumbs li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.breadcrumbs li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs li {
+	color: #027500;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: " / ";
+    margin-left: 5px;
+	color: #666;
+}
+
+
+
+
 
 
 

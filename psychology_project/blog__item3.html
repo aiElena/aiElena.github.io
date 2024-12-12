@@ -45,15 +45,15 @@
                 <ul class="nav__list clearfix">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
 					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
-                    <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
 
 			<nav class="header__nav-lang nav">
 				<ul class="nav__lang">
-					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>
 					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"><img src="img/uk.jpg" alt="ukflag" width="35px"></button></li>
+					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>	
 				</ul>
 			</nav>		
         </div>
@@ -94,32 +94,40 @@
         </div>
     </div>
     <!-- Основной контент -->
-    <main class="main">
-        <section class="blog__article">
-            <div class="blog__container-article">
-                <h2 class="blog__title-article">Что такое пассивная агрессия, как ее распознать и что с ней делать</h2>
+	<main class="main">
+		<!-- Хлебные крошки -->
+		<nav class="breadcrumbs" style="display: none;">
+			<ul id="breadcrumbs-list"></ul>
+		</nav>   
+		<!-- Контент страницы -->
+		<div id="main-content">
+			<section class="blog__article">
+				<div class="blog__container-article">
+					<h2 class="blog__title-article">Что такое пассивная агрессия, как ее распознать и что с ней делать</h2>
 					<img src="img/pict3.jpg" alt="pict" class="blog__image-article">
-                <p class="blog__txt-article">
+					<p class="blog__txt-article">
 					Что такое пассивная агрессия, как ее распознать и что с ней делать
-				</p>
-				<p class="blog__txt-article">
+					</p>
+					<p class="blog__txt-article">
 					Пассивную агрессию, в наши дни мы очень часто можем испытать на себе. В большинстве случаев мы не знаем, как это распознать, и часто заканчиваем ситуацию чувством угрызения совести, пересматривая свое отношение и поведение, хотя на самом деле мы даже не осознаем того, что мы жертвы.
-				</p>
-				<p class="blog__txt-article">
+					</p>
+					<p class="blog__txt-article">
 					Агрессия не всегда бывает такой бурной и драматичной, как мы могли ожидать вначале. Взрывные и внезапные реакции привлекают внимание окружающих, вызывают напряжение, страх, опасения, что конфликт не перерастет и не расширится, особенно когда ситуация угрожает физической угрозой безопасности присутствующих. Явной физической агрессии, направленной на других, уделяется гораздо больше внимания, чем другим формам агрессивного поведения, именно потому, что ее последствия настолько непосредственны и очевидны. С другой стороны, пассивная агрессия является неявной, скрытой, часто замаскированной другими чертами характера, но именно по этим причинам она может быть гораздо более разрушительной как для других, так и для человека, который ее проявляет.				
-				</p>
-                <div class="blog__item-img">
-					<img src="img/pict3-1.jpg" alt="pict" class="blog__item-image-atcl3-1">
-				</div>
-				<h3>Пассивно-агрессивное отношение</h3>
-				<p class="blog__txt-article">
+					</p>
+					<div class="blog__item-img">
+						<img src="img/pict3-1.jpg" alt="pict" class="blog__item-image-atcl3-1">
+					</div>
+					<h3>Пассивно-агрессивное отношение</h3>
+					<p class="blog__txt-article">
 					Пассивная агрессия выражается в негативном отношении или враждебности к кому-то или чему-то и в то же время в пассивном сопротивлении этому. Если этот паттерн проявляется постоянно и представляет собой основной способ реагирования, мы можем говорить о пассивно-агрессивном расстройстве личности. Хотя небольшое количество людей обладает настолько обобщенным паттерном пассивно-агрессивного поведения, что его можно назвать расстройством, большое количество из них обладает значительными пассивно-агрессивными чертами, которые затрудняют жизнь как для них самих, так и для их окружения. С другой стороны, даже если мы не склонны к пассивно-агрессивному способу реагирования, это произойдет в ситуации, требования которой нам угрожают, и в которой мы не в состоянии отреагировать открытым отказом.
-				</p>
-            </div>
-        </section>
-
-
-
+					</p>
+				</div>
+			</section>
+			<div class="pagination">
+				<a href="blog__item2.html" class="pagination__prev">← Предыдущая статья</span>
+				<a href="blog__item4.html" class="pagination__next">Следующая статья →</a>
+			</div>
+		</div>
     </main>
 
     <!-- Подвал сайта -->
@@ -138,5 +146,6 @@
     <!-- Подключение JS -->
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
+	<script src="js/breadcrumbs.js"></script>
 </body>
 </html>

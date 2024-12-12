@@ -45,15 +45,15 @@
                 <ul class="nav__list clearfix">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
 					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
-                    <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
 
 			<nav class="header__nav-lang nav">
 				<ul class="nav__lang">
-					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>
 					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"><img src="img/uk.jpg" alt="ukflag" width="35px"></button></li>
+					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>	
 				</ul>
 			</nav>		
         </div>
@@ -94,30 +94,33 @@
         </div>
     </div>
     <!-- Основной контент -->
-    <main class="main">
-        <section class="blog__article">
-            <div class="blog__container-article">
-			<img src="img/podr.jpg" alt="pict" class="blog__image-article">
-                <h2 class="blog__title-article">Осторожно — подросток</h2>
-                <p class="blog__txt-article">
+	<main class="main">
+		<!-- Хлебные крошки -->
+		<nav class="breadcrumbs" style="display: none;">
+			<ul id="breadcrumbs-list"></ul>
+		</nav>
+		<!-- Контент страницы -->
+		<div id="main-content">	
+			<section class="blog__article">
+				<div class="blog__container-article">
+					<img src="img/podr.jpg" alt="pict" class="blog__image-article">
+					<h2 class="blog__title-article">Осторожно — подросток</h2>
+					<p class="blog__txt-article">
 					Вводная часть. Подростковая пора — сложная и короткая. Чтобы пройти ее «без жертв и разрушений», нужно знать ее особенности. Быть умным и терпеливым.			
-				</p>
-                
-				<p class="blog__txt-article">— Трудно?</p>
-
-				<p class="blog__txt-article">— Очень!</p>
-
-				<p class="blog__txt-article">— Точно. А кто говорил, что быть родителем легко?!</p>
-
-				<p class="blog__txt-article">Это самая сложная и ответственная работа на земле. Итак, осторожно — подросток!</p>
-				<h3>Чтобы не утратить доверия</h3>
-				<p class="blog__txt-article">Если на вашу просьбу оторваться от компьютера никто не отрывается и на вас не реагирует; если дух свободомыслия перешел в дух свобододействия и вас полностью игнорируют; если в ответ на ваши предложения слышатся усмешки и контрпредложения; если ваши действия вызывают острую критику, советы — негодования, рекомендации — противодействия, значит, ваш ребенок вырос. На пути к взрослению превратился в подростка. Это неизбежно, но учитывать приходится. Поэтому правила жизни нужно менять, иначе наступит игра не по правилам. Это совсем другой разговор.</p>
-				
-            </div>
-        </section>
-
-
-
+					</p>
+					<p class="blog__txt-article">— Трудно?</p>
+					<p class="blog__txt-article">— Очень!</p>
+					<p class="blog__txt-article">— Точно. А кто говорил, что быть родителем легко?!</p>
+					<p class="blog__txt-article">Это самая сложная и ответственная работа на земле. Итак, осторожно — подросток!</p>
+					<h3>Чтобы не утратить доверия</h3>
+					<p class="blog__txt-article">Если на вашу просьбу оторваться от компьютера никто не отрывается и на вас не реагирует; если дух свободомыслия перешел в дух свобододействия и вас полностью игнорируют; если в ответ на ваши предложения слышатся усмешки и контрпредложения; если ваши действия вызывают острую критику, советы — негодования, рекомендации — противодействия, значит, ваш ребенок вырос. На пути к взрослению превратился в подростка. Это неизбежно, но учитывать приходится. Поэтому правила жизни нужно менять, иначе наступит игра не по правилам. Это совсем другой разговор.</p>
+				</div>
+			</section>
+			<div class="pagination">
+				<span class="pagination__next" style="visibility: hidden;">← Следующая статья</span>
+				<a href="blog__item7.html" class="pagination__prev">← Предыдущая статья</span>
+			</div>
+		</div>
     </main>
 
     <!-- Подвал сайта -->
@@ -136,5 +139,6 @@
     <!-- Подключение JS -->
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
+	<script src="js/breadcrumbs.js"></script>
 </body>
 </html>

@@ -18,7 +18,19 @@ $(function(){
 	});
 });
 
+/*----------------*/
+    // Получаем текущий URL
+    const currentPath = window.location.pathname;
 
+    // Находим все ссылки в меню
+    const navLinks = document.querySelectorAll('.nav__list .nav__link');
+
+    navLinks.forEach(link => {
+        // Сравниваем путь ссылки с текущим путем (игнорируя возможный базовый путь)
+        if (currentPath.endsWith(link.getAttribute('href'))) {
+            link.classList.add('active');
+        }
+    });
 
 
 /*---------upbtn-----------*/
@@ -73,6 +85,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+
 
 
 

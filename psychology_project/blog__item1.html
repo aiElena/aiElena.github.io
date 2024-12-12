@@ -45,15 +45,15 @@
                 <ul class="nav__list clearfix">
                     <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
 					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
-                    <li class="nav__item"><a href="#oferty" class="nav__link">О нас</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
 
 			<nav class="header__nav-lang nav">
 				<ul class="nav__lang">
-					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>
 					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"><img src="img/uk.jpg" alt="ukflag" width="35px"></button></li>
+					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"><img src="img/ru.jpg" alt="ruflag" width="35px"></button></li>	
 				</ul>
 			</nav>		
         </div>
@@ -94,20 +94,29 @@
         </div>
     </div>
     <!-- Основной контент -->
-    <main class="main">
-        <section class="blog__article">
-            <div class="blog__container-article">
-			<img src="img/pict1.jpg" alt="pict" class="blog__image-article">
-                <h2 class="blog__title-article">Статья первая</h2>
-                <p class="blog__txt-article">
-Lorem Ipsum — это текст-«рыба», часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной «рыбой» для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых				
-				</p>
-                
-            </div>
-        </section>
-
-
-
+	<main class="main">
+		<!-- Хлебные крошки -->
+		<nav class="breadcrumbs" style="display: none;">
+			<ul id="breadcrumbs-list"></ul>
+		</nav>
+    
+		<!-- Контент страницы -->
+		<div id="main-content">
+			<section class="blog__article">
+				<div class="blog__container-article">
+					<img src="img/pict1.jpg" alt="pict" class="blog__image-article">
+					<h2 class="blog__title-article">Статья первая</h2>
+					<p class="blog__txt-article">
+					Lorem Ipsum — это текст-«рыба», часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной «рыбой» для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых				
+					</p>
+					
+				</div>
+			</section>
+			<div class="pagination">
+				<span class="pagination__prev" style="visibility: hidden;">← Предыдущая статья</span>
+				<a href="blog__item2.html" class="pagination__next">Следующая статья →</a>
+			</div>
+		</div>
     </main>
 
     <!-- Подвал сайта -->
@@ -126,5 +135,6 @@ Lorem Ipsum — это текст-«рыба», часто используем�
     <!-- Подключение JS -->
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
+	<script src="js/breadcrumbs.js"></script>
 </body>
 </html>
