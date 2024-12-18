@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание вашего сайта">
+    <title>Главная страница</title>
+	<link rel="icon" href="img/favicons/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+<body class="body">
+
+    <!-- Шапка сайта -->
+    <header class="header" id="top">
+		<div class="header__container-top">
+			<div class="top__info">
+				<p><i class="fa fa-home" aria-hidden="true"></i>Лично в Харькове и онлайн по всему миру</p>
+			</div>
+			<div class="top__time">
+				<p><i class="fa fa-clock-o" aria-hidden="true"></i>Часы работы с 10.00 до 22.00</p>
+			</div>
+			<div class="top__tel">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<a href=”tel:+380441234567”>+38 (044) 123-45-67</a>
+			</div>
+			<div class="top__btn">
+				<button type="button" class="open-modal">Записаться на консультацию</button>
+			</div>			
+		</div>
+        <div class="header__container">
+			<a href="/" class="header__logo">
+				<img src="img/logo.png" alt="Логотип" class="header__logo-image">
+			</a>
+            <nav class="header__nav nav">
+						
+				<div class="menuToggle menu__icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>			
+				</div>
+			
+				<ul class="nav__list clearfix">
+					<li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+					<li class="nav__item"><a href="blog.html" class="nav__link">Статьи</a></li>
+					<li class="nav__item"><a href="about.html" class="nav__link">О нас</a></li>
+					<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+				</ul>
+            </nav>
+			
+			<nav class="header__nav-lang nav">
+				<ul class="nav__lang">
+					<li class="nav__item-lang-uk"><button id="uk" class="btn-uk"></button></li>
+					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"></button></li>	
+				</ul>
+			</nav>
+			<nav class="header__nav-login nav">
+				<ul class="nav__login">
+					<li class="nav__item-login"><a href="#" id="openModal">Войти</a></li>
+					<li class="nav__item-login"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
+				</ul>
+			</nav>			
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1>Оплата</h1>
+
+            <!-- Форма оплаты картой -->
+            <form id="card-form" class="payment-form">
+                <h2>Оплата картой</h2>
+                <div class="form-group">
+                    <label for="card-number">Номер карты</label>
+                    <input type="text" id="card-number" placeholder="Введите номер карты" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-expiry">Срок действия (MM/YY)</label>
+                    <input type="text" id="card-expiry" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-cvc">CVC</label>
+                    <input type="text" id="card-cvc" placeholder="Введите CVC" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Оплатить">
+                </div>
+            </form>
+
+            <!-- Форма оплаты по счету -->
+            <form id="invoice-form" class="payment-form">
+                <h2>Оплата по счету</h2>
+                <div class="form-group">
+                    <label for="full-name">ФИО</label>
+                    <input type="text" id="full-name" placeholder="Введите ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" placeholder="Введите вашу почту" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" placeholder="Введите ваш телефон" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Отправить счёт">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Уведомление -->
+    <div id="notification" class="notification"></div>
+
+    <footer>
+        <div class="footer__container">
+            <p class="footer__text">© 2024 Все права защищены</p>
+        </div>
+    </footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+	<script src="js/breadcrumbs.js"></script>
+	<script src="js/contact-form.js"></script>
+    <script>
+        // Функция для отображения уведомления
+        function showNotification(message, redirectUrl) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+
+            setTimeout(() => {
+                notification.style.display = 'none';
+                window.location.href = redirectUrl;
+            }, 3000); // Уведомление исчезнет через 3 секунды
+        }
+
+        // Обработка формы оплаты картой
+        const cardForm = document.getElementById('card-form');
+        cardForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            showNotification('Оплата картой успешно произведена!', 'index.html');
+        });
+
+        // Обработка формы оплаты по счету
+        const invoiceForm = document.getElementById('invoice-form');
+        invoiceForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            showNotification('Запрос на оплату по счету успешно отправлен!', 'index.html');
+        });
+    </script>
+</body>
+</html>
