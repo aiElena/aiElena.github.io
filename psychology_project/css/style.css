@@ -193,27 +193,39 @@ img {
  }
 
 .nav__item {
-	color: #04aa4c;
-    /*font-family: Montserrat-Regular, sans-serif;*/
-    font-size: 20px;
-	font-weight: 600;
-    line-height: 30px;
-    padding: 0 10px;
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #04aa4c;
+  /*opacity: 0.7;*/
+  transition: opacity 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+.nav__item::after {
+  --scale: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, #04aa4c, #04aa4c);
+  transform: scaleX(var(--scale));
+  transform-origin: var(--x) 50%;
+  transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+.nav__item:hover {
+  opacity: 1;
+}
+.nav__item:hover::after {
+  --scale: 1;
 }
 
 .nav__link.active {
-    border-bottom: 2px solid #04aa4c;
-    padding-bottom: 3px;
-}
-
-.nav__item:hover {
-	background-size: 100% 2px;
+    border-bottom: 3px solid #04aa4c;
+    padding-bottom: 4px;
 }
 
 .header__nav.menu_state_open .menu__icon span:nth-child(1) {
@@ -278,6 +290,7 @@ li.nav__item {
   padding: 0;
   margin-bottom: 0;
   margin-right: 5px;
+  border: 1px solid #027500;
 }
 
 button.btn-ru,
@@ -297,20 +310,20 @@ button.btn-uk {
 }
 
 /*-----nav__item-login--------*/
-li.nav__item-login a {
+.nav__link-login {
+	padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #027500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav__link-login:hover {
+	background: rgba(0,0,0,0);
 	color: #027500;
-	font-weight: 600;
-	background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+	box-shadow: inset 0 0 0 3px #027500;
 }
-
-li.nav__item-login a:hover {
-	background-size: 100% 2px;	
-}
-
 
 /*-------header-top------------*/
 .header__container-top {
@@ -671,6 +684,15 @@ a.intro__button:hover {
     cursor: pointer;
 }
 
+button.btn-modal {
+	padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #027500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;	
+}
+
 button.open-modal {
 	padding: 8px 10px;
     border-radius: 4px;
@@ -680,31 +702,16 @@ button.open-modal {
     transition: background-color 0.3s ease;
 }
 
-button.open-modal:hover {
+button.btn-modal:hover {
 	background: rgba(0,0,0,0);
 	color: #027500;
 	box-shadow: inset 0 0 0 3px #027500;
 }
 
-#loginMessage {
-    margin-top: 20px;
-    color: #027500;
-}
-
-#logout {
-    display: none;
-	margin: auto 0 10px 0;
-	padding: 8px 10px;
-    color: #027500;
-    font-size: 16px;
-	font-weight: 600;
-    border: none;
-    cursor: pointer;
-	background: transparent;
-}
-
-#logout:hover {
-
+button.open-modal:hover {
+	background: rgba(0,0,0,0);
+	color: #027500;
+	box-shadow: inset 0 0 0 3px #027500;
 }
 
 /* Эффект появления модального окна */
@@ -775,7 +782,8 @@ button.open-modal:hover {
 #loginMessage {
     text-align: center;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 20px;
+	color: #027500;
     display: none;
 }
 
@@ -1043,7 +1051,11 @@ h1, h2 {
     text-align: center;
 }
 
-.payment-form {
+.payment__forms {
+	display: flex;
+}
+
+.payment__forms-form {
     margin-bottom: 30px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -1651,8 +1663,11 @@ form.contact-form {
 		min-height: 180px;
 		display: flex;
 		flex-direction: column;
+	}
+	.payment__forms {
+		display: flex;
+		flex-wrap: wrap;
 	}	
-
 }
 
 /* Для мобильных устройств (ширина экрана до 320px) */

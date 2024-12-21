@@ -58,57 +58,131 @@
 			</nav>
 			<nav class="header__nav-login nav">
 				<ul class="nav__login">
-					<li class="nav__item-login"><a href="#" id="openModal">Войти</a></li>
-					<li class="nav__item-login"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
+					<li class="nav__item-login"><button id="openModal" class="nav__link-login">Войти</button></li>
+					<li class="nav__item-login"><button id="logout" style="display:none;" class="nav__link-login">Выйти</button></li>
 				</ul>
 			</nav>			
         </div>
-
     </header>
-
+	
+    <!-- Модальное окно Вход -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeLoginModal">&times;</span>
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Электронная почта:</label>
+                <input type="email" id="loginEmail" name="email" required>
+                
+                <label for="loginPassword">Пароль:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                
+                <button type="submit" class="btn-modal">Войти</button>
+                <p><a href="#" id="openRegisterFromLogin">Нет аккаунта? Зарегистрируйтесь</a></p>
+            </form>
+        </div>
+    </div>
+	
+	<!-- Модальное окно Регистрация -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeRegisterModal">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <label for="registerName">Ваше имя:</label>
+                <input type="text" id="registerName" name="name" required>
+                
+                <label for="registerEmail">Электронная почта:</label>
+                <input type="email" id="registerEmail" name="email" required>
+                
+                <label for="registerPassword">Пароль:</label>
+                <input type="password" id="registerPassword" name="password" required>
+                
+                <button type="submit" class="btn-modal">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+	
+    <!-- Модальное окно-modal__register -->
+    <div id="modal__register" class="modal__register">
+        <div class="modal__register-content">
+            <span class="close__register-btn" id="closeModalRegisterBtn">&times;</span>
+            <h2>Записаться на консультацию</h2>
+			<form class="appointment-form" action="#" method="POST">
+				<h2>Записаться на консультацию</h2>				
+				<!-- Имя -->
+				<label for="name-register">Ваше имя:</label>
+				<input type="text" id="name-register" name="name-register" placeholder="Введите ваше имя" required>
+				
+				<!-- Электронная почта -->
+				<label for="email-register">Электронная почта:</label>
+				<input type="email" id="email-register" name="email-register" placeholder="Введите вашу почту" required>
+				
+				<!-- Телефон -->
+				<label for="phone">Телефон:</label>
+				<input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+	
+				<!-- Дата и время -->
+				<label for="date">Выберите дату:</label>
+				<input type="date" id="date" name="date" required>
+				
+				<label for="time">Выберите время:</label>
+				<input type="time" id="time" name="time" required>
+				
+				<!-- Сообщение -->
+				<label for="message">Ваши пожелания или вопросы:</label>
+				<textarea id="message" name="message" rows="4" placeholder="Напишите ваши пожелания или вопросы"></textarea>
+				
+				<!-- Кнопка отправки -->
+				<button type="submit" class="appointment-button">Записаться</button>
+			</form>	
+        </div>
+    </div>
+	
     <main class="main">
         <div class="container">
-            <h1>Оплата</h1>
+            <h2>Оплата</h2>
+			<div class="payment__forms">
+				<!-- Форма оплаты картой -->
+				<form id="card-form" class="payment__forms-form">
+					<h2>Оплата картой</h2>
+					<div class="form-group">
+						<label for="card-number">Номер карты</label>
+						<input type="text" id="card-number" placeholder="Введите номер карты" required>
+					</div>
+					<div class="form-group">
+						<label for="card-expiry">Срок действия (MM/YY)</label>
+						<input type="text" id="card-expiry" placeholder="MM/YY" required>
+					</div>
+					<div class="form-group">
+						<label for="card-cvc">CVC</label>
+						<input type="text" id="card-cvc" placeholder="Введите CVC" required>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Оплатить">
+					</div>
+				</form>
 
-            <!-- Форма оплаты картой -->
-            <form id="card-form" class="payment-form">
-                <h2>Оплата картой</h2>
-                <div class="form-group">
-                    <label for="card-number">Номер карты</label>
-                    <input type="text" id="card-number" placeholder="Введите номер карты" required>
-                </div>
-                <div class="form-group">
-                    <label for="card-expiry">Срок действия (MM/YY)</label>
-                    <input type="text" id="card-expiry" placeholder="MM/YY" required>
-                </div>
-                <div class="form-group">
-                    <label for="card-cvc">CVC</label>
-                    <input type="text" id="card-cvc" placeholder="Введите CVC" required>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Оплатить">
-                </div>
-            </form>
-
-            <!-- Форма оплаты по счету -->
-            <form id="invoice-form" class="payment-form">
-                <h2>Оплата по счету</h2>
-                <div class="form-group">
-                    <label for="full-name">ФИО</label>
-                    <input type="text" id="full-name" placeholder="Введите ваше имя" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Электронная почта</label>
-                    <input type="email" id="email" placeholder="Введите вашу почту" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Телефон</label>
-                    <input type="tel" id="phone" placeholder="Введите ваш телефон" required>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Отправить счёт">
-                </div>
-            </form>
+				<!-- Форма оплаты по счету -->
+				<form id="invoice-form" class="payment__forms-form">
+					<h2>Оплата по счету</h2>
+					<div class="form-group">
+						<label for="full-name">ФИО</label>
+						<input type="text" id="full-name" placeholder="Введите ваше имя" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Электронная почта</label>
+						<input type="email" id="email" placeholder="Введите вашу почту" required>
+					</div>
+					<div class="form-group">
+						<label for="phone">Телефон</label>
+						<input type="tel" id="phone" placeholder="Введите ваш телефон" required>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Отправить счёт">
+					</div>
+				</form>
+			</div>
         </div>
     </main>
 
@@ -122,8 +196,7 @@
     </footer>
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
-	<script src="js/breadcrumbs.js"></script>
-	<script src="js/contact-form.js"></script>
+	<!--script src="js/breadcrumbs.js"></script-->
     <script>
         // Функция для отображения уведомления
         function showNotification(message, redirectUrl) {

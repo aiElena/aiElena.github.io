@@ -64,21 +64,81 @@
 			</nav>					
         </div>
     </header>
-    <!-- Модальное окно -->
-    <div id="modal" class="modal">
+	
+    <!-- Модальное окно Вход -->
+    <div id="loginModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" id="closeModalBtn">&times;</span>
-            <h2>Вход на сайт</h2>
-            <form id="loginForm" class="form">
-                <label for="email">Электронная почта:</label>
-                <input type="email" id="email" placeholder="Введите вашу почту" required>
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" placeholder="Введите ваш пароль" required>
-                <button type="submit">Войти</button>
+            <span class="close-btn" id="closeLoginModal">&times;</span>
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Электронная почта:</label>
+                <input type="email" id="loginEmail" name="email" required>
+                
+                <label for="loginPassword">Пароль:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                
+                <button type="submit" class="btn-modal">Войти</button>
+                <p><a href="#" id="openRegisterFromLogin">Нет аккаунта? Зарегистрируйтесь</a></p>
             </form>
-            <div id="loginMessage" style="display: none;"></div>
         </div>
     </div>
+	
+	<!-- Модальное окно Регистрация -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeRegisterModal">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <label for="registerName">Ваше имя:</label>
+                <input type="text" id="registerName" name="name" required>
+                
+                <label for="registerEmail">Электронная почта:</label>
+                <input type="email" id="registerEmail" name="email" required>
+                
+                <label for="registerPassword">Пароль:</label>
+                <input type="password" id="registerPassword" name="password" required>
+                
+                <button type="submit" class="btn-modal">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+	
+    <!-- Модальное окно-modal__register -->
+    <div id="modal__register" class="modal__register">
+        <div class="modal__register-content">
+            <span class="close__register-btn" id="closeModalRegisterBtn">&times;</span>
+            <h2>Записаться на консультацию</h2>
+			<form class="appointment-form" action="#" method="POST">
+				<h2>Записаться на консультацию</h2>				
+				<!-- Имя -->
+				<label for="name-register">Ваше имя:</label>
+				<input type="text" id="name-register" name="name-register" placeholder="Введите ваше имя" required>
+				
+				<!-- Электронная почта -->
+				<label for="email-register">Электронная почта:</label>
+				<input type="email" id="email-register" name="email-register" placeholder="Введите вашу почту" required>
+				
+				<!-- Телефон -->
+				<label for="phone">Телефон:</label>
+				<input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
+	
+				<!-- Дата и время -->
+				<label for="date">Выберите дату:</label>
+				<input type="date" id="date" name="date" required>
+				
+				<label for="time">Выберите время:</label>
+				<input type="time" id="time" name="time" required>
+				
+				<!-- Сообщение -->
+				<label for="message">Ваши пожелания или вопросы:</label>
+				<textarea id="message" name="message" rows="4" placeholder="Напишите ваши пожелания или вопросы"></textarea>
+				
+				<!-- Кнопка отправки -->
+				<button type="submit" class="appointment-button">Записаться</button>
+			</form>	
+        </div>
+    </div>
+	
     <!-- Основной контент -->
 	<main class="main">
 		<!-- Хлебные крошки -->
@@ -94,8 +154,7 @@
 					<h2 class="blog__title-article">Статья первая</h2>
 					<p class="blog__txt-article">
 					Lorem Ipsum — это текст-«рыба», часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной «рыбой» для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых				
-					</p>
-					
+					</p>	
 				</div>
 			</section>
 			<div class="pagination">

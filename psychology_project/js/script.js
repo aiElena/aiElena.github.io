@@ -53,80 +53,273 @@ $('.upbtn').on('click',function() {
     return false;
 });
 
-/*-----modal---loginForm-----*/
 
-document.addEventListener("DOMContentLoaded", function() {
-    const modal = document.getElementById("modal");
-    const openModalBtn = document.getElementById("openModal");
-    const closeModalBtn = document.getElementById("closeModalBtn");
-    const loginForm = document.getElementById("loginForm");
-    const loginMessage = document.getElementById("loginMessage");
-    const logoutBtn = document.getElementById("logout"); // Кнопка "Выйти"
 
-    // Проверка, если пользователь уже вошел
-    if (localStorage.getItem("isLoggedIn") === "true") {
-        // Если пользователь вошел, скрываем кнопку "Войти" и показываем "Выйти"
-        openModalBtn.style.display = "none"; // Скрываем кнопку "Войти"
-        loginMessage.textContent = "Вы успешно вошли!";
-        loginMessage.style.display = "block";
-        logoutBtn.style.display = "inline-block"; // Показываем кнопку "Выйти"
-    } else {
-        openModalBtn.style.display = "inline"; // Показываем кнопку "Войти", если не вошли
-        logoutBtn.style.display = "none"; // Скрываем кнопку "Выйти"
+
+
+$('.faq__item_faqAsk').click(function(){
+	$(this).next().toggleClass('open').slideToggle(500);
+	$(this).toggleClass('active');
+});
+
+
+/*-------modal__register----------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("modal__register");
+  const openModalBtns = document.querySelectorAll(".open-modal");
+  const closeModalBtn = document.getElementById("closeModalRegisterBtn");
+
+  // Функция для открытия модального окна
+  function openModal() {
+    modal.style.display = "block";
+  }
+
+  // Функция для закрытия модального окна
+  function closeModal() {
+    modal.style.display = "none";
+  }
+
+  // Открытие модального окна при клике на любую кнопку
+  openModalBtns.forEach((btn) => {
+    btn.addEventListener("click", openModal);
+  });
+
+  // Закрытие модального окна при клике на крестик
+  closeModalBtn.addEventListener("click", closeModal);
+
+  // Закрытие модального окна при клике за его пределами
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});
+
+/*------reviews--------*/
+// Обработка звезд
+document.querySelectorAll('#rating-container span').forEach(star => {
+    star.addEventListener('click', () => {
+        const ratingValue = star.getAttribute('data-value');
+        document.getElementById('rating').value = ratingValue;
+
+        // Обновить стиль для звезд
+        document.querySelectorAll('#rating-container span').forEach(star => {
+            star.style.color = star.getAttribute('data-value') <= ratingValue ? 'gold' : 'gray';
+        });
+    });
+});
+
+// Проверяем, существует ли форма с ID "review-form"
+const reviewForm = document.getElementById('review-form');
+
+if (reviewForm) {
+    // Добавляем обработчик события submit
+    reviewForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+    // Получаем данные из формы
+    const name = document.getElementById('name').value;
+    const review = document.getElementById('review').value;
+    const rating = document.getElementById('rating').value || 0; // Если рейтинг не выбран, установить 0
+    const photoInput = document.getElementById('photo');
+
+    // Проверяем, выбран ли файл
+    let photoURL = 'https://via.placeholder.com/100'; // Аватар по умолчанию
+    if (photoInput && photoInput.files.length > 0) {
+        const photoFile = photoInput.files[0];
+        photoURL = URL.createObjectURL(photoFile);
     }
 
-    // Открытие модального окна
-    openModalBtn.onclick = function() {
-        modal.style.display = "flex";
-    };
+    // Создаём новый элемент слайдера
+    const newSlide = document.createElement('li');
+    newSlide.innerHTML = `
+        <div class="slider-container">
+            <!-- Вставляем изображение (фото или аватар) -->
+            <img src="${photoURL}" alt="${name}" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+            <h4>${name}</h4>
+            <p>${review}</p>
+            <p>Рейтинг: ${'★'.repeat(rating)}</p>
+        </div>
+    `;
 
-    // Закрытие модального окна
-    closeModalBtn.onclick = function() {
-        modal.style.display = "none";
-    };
+    // Добавляем новый слайд в слайдер
+    const slider = document.querySelector('#slider ul.slider__review');
+    slider.appendChild(newSlide);
 
-    // Закрытие модального окна при клике вне его
-    window.onclick = function(event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    };
+     //Если слайдов больше 4, удаляем первый
+    const slides = slider.querySelectorAll('li');
+    if (slides.length > 4) {
+        slider.removeChild(slides[0]);
+    }
 
-    // Обработка формы входа
-    loginForm.onsubmit = function(event) {
-        event.preventDefault();
-        const email = document.getElementById("email").value.trim().toLowerCase();
-        const password = document.getElementById("password").value.trim();
-
-        // Простая проверка данных
-        if (email === "user@example.com" && password === "password123") {
-            localStorage.setItem("isLoggedIn", "true"); // Сохранение статуса в localStorage
-            loginMessage.textContent = "Вы успешно вошли!";
-            loginMessage.style.display = "block";
-            loginForm.style.display = "none"; // Прячем форму
-
-            // Меняем кнопку "Войти" на кнопку "Выйти"
-            openModalBtn.style.display = "none";
-            logoutBtn.style.display = "inline-block"; // Показываем кнопку "Выйти"
-            setTimeout(function() {
-                modal.style.display = "none"; // Закрытие модального окна через 2 секунды
-            }, 2000);
-        } else {
-            loginMessage.textContent = "Неверные данные. Попробуйте снова.";
-            loginMessage.style.color = "red";
-            loginMessage.style.display = "block";
-        }
-    };
-
-    // Выход из аккаунта
-    logoutBtn.onclick = function() {
-        localStorage.removeItem("isLoggedIn");
-        loginMessage.style.display = "none";
-        loginForm.style.display = "block"; // Показываем форму входа снова
-        openModalBtn.style.display = "inline"; // Показываем кнопку "Войти"
-        logoutBtn.style.display = "none"; // Скрываем кнопку "Выйти"
-    };
+    // Очищаем форму после отправки
+    document.getElementById('review-form').reset();
 });
+}
+
+/*--------------------*/
+
+// Получение элементов модальных окон и кнопок
+const loginModal = document.getElementById('loginModal');
+const registerModal = document.getElementById('registerModal');
+const closeLoginModal = document.getElementById('closeLoginModal');
+const closeRegisterModal = document.getElementById('closeRegisterModal');
+const openRegisterFromLogin = document.getElementById('openRegisterFromLogin');
+const loginForm = document.getElementById('loginForm');
+const registerForm = document.getElementById('registerForm');
+const openModalButton = document.getElementById('openModal');
+const logoutButton = document.getElementById('logout');
+
+// Создание элемента для отображения сообщений
+const messageBox = document.createElement('div');
+messageBox.style.position = 'fixed';
+messageBox.style.bottom = '20px';
+messageBox.style.right = '20px';
+messageBox.style.padding = '10px 20px';
+messageBox.style.backgroundColor = '#4caf50';
+messageBox.style.color = '#fff';
+messageBox.style.borderRadius = '5px';
+messageBox.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+messageBox.style.display = 'none';
+messageBox.style.zIndex = '1000';
+document.body.appendChild(messageBox);
+
+// Функция для отображения сообщения
+function showMessage(message, duration = 3000) {
+    messageBox.textContent = message;
+    messageBox.style.display = 'block';
+    setTimeout(() => {
+        messageBox.style.display = 'none';
+    }, duration);
+}
+
+// Функция для открытия модального окна
+function openModal(modal) {
+    modal.style.display = "flex";
+}
+
+// Функция для закрытия модального окна
+function closeModal(modal) {
+    modal.style.display = 'none';
+}
+
+// Открытие модального окна входа при клике на кнопку "Войти"
+openModalButton.addEventListener('click', () => openModal(loginModal));
+
+// Закрытие модальных окон при клике на кнопку закрытия
+closeLoginModal.addEventListener('click', () => closeModal(loginModal));
+closeRegisterModal.addEventListener('click', () => closeModal(registerModal));
+
+// Переключение с окна входа на окно регистрации
+openRegisterFromLogin.addEventListener('click', (event) => {
+    event.preventDefault(); // Предотвращаем переход по ссылке
+    closeModal(loginModal);
+    openModal(registerModal);
+});
+
+// Закрытие модального окна при клике вне его
+window.addEventListener('click', (event) => {
+    if (event.target === loginModal) {
+        closeModal(loginModal);
+    }
+    if (event.target === registerModal) {
+        closeModal(registerModal);
+    }
+});
+
+// Сохранение данных пользователя в LocalStorage
+function saveUser(name, email, password) {
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    users.push({ name, email, password });
+    localStorage.setItem('users', JSON.stringify(users));
+}
+
+// Проверка пользователя при входе
+function validateUser(email, password) {
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    return users.find(user => user.email === email && user.password === password);
+}
+
+// Функция для отображения кнопок входа и выхода
+function toggleAuthButtons(isLoggedIn) {
+    if (isLoggedIn) {
+        openModalButton.style.display = 'none';
+        logoutButton.style.display = 'block';
+    } else {
+        openModalButton.style.display = 'block';
+        logoutButton.style.display = 'none';
+    }
+}
+
+// Обработка формы входа
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Предотвращаем отправку формы
+
+    const email = loginForm.email.value;
+    const password = loginForm.password.value;
+
+    if (email && password) {
+        const user = validateUser(email, password);
+        if (user) {
+            showMessage('Успешный вход! Перенаправление...', 3000);
+            toggleAuthButtons(true);
+            setTimeout(() => {
+                window.location.href = 'profile.html';
+            }, 3000);
+        } else {
+            showMessage('Неверный логин или пароль.', 3000);
+        }
+    } else {
+        showMessage('Пожалуйста, заполните все поля для входа.', 3000);
+    }
+});
+
+// Обработка формы регистрации
+registerForm.addEventListener('submit', (event) => {
+    event.preventDefault(); // Предотвращаем отправку формы
+
+    const name = registerForm.name.value;
+    const email = registerForm.email.value;
+    const password = registerForm.password.value;
+
+    if (name && email && password) {
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        const userExists = users.some(user => user.email === email);
+
+        if (userExists) {
+            showMessage('Пользователь с таким email уже зарегистрирован.', 3000);
+        } else {
+            saveUser(name, email, password);
+            showMessage('Регистрация успешна! Перенаправление...', 3000);
+            toggleAuthButtons(true);
+            setTimeout(() => {
+                window.location.href = 'profile.html';
+            }, 3000);
+        }
+    } else {
+        showMessage('Пожалуйста, заполните все поля для регистрации.', 3000);
+    }
+});
+
+// Логика выхода
+logoutButton.addEventListener('click', () => {
+    showMessage('Вы вышли из системы.', 3000);
+    toggleAuthButtons(true);
+});
+
+/*-----------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
