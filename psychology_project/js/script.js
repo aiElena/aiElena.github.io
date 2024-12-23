@@ -381,7 +381,52 @@ function showTarget(targets, targetId) {
 
 main()
 
+/*---------------*/
+        // Получение текущего пользователя из LocalStorage
+        const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
+        if (!currentUser) {
+            window.location.href = "index.html";
+        } else {
+            document.getElementById("welcomeMessage").textContent = `Здравствуйте, ${currentUser.name}!`;
+            document.getElementById("updateName").value = currentUser.name;
+            document.getElementById("updateEmail").value = currentUser.email;
+        }
+
+        document.getElementById("logout").addEventListener("click", () => {
+            localStorage.removeItem("currentUser");
+            window.location.href = "index.html";
+        });
+
+        // Переключение вкладок
+        const menuButtons = document.querySelectorAll('.profile__menu-button');
+        const contentSections = document.querySelectorAll('.profile__content');
+
+        menuButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+                contentSections.forEach(section => {
+                    section.style.display = section.id === targetTab ? 'block' : 'none';
+                });
+            });
+        });
+
+        // Сохранение настроек профиля
+        document.getElementById('settingsForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const updatedName = document.getElementById('updateName').value;
+            const updatedEmail = document.getElementById('updateEmail').value;
+
+            if (updatedName && updatedEmail) {
+                currentUser.name = updatedName;
+                currentUser.email = updatedEmail;
+                localStorage.setItem("currentUser", JSON.stringify(currentUser));
+                document.getElementById("welcomeMessage").textContent = `Здравствуйте, ${updatedName}!`;
+                alert("Изменения сохранены.");
+            } else {
+                alert("Пожалуйста, заполните все поля.");
+            }
+        });
 
 
 
