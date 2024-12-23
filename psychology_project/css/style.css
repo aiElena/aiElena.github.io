@@ -1193,6 +1193,36 @@ form.contact-form {
     visibility: visible;
 }
 
+/*------profile---------*/
+.container__profile {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+}
+
+.hidden {
+  display: none
+}
+
+.profile__info {
+	display: flex;
+	gap: 40px;
+}
+
+.about__info-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.profile__info a {
+	cursor: pointer;
+}
+
+.profile__info-block-title {
+	flex-basis: 40%;
+}
+
 /*------container__404----------*/
 .container__404 {
 	text-align: center;
@@ -1741,15 +1771,6 @@ form.contact-form {
     color: black;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
 
 
 

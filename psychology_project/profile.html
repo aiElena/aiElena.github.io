@@ -9,25 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-    <style>
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-        button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #4caf50;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+
 </head>
 <body class="body">
 
@@ -75,18 +57,12 @@
 					<li class="nav__item-lang-ru"><button id="ru" class="btn-ru"></button></li>	
 				</ul>
 			</nav>
-			<!--nav class="header__nav-login nav">
-				<ul class="nav__login">
-					<li class="nav__item-login"><a href="#" id="openModal">Войти</a></li>
-					<li class="nav__item-login"><button id="logout" style="display:none;" class="nav__link">Выйти</button></li>
-				</ul>
-			</nav-->
-        <nav>
+			<nav>
 				<ul class="nav__login">
 					<li class="nav__item-login"><button id="openModal" class="nav__link-login">Войти</button></li>
 					<li class="nav__item-login"><button id="logout" style="display:none;" class="nav__link-login">Выйти</button></li>
 				</ul>
-        </nav>			
+			</nav>			
         </div>
 
     </header>
@@ -168,47 +144,116 @@
     <div id="notification" class="notification"></div>	
 	
     <!-- Основной контент -->
-	<main class="main">
+	<main class="main__profile">
 		<!-- Контейнер для уведомлений -->
 		<div id="notification" class="notification" style="display: none;"></div>
 		<!-- Контент страницы -->
-		<div id="main-content">
-			<section class="user-info">
-				<div class="user__container">
-					<h2>Информация о пользователе</h2>
-					<p><strong>Имя:</strong> <span id="userName"></span></p>
-					<p><strong>Email:</strong> <span id="userEmail"></span></p>
-				</div>	
-			</section>
-
-			<section class="appointments">
-				<div class="appointments__container">
-					<h2>Ваши записи</h2>
-					<p>У вас пока нет записей. <a href="schedule.html">Записаться на консультацию</a></p>
-				</div>
-			</section>
+		<div id="main__profile-content">
+		    <h2 id="welcomeMessage" class="profile__title">Здравствуйте, Гость!</h2>
+			<div class="container__profile">
+				<section class="profile">
+					<div class="profile__info">
+						<div class="profile__info-block-title">
+							<div class="profile__info-title">
+								<a class="source source-1">Настройки профиля</a>
+							</div>					
+						</div>
+						<div class="profile__info-block-text">
+							<div class="profile__info-text target target-1">
+								<div id="settings" class="profile__content">
+									<h2>Настройки профиля</h2>
+									<form id="settingsForm">
+										<label>
+											Имя:
+											<input type="text" id="updateName" value="">
+										</label>
+										<label>
+											Email:
+											<input type="email" id="updateEmail" value="">
+										</label>
+										<button type="submit" class="profile__button">Сохранить изменения</button>
+									</form>
+								</div>
+							</div>					
+						</div>					
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-block-title">
+							<div class="profile__info-title">
+								<a class="source source-2">История заказов</a>
+							</div>					
+						</div>
+						<div class="profile__info-block-text">
+							<div class="profile__info-text target target-2">
+								<p>У вас пока нет записей
+								<a class="open-modal"> Записаться на консультацию</a></p>
+							</div>					
+						</div>				
+					</div>
+					<div class="profile__info">
+						<div class="profile__info-block-title">
+							<div class="profile__info-title">
+								<a class="source source-3">Избранное</a>
+							</div>					
+						</div>
+						<div class="profile__info-block-text">
+							<div class="profile__info-text target target-3">
+								<p>У вас пока нет записей</p>
+							</div>					
+						</div>				
+					</div>				
+				</section>
+			</div>
 		</div>
-    </main>
-
-    <!--script>
+	</main>	
+    <script>
+        // Получение текущего пользователя из LocalStorage
         const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
         if (!currentUser) {
-            //window.location.href = "index.html";
+            window.location.href = "index.html";
         } else {
             document.getElementById("welcomeMessage").textContent = `Здравствуйте, ${currentUser.name}!`;
+            document.getElementById("updateName").value = currentUser.name;
+            document.getElementById("updateEmail").value = currentUser.email;
         }
 
         document.getElementById("logout").addEventListener("click", () => {
             localStorage.removeItem("currentUser");
-            //window.location.href = "index.html";
+            window.location.href = "index.html";
         });
-    </script-->
-	
-	
-    <script>
 
-    </script>	
+        // Переключение вкладок
+        const menuButtons = document.querySelectorAll('.profile__menu-button');
+        const contentSections = document.querySelectorAll('.profile__content');
+
+        menuButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+                contentSections.forEach(section => {
+                    section.style.display = section.id === targetTab ? 'block' : 'none';
+                });
+            });
+        });
+
+        // Сохранение настроек профиля
+        document.getElementById('settingsForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const updatedName = document.getElementById('updateName').value;
+            const updatedEmail = document.getElementById('updateEmail').value;
+
+            if (updatedName && updatedEmail) {
+                currentUser.name = updatedName;
+                currentUser.email = updatedEmail;
+                localStorage.setItem("currentUser", JSON.stringify(currentUser));
+                document.getElementById("welcomeMessage").textContent = `Здравствуйте, ${updatedName}!`;
+                alert("Изменения сохранены.");
+            } else {
+                alert("Пожалуйста, заполните все поля.");
+            }
+        });
+    </script>
+
 	
 	
 	    <!-- Подключение JS -->
