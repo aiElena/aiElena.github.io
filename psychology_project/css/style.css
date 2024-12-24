@@ -1212,7 +1212,7 @@ form.contact-form {
 	gap: 40px;
 }
 
-.about__info-block {
+.profile__info-block {
 	display: flex;
 	flex-direction: column;
 }
