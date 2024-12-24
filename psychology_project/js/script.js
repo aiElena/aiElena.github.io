@@ -1,5 +1,6 @@
 
 
+
 /*------menu----------*/
 
 $(function(){
@@ -384,6 +385,44 @@ main()
 /*---------------*/
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    // Элемент для сообщений
+    const messageElement = document.getElementById("message");
+
+    if (!currentUser) {
+        if (messageElement) {
+            messageElement.textContent = "Пользователь не авторизован.";
+            messageElement.style.color = "red";
+        }
+        return;
+    }
+
+    if (messageElement) {
+        messageElement.textContent = `Добро пожаловать, ${currentUser.name}!`;
+        messageElement.style.color = "green";
+    }
+
+    const updateNameInput = document.getElementById("updateName");
+    const updateEmailInput = document.getElementById("updateEmail");
+
+    if (updateNameInput && updateEmailInput) {
+        updateNameInput.value = currentUser.name || '';
+        updateEmailInput.value = currentUser.email || '';
+    }
+
+    const logoutButton = document.getElementById("logout");
+    if (logoutButton) {
+        logoutButton.addEventListener("click", () => {
+            localStorage.removeItem("currentUser");
+            if (messageElement) {
+                messageElement.textContent = "Вы вышли из системы.";
+                messageElement.style.color = "orange";
+            }
+        });
+    }
+});
 
 
 
