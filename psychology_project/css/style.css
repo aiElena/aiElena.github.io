@@ -1200,7 +1200,9 @@ form.contact-form {
     padding: 20px;
     background: #fff;
 }
-
+.profile-content {
+	border: 1px solid #ff0000;
+}
 .hidden {
   display: none
 }
