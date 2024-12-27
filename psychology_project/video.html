@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание вашего сайта">
-    <title>Blog item</title>
+    <title>About</title>
 	<!--link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"-->
 	<link rel="icon" href="img/favicons/icon.ico">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 </head>
 <body class="body">
-
 
     <!-- Шапка сайта -->
     <header class="header" id="top">
@@ -65,7 +65,7 @@
 			</nav>				
         </div>
     </header>
-	
+
     <!-- Модальное окно Вход -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
@@ -141,28 +141,43 @@
     </div>
 	
     <!-- Основной контент -->
+
 	<main class="main">
-		<!-- Хлебные крошки -->
-		<nav class="breadcrumbs" style="display: none;">
-			<ul id="breadcrumbs-list"></ul>
-		</nav>
+   
 		<!-- Контент страницы -->
 		<div id="main-content">
-			<section class="blog__article">
-				<div class="blog__container-article">
-					<img src="img/pict2.jpg" alt="pict" class="blog__image-article">
-					<h2 class="blog__title-article">Что такое чувство вины и какие могут быть последствия</h2>
-					<p class="blog__txt-article">
-					Lorem Ipsum — это текст-«рыба», часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной «рыбой» для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых				
-					</p>					
+			<section class="video">
+				<div class="video__info">
+					<h2 class="video__info-title">Просмотрите видео-лекцию</h2>
+					<div class="video__info-block">
+						<div class="video__container-video">
+							<iframe class="responsive-iframe" src="https://www.youtube.com/embed/j8UUJ4APzsw?si=cKEjsQV8SFNAiz4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__container-text">
+							<p> используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+						</div>
+					</div>	
+				</div>
+				<div class="video__info">
+					<h2 class="video__info-title">Просмотрите видео-лекцию</h2>
+					<div class="video__info-block">
+						<div class="video__container-video">
+							<iframe class="responsive-iframe" src="https://www.youtube.com/embed/j8UUJ4APzsw?si=cKEjsQV8SFNAiz4B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						</div>
+						<div class="video__container-text">
+							<p> используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+						</div>
+					</div>	
 				</div>
 			</section>
-			<div class="pagination">
-				<a href="blog__item1.html" class="pagination__prev">← Предыдущая статья</span>
-				<a href="blog__item3.html" class="pagination__next">Следующая статья →</a>
-			</div>
+			
+			
+			
+			
+			
 		</div>
-    </main>
+
+	</main>	
 
     <!-- Подвал сайта -->
     <footer class="footer">
@@ -176,7 +191,9 @@
             </div>
         </div>
     </footer>
+<script>
 
+</script>
     <!-- Подключение JS -->
 	<script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
